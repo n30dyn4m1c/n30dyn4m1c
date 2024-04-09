@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @n30dyn4m1c
-- 👀 I’m interested in ... student information systems, erp dev, chatbots, data visualization
-- 🌱 I’m currently learning ... C#, ruby
-- 💞️ I’m looking to collaborate on data visualization projects
+- 👀 I’m interested in ... trading bots, student information systems, erp dev, chatbots, data visualization
+- 🌱 I’m currently learning ... MQL5
+- 💞️ I’m looking to collaborate on MetaTrader5 EAs
 - 📫 How to reach me ... n30dyn4m1c@gmail.com
 
 <!---
