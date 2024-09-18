@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @n30dyn4m1c
+- 👋 Hi, I’m N30
 - 👀 I’m interested in ... trading bots, student information systems, erp dev, chatbots, data visualization
 - 🌱 I’m currently learning ... MQL5
 - 💞️ I’m looking to collaborate on MetaTrader5 EAs
