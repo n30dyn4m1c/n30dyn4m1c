@@ -1,8 +1,8 @@
 - 👋 Hi, I’m N30
-- 👀 I’m interested in ... trading bots, student information systems, erp dev, chatbots, data visualization
-- 🌱 I’m currently learning ... MQL5
-- 💞️ I’m looking to collaborate on MetaTrader5 EAs
-- 📫 How to reach me ... n30dyn4m1c@gmail.com
+- Glory to God in the Highest! Jesus Christ is Lord and King over all!
+- 👀 I’m interested in ... trading bots, erp dev, chatbots
+- 🌱 I’m currently learning ... MQL5, React, Spring Boot
+
 
 <!---
 n30dyn4m1c/n30dyn4m1c is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
