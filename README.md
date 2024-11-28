@@ -1,5 +1,5 @@
 - 👋 Hi, I’m N30
-- Glory to God in the Highest! Jesus Christ is Lord and King over all!
+- Hoc hostes meos, linguas eorum, voluntatesque eorum liget.
 - 👀 I’m interested in ... trading bots, erp dev, chatbots
 - 🌱 I’m currently learning ... MQL5, React, Spring Boot
 
