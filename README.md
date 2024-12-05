@@ -1,5 +1,5 @@
 - 👋 Hi, I’m N30
-- Hoc hostes meos, linguas eorum, voluntatesque eorum liget.
+- Expecting the unexpected, witnessing poetry in motion, super colossal history.
 - 👀 I’m interested in ... trading bots, erp dev, chatbots
 - 🌱 I’m currently learning ... MQL5, React, Spring Boot
 
