@@ -1,4 +1,12 @@
-N30. Based in Papua New Guinea. I write code, occasionally.
+## N30
+
+Software developer based in Papua New Guinea.  
+Focus areas include internal university systems, data tools, and automated trading (MQL5).  
+Development is selective, purposeful, and often private.
+
+Currently maintaining and extending personal utilities in education and local applications.  
+Also experimenting with expert advisors and strategies for algorithmic trading.
+
 
 
 <!---
