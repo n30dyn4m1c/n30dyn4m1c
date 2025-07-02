@@ -1,4 +1,4 @@
-- N30. Based in Papua New Guinea. I write code, occasionally
+N30. Based in Papua New Guinea. I write code, occasionally
 
 
 <!---
