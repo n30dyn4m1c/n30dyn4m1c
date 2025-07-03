@@ -2,10 +2,9 @@
 
 Software developer based in Papua New Guinea.  
 Focus areas include internal university systems, data tools, and automated trading (MQL5).  
-Development is selective, purposeful, and often private.
 
 Currently maintaining and extending personal utilities in education and local applications.  
-Also experimenting with expert advisors and strategies for algorithmic trading.
+Also experimenting with MetaTrader 5 EAs and strategies for algorithmic trading.
 
 
 
