@@ -1,6 +1,6 @@
 ## N30
 
-Software developer based in Papua New Guinea.  
+Developer based in Papua New Guinea.  
 Focus areas include internal university systems, data tools, and automated trading (MQL5).  
 
 Currently maintaining and extending personal utilities in education and local applications.  
