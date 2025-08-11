@@ -1,4 +1,4 @@
-## N30
+## Neo Malesa
 Developer based in Papua New Guinea.
   
 Focus areas include internal university systems, data tools, and automated trading (MQL5).  
