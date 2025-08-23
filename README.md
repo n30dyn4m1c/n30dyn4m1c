@@ -1,7 +1,7 @@
 ## Neo Malesa
 Developer based in Papua New Guinea.
   
-Focus areas include internal university systems, data tools, and automated trading (MQL5).  
+Focus areas include internal university systems, data tools, and automated trading.  
 
 Currently maintaining utilities in education and local applications.
 
