@@ -3,8 +3,6 @@ Developer based in Papua New Guinea.
   
 Focus areas include internal university systems, data tools, and automated trading.  
 
-Currently maintaining utilities in education and local applications.
-
 Also experimenting with MetaTrader 5 EAs and strategies for algorithmic trading.
 
 Always learning and tinkering.
