@@ -1,7 +1,7 @@
 # 👋 Hi, I'm N30
 **Developer & Trader based in Port Moresby, PNG**
 
-I specialize in building automated trading tools and data-driven web applications, leveraging AI to accelerate development.
+I build automated trading tools and data-driven web applications, leveraging AI to accelerate development.
 
 ### 🛠️ Languages & Tools
 
