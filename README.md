@@ -35,5 +35,5 @@ I build automated trading tools and data-driven web applications, leveraging AI 
 ---
 
 ### 🔭 I’m currently working on
-* **Ichimoku Alignment Breakout EA:** An automated trading system focused on trend confirmation and breakout signals.
+* **Ichimoku Multi-Timeframe Breakout EA:** An automated trading system focused on trend confirmation and breakout signals.
 * **UPNG Website update:** New public website project for the University of Papua New Guinea.
