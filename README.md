@@ -23,7 +23,7 @@ Currently, my discipline is centered on the financial markets, where I specializ
 ![Pine Script™](https://img.shields.io/badge/Pine_Script-009688?style=flat&logo=tradingview&logoColor=white)
 ![TradingView](https://img.shields.io/badge/TradingView-1976D2?style=flat&logo=tradingview&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
-![SQL Server](https://img.io/badge/SQL_Server-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white)
 ![MS Access](https://img.shields.io/badge/Microsoft_Access-A4373A?style=flat&logo=microsoft-access&logoColor=white)
