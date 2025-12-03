@@ -47,8 +47,6 @@ Currently, my discipline is centered on the financial markets, where I specializ
 ---
 
 ### 🤝 Connect With Me
-[![X (Twitter)](https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white)](https://x.com/n30dyn4m1c)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:n30dyn4m1c@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-2A2B2E?style=flat&logo=about-dot-me&logoColor=white)]([YOUR_PORTFOLIO_URL])
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:github+n30dyn4m1c@gmail.com)
 
-This is the final, professional, and descriptive version of your profile story. You just need to insert your three contact links to finalize the revamp!
+
