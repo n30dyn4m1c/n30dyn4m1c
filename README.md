@@ -13,7 +13,7 @@ I got into day trading in 2022 and started off learning to trade by manually pla
 
 Besides these I've delved into different stuff: data visualization with MS Power BI, Tableau, visual programming languages like Scratch, and for phone apps: Thunkable, MIT App Inventor 2, no-code platforms, CMS: Wordpress, Joomla, Drupal, Wagtail, JavaScript frameworks React, Express, NodeJS, Ruby, Java, Perl, PHP, PHP RAD frameworks, Arduinos, Raspberry Pis, Chatfuel Messenger chatbots, Custom GPTs.
 
-I like to see fellow Papua New Guineans posting code here on Github. Some starting off with their first Hello World git commit, others doing work stuff, a few doing phenomonal ground-breaking projects. I for everyone who codes. I'm just here to learn, stay with the good vibes, we all are on independent branches in our dev journey, but perhaps we can inspire each other or challenge ourselves by sharing our code and our work here.
+I like to see fellow Papua New Guineans posting code here on Github. Some starting off with their first Hello World git commit, others doing work stuff, a few doing phenomonal ground-breaking projects. I am for everyone who codes. Me, I'm just here to learn, stay with the good vibes. We all are on independent branches in our dev journey, but perhaps we can inspire each other or challenge ourselves by sharing our code and our work here.
 
 Cheers.
 N30
