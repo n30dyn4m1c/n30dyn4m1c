@@ -1,4 +1,4 @@
-# N30 | Developer & Trader
+# N30 | Developer, Trader, Creative
 **Location: Waigani, Port Moresby, PNG**
 
 I'm trying to develop consistency with my dev work in 2025. I try to commit every day. Sometimes it's trivial but I still commit something. Not exactly a qualitative approach, but I believe consistency will in turn develop into stick-to-it-iveness. And the more we code, the more chances we have of building something great.
