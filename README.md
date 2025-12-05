@@ -1,7 +1,17 @@
 # N30 | Developer & Trader
-**Location: Port Moresby, PNG**
+**Location: Waigani, Port Moresby, PNG**
 
-Focus areas include: Data management (SQL/VBA), Full-stack web architecture (Python/Django), and Algorithmic trading system development (MQL5/Pine Script).
+I'm trying to develop consistency with my dev work in 2025. I try to commit every day. Sometimes it's trivial but I still commit something. Not exactly a qualitative approach, but I believe consistency will in turn develop into stick-to-it-iveness. And the more we code, the more chances we have of building something great.
+
+I've always enjoyed creating things. I learnt programming at UPNG when I studied for my BSc. I had a good mathematics foundation especially with Discrete Mathematics which gave great theoretical understanding for the practical lab sessions. We learnt to code in C++. A semester later we did a course on data structures and algorithms. I personally thought that was a difficult course, though it could've been the lecturer that was difficult and the fact there was no ChatGPT in those days to demystify it for me. I also was fortunate to do courses on database management and development and web development as well. That gave me a good enough foundation to start off. The projects and assignments were enough to push me to deliver code, deliver something that at least worked. I don't think I would've had the discipline to teach myself how to code if it wasn't for uni.  I was also fortunate to have gone to South Korea to do a Masters degree in ICT, and the tech exposure there was also eye-opening and helped me to expand my experience and horizons as to the possibility of tech adoption in PNG. Yeah, we're still lagging behind, but there's hope we can leapfrog a lot of things.
+
+Professionally, I work in a University IT setting these days. Most tools or platforms at work are for internal use so I don't post them publicly. But I work with ERP systems, legacy student database systems, data sets, web platforms etc in a uni setting.
+
+I have a number of hobby projects I've started on the side, which I hope will gain some traction in the future. I'm yet to put them out publicly though. Maybe when I do I might make a name for myself and get some credibility and fame in the tech space in PNG. lol. jk. we don't really care about all that.
+
+I got into day trading in 2022 and started off learning to trade by manually placing orders and closing them. But when I used the desktop application MetaTrader 5, I noticed I could write custom code to automate some functionalities. That is how I got into writing MQL5 scripts to assist me in trading. I am considering publishing a few on the MQL5 Marketplace after I polish them up.
+
+Besides these I've delved into different stuff: data visualization with MS Power BI, Tableau, visual programming languages like Scratch, and for phone apps: Thunkable, MIT App Inventor 2, no-code platforms, CMS: Wordpress, Joomla, Drupal, Wagtail, JavaScript frameworks React, Express, NodeJS, Ruby, Java, Perl, PHP, PHP RAD frameworks, Arduinos, Raspberry Pis, Chatfuel Messenger chatbots, Custom GPTs.
 
 ---
 
@@ -34,12 +44,12 @@ Focus areas include: Data management (SQL/VBA), Full-stack web architecture (Pyt
 
 ---
 
-### 🔭 Active Projects
+### 🔭 2 active projects, I have others also
 * **Ichimoku Multi-Timeframe Breakout EA:** Automated trading system development (MQL5).
-* **UPNG Website Update:** Web presence modernization and maintenance (Full-Stack).
+* **UPNG Website Update:** Updating to a modernized framework customized to UPNG's specific data needs (Django/Wagtail).
 
 ---
 
-### 🤝 Contact
+### 🤝 You can contact me
 [![X (Twitter)](https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white)](http://x.com/n30dyn4m1c)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:n30dyn4m1c@gmail.com)
