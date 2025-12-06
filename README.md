@@ -15,7 +15,8 @@ Besides these I've delved into different stuff: data visualization with MS Power
 
 I like to see fellow Papua New Guineans posting code here on Github. Some starting off with their first Hello World git commit, others doing work stuff, a few doing phenomonal ground-breaking projects. I am for everyone who codes. Me, I'm just here to learn, stay with the good vibes. We all are on independent branches in our dev journey, but perhaps we can inspire each other or challenge ourselves by sharing our code and our work here.
 
-Cheers.
+Cheers
+
 N30
 
 ---
