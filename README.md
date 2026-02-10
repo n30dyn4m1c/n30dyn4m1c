@@ -12,7 +12,7 @@ Tools: Django. Wagtail. MQL5. Claude. Antigravity.
 
 Interests: information systems, erps, data visualization, algorithmic trading systems, AI solutions, agentic AI
 
-Writing: [Medium](https://medium.com/n30dyn4m1c)
+Blog: [Medium](https://medium.com/n30dyn4m1c)
 
 ---
 
