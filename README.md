@@ -13,12 +13,9 @@ Tools: Django. Wagtail. MQL5. Claude. Antigravity.
 Interests: information systems, erps, data visualization, algorithmic trading systems, AI solutions, agentic AI
 
 
-
 ---
-Blog: [Medium](https://medium.com/n30dyn4m1c)
 
 Get in touch: 
-Email: n30dyn4m1c@gmail.com 
-X: [@n30dyn4m1c](https://x.com/n30dyn4m1c)
+Email: n30dyn4m1c@gmail.com | X: [@n30dyn4m1c](https://x.com/n30dyn4m1c) | Personal Blog: [Medium](https://medium.com/n30dyn4m1c)
 
 ---
