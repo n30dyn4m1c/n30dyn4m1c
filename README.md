@@ -4,14 +4,15 @@ Full Stack Developer | Algorithmic Trading
 
 ---
 
-Current job: UPNG ICT  
+Current Job: UPNG ICT  
 
 Education: MSc ICT Convergence (Handong, South Korea) | BSc Computer Science (UPNG)
 
-Tools: Django. Wagtail. MQL5. Claude. Antigravity.
+Tools: Django, Wagtail, MQL5, Claude, Antigravity.
 
-Interests: information systems, erps, data visualization, algorithmic trading systems, AI solutions, agentic AI
+Interests: Information Systems, ERPs, Data Visualization, Algorithmic Trading Systems, AI solutions, Agentic AI
 
+Open to Opportunities: Jobs, Contracts, Collaborations, Freelance work. 
 
 ---
 
