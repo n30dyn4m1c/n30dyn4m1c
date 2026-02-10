@@ -16,6 +16,6 @@ Writing: [Medium](https://medium.com/n30dyn4m1c)
 
 ---
 
-Get in touch: n30dyn4m1c@gmail.com | [@n30dyn4m1c](https://x.com/n30dyn4m1c)
+Get in touch: Email: n30dyn4m1c@gmail.com | X: [@n30dyn4m1c](https://x.com/n30dyn4m1c)
 
 ---
