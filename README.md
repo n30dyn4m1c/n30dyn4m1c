@@ -2,8 +2,6 @@ $N30
 
 Full Stack Developer | Algorithmic Trading 
 
-Build. Test. Iterate.
-
 ---
 
 Current job: UPNG ICT  
@@ -11,6 +9,8 @@ Current job: UPNG ICT
 Education: MSc ICT Convergence (Handong, South Korea) | BSc Computer Science (UPNG)
 
 Tools: Django. Wagtail. MQL5. Claude. Antigravity.
+
+Interests: information systems, erps, data visualization, algorithmic trading systems, AI solutions, agentic AI
 
 Writing: [Medium](https://medium.com/n30dyn4m1c)
 
