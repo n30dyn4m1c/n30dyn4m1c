@@ -17,6 +17,6 @@ Open to Opportunities: Jobs, Contracts, Collaborations, Freelance work.
 ---
 
 Get in touch: 
-Email: n30dyn4m1c@gmail.com | X: [@n30dyn4m1c](https://x.com/n30dyn4m1c) | Personal Blog: [Medium](https://medium.com/n30dyn4m1c)
+X: [@n30dyn4m1c](https://x.com/n30dyn4m1c) | Personal Blog: [Medium](https://medium.com/n30dyn4m1c)
 
 ---
