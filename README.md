@@ -41,9 +41,9 @@ Current Job: UPNG ICT
 
 Education: MSc ICT Convergence (Handong, South Korea) | BSc Computer Science (UPNG)
 
-Tools: Django, Wagtail, MQL5, Claude, Antigravity.
+Tools: Django, Wagtail, Python, MQL5, MetaTrader5, Claude.ai, Claude Code, Gemini, Antigravity.
 
-Interests: Information Systems, ERPs, Data Visualization, Algorithmic Trading Systems, AI solutions, Agentic AI
+Interests: Information Systems, ERPs, Data Visualization, Algorithmic Trading Systems, AI solutions, Agentic AI, exploring bleeding edge tech
 
 Open to Opportunities: Jobs, Contracts, Collaborations, Freelance work. 
 
