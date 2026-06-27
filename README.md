@@ -46,7 +46,7 @@
 Developer focused on information systems, algorithmic trading, and AI solutions. Based in Papua New Guinea.
 
 [![X](https://img.shields.io/badge/@n30dyn4m1c-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/n30dyn4m1c)
-[![Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@n30dyn4m1c)
+[![Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@neomalesa)
 
 </div>
 
