@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Render the self-hosted profile cards (contribution pulse, language bars) into assets/.
+"""Render the self-hosted profile cards into assets/: contribution pulse, language
+bars, and the market tape drawn from the prices now.py collects.
 
-Both cards are committed to the repo, so the README never depends on a third-party
+The cards are committed to the repo, so the README never depends on a third-party
 renderer being up. A failed refresh leaves the previous card in place.
 """
 import argparse
@@ -279,6 +280,66 @@ def langs_card(ranked, stars, repo_count, followers):
     return frame(width, height, header + "".join(rows) + footer, css)
 
 
+def spark(points, x0, y0, w, h, color, index):
+    """A sparkline that draws itself in, with a breathing dot left at the head."""
+    lo, hi = min(points), max(points)
+    span = (hi - lo) or 1.0
+    step = w / (len(points) - 1)
+    xy = [(x0 + i * step, y0 + h - (v - lo) / span * h) for i, v in enumerate(points)]
+    length = sum(((xy[i + 1][0] - xy[i][0]) ** 2 + (xy[i + 1][1] - xy[i][1]) ** 2) ** 0.5
+                 for i in range(len(xy) - 1))
+    path = " ".join(f"{x:.1f},{y:.1f}" for x, y in xy)
+    hx, hy = xy[-1]
+    return (f'<polyline class="l l{index}" points="{path}" fill="none" stroke="{color}" '
+            f'stroke-width="2" stroke-linecap="round" stroke-linejoin="round" '
+            f'style="--len:{length:.0f}" />'
+            f'<circle class="ring r{index}" cx="{hx:.1f}" cy="{hy:.1f}" r="5.5" fill="none" '
+            f'stroke="{color}" stroke-width="1.5" />'
+            f'<circle cx="{hx:.1f}" cy="{hy:.1f}" r="2.5" fill="{color}" />')
+
+
+def tape_card(history):
+    if len(history) < 2:
+        raise RuntimeError("not enough samples yet")
+    width, height = 780, 168
+    pad, gap = 20, 24
+    panel = (width - pad * 2 - gap) / 2
+    spark_y, spark_h = 74, 58
+
+    series = [("XAUUSD", [row[1] for row in history], CYAN),
+              ("BTCUSD", [row[2] for row in history], MAGENTA)]
+    body = [text_el(pad, 30, "tape", 13, CYAN)]
+    for i, (name, values, color) in enumerate(series):
+        x0 = pad + i * (panel + gap)
+        change = (values[-1] - values[0]) / values[0] * 100 if values[0] else 0.0
+        arrow = "▲" if change >= 0 else "▼"
+        body += [
+            text_el(x0, 56, name, 12, TEXT),
+            text_el(x0 + panel, 56, f"{values[-1]:,.2f}  {arrow} {abs(change):.2f}%", 12,
+                    CYAN if change >= 0 else MAGENTA, anchor="end"),
+            f'<line x1="{x0}" y1="{spark_y + spark_h + 8}" x2="{x0 + panel}" '
+            f'y2="{spark_y + spark_h + 8}" stroke="{GRID}" stroke-width="1" />',
+            spark(values, x0, spark_y, panel - 8, spark_h, color, i),
+        ]
+
+    hours = (datetime.datetime.strptime(history[-1][0], "%Y-%m-%dT%H:%MZ")
+             - datetime.datetime.strptime(history[0][0], "%Y-%m-%dT%H:%MZ")).total_seconds() / 3600
+    window = f"{hours:.0f}h" if hours < 48 else f"{hours / 24:.1f}d"
+    body.append(text_el(pad, height - 16,
+                        f"window {window} · {len(history)} samples · % over window",
+                        11, MUTED))
+
+    css = ("@keyframes draw{from{stroke-dashoffset:var(--len)}to{stroke-dashoffset:0}}\n"
+           "@keyframes blip{0%,100%{opacity:.15}50%{opacity:.9}}\n"
+           ".l{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);"
+           "animation:draw 1.8s ease-out forwards}\n"
+           ".ring{opacity:.15;animation:blip 2.4s ease-in-out infinite 1.8s}\n"
+           ".l1{animation-delay:.25s}.r1{animation-delay:2.05s}\n"
+           "@media(prefers-reduced-motion:reduce){.l{stroke-dasharray:none;stroke-dashoffset:0;"
+           "animation:none}.ring{animation:none;opacity:.6}}")
+    return frame(width, height, "".join(body), css)
+
+
 # ------------------------------------------------------------------ entry point
 
 def is_fresh(path, max_age_hours):
@@ -313,6 +374,7 @@ def main():
 
     pulse_path = os.path.join(ASSETS, "pulse.svg")
     langs_path = os.path.join(ASSETS, "langs.svg")
+    tape_path = os.path.join(ASSETS, "tape.svg")
 
     if args.fixture:
         data = json.load(open(args.fixture, encoding="utf-8"))
@@ -320,7 +382,17 @@ def main():
         write(pulse_path, pulse_card(weeks, data["total"]))
         write(langs_path, langs_card([tuple(x) for x in data["languages"]],
                                      data["stars"], data["repos"], data["followers"]))
+        if data.get("history"):
+            write(tape_path, tape_card(data["history"]))
         return
+
+    # The tape reads prices now.py already collected, so it refreshes every run
+    # rather than on the daily cadence the API-backed cards use.
+    try:
+        with open(os.path.join(ROOT, "data", "history.json"), encoding="utf-8") as f:
+            write(tape_path, tape_card(json.load(f)))
+    except Exception as e:
+        print(f"tape kept (refresh failed: {e})")
 
     if not args.force and is_fresh(pulse_path, args.max_age_hours) and is_fresh(langs_path, args.max_age_hours):
         print("cards are fresh")

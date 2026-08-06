@@ -88,6 +88,8 @@
 
 <!-- NOW:END -->
 
+<img alt="market tape" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/main/assets/tape.svg" />
+
 ---
 
 ### `02 · writing`

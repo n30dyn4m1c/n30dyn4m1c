@@ -10,8 +10,11 @@ import urllib.parse
 import urllib.request
 
 START, END = "<!-- NOW:START -->", "<!-- NOW:END -->"
-README = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "README.md"))
-NOW_JSON = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "now.json"))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+README = os.path.join(ROOT, "README.md")
+NOW_JSON = os.path.join(ROOT, "now.json")
+HISTORY = os.path.join(ROOT, "data", "history.json")
+MAX_POINTS = 336  # one week of half-hourly samples
 UA = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
     "Accept": "application/json, text/plain, */*",
@@ -87,12 +90,32 @@ def market_badge(symbol, price, pct):
     return f'<img alt="{html.escape(symbol)} {html.escape(message)}" src="{html.escape(src)}" />'
 
 
+def append_history(xau, btc):
+    """Keep a rolling week of prices for the sparkline card. Never fatal."""
+    try:
+        with open(HISTORY, encoding="utf-8") as f:
+            hist = json.load(f)
+    except Exception:
+        hist = []
+    ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+    if hist and hist[-1][0] == ts:
+        return
+    hist.append([ts, round(xau, 2), round(btc, 2)])
+    try:
+        os.makedirs(os.path.dirname(HISTORY), exist_ok=True)
+        with open(HISTORY, "w", encoding="utf-8") as f:
+            json.dump(hist[-MAX_POINTS:], f, separators=(",", ":"))
+    except OSError as e:
+        print(f"history not written: {e}")
+
+
 def markets_row():
     try:
         btc = json.loads(fetch(
             "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true"
         ))["bitcoin"]
         gold = json.loads(fetch("https://data-asg.goldprice.org/dbXRates/USD"))["items"][0]
+        append_history(gold["xauPrice"], btc["usd"])
         value = "&nbsp;".join([
             market_badge("XAUUSD", f"${gold['xauPrice']:,.2f}", gold["pcXau"]),
             market_badge("BTCUSD", f"${btc['usd']:,.0f}", btc["usd_24h_change"]),
