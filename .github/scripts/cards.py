@@ -324,7 +324,12 @@ def tape_card(history):
 
     hours = (datetime.datetime.strptime(history[-1][0], "%Y-%m-%dT%H:%MZ")
              - datetime.datetime.strptime(history[0][0], "%Y-%m-%dT%H:%MZ")).total_seconds() / 3600
-    window = f"{hours:.0f}h" if hours < 48 else f"{hours / 24:.1f}d"
+    if hours < 1:
+        window = f"{hours * 60:.0f}m"
+    elif hours < 48:
+        window = f"{hours:.0f}h"
+    else:
+        window = f"{hours / 24:.1f}d"
     body.append(text_el(pad, height - 16,
                         f"window {window} · {len(history)} samples · % over window",
                         11, MUTED))
