@@ -70,7 +70,7 @@ def weather_row():
                "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&timezone=auto")
         cur = json.loads(fetch(url))["current"]
         desc = WMO.get(cur["weather_code"], "unknown")
-        value = (f"<b>{round(cur['temperature_2m'])}&deg;C</b> &middot; {desc} &middot; "
+        value = (f"{round(cur['temperature_2m'])}&deg;C &middot; {desc} &middot; "
                  f"{cur['relative_humidity_2m']}% RH &middot; wind {round(cur['wind_speed_10m'])} km/h")
         return row("weather", "port moresby", value)
     except Exception:
@@ -102,30 +102,17 @@ def markets_row():
         return None
 
 
-def spotify_card(cfg):
-    if not cfg.get("enabled") or not cfg.get("uid"):
-        return None
-    uid = cfg["uid"]
-    src = ("https://spotify-github-profile.kittinanx.com/api/view?uid={uid}"
-           "&cover_image=true&theme=default&show_offline=false&background_color=0d0221"
-           "&interchange=true&bar_color=00ffcc&bar_color_cover=false").format(uid=uid)
-    return ('<div align="center">\n\n'
-            f'<a href="https://open.spotify.com/user/{uid}">'
-            f'<img alt="now playing on Spotify" src="{html.escape(src)}" /></a>\n\n'
-            "</div>")
-
-
 def reading_row(cfg):
     title = html.escape(cfg.get("title", ""))
     author = html.escape(cfg.get("author", ""))
-    source = f" &middot; <samp>{html.escape(cfg['source'])}</samp>" if cfg.get("source") else ""
-    return row("reading", "reading", f"<i>{title}</i> &mdash; {author}{source}")
+    source = f" &middot; {html.escape(cfg['source'])}" if cfg.get("source") else ""
+    return row("reading", "reading", f"{title} &mdash; {author}{source}")
 
 
 def exploring_row(items):
     if not items:
-        return row("exploring", "exploring", "<i>idle</i>")
-    chips = " &middot; ".join(f"<code>{html.escape(str(p))}</code>" for p in items)
+        return row("exploring", "exploring", "idle")
+    chips = " &middot; ".join(html.escape(str(p)) for p in items)
     return row("exploring", "exploring", chips)
 
 
@@ -135,20 +122,16 @@ def build_block(cfg, current):
     rows = [
         reading_row(cfg.get("reading", {})),
         exploring_row(cfg.get("exploring", [])),
-        weather_row() or old_row(current, "weather") or row("weather", "port moresby", "<i>link down</i>"),
-        markets_row() or old_row(current, "markets") or row("markets", "markets", "<i>link down</i>"),
+        weather_row() or old_row(current, "weather") or row("weather", "port moresby", "link down"),
+        markets_row() or old_row(current, "markets") or row("markets", "markets", "link down"),
     ]
-    parts = []
-    card = spotify_card(cfg.get("spotify", {}))
-    if card:
-        parts += [card, ""]
-    parts += ["<table>", "\n".join(rows), "</table>", "",
-              f"<sub><code>last sync</code> {ts}</sub>"]
+    parts = ["<table>", "\n".join(rows), "</table>", "",
+              f"<sub>last sync &middot; {ts}</sub>"]
     return "\n".join(parts)
 
 
 def strip_sync(text):
-    return re.sub(r"<code>last sync</code>.*?GMT\+10", "", text)
+    return re.sub(r"<sub>last sync.*?GMT\+10</sub>", "", text)
 
 
 def main():

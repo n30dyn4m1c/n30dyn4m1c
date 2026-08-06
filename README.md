@@ -57,31 +57,25 @@
 
 ---
 
-![01 · live](https://img.shields.io/badge/01-live-0D0221?style=for-the-badge&labelColor=FF00CC)
+### `01 · live`
 
 <!-- NOW:START -->
-
-<div align="center">
-
-<a href="https://open.spotify.com/user/31rab35tvuqg4kfupjoknxfajnla"><img alt="now playing on Spotify" src="https://spotify-github-profile.kittinanx.com/api/view?uid=31rab35tvuqg4kfupjoknxfajnla&amp;cover_image=true&amp;theme=default&amp;show_offline=false&amp;background_color=0d0221&amp;interchange=true&amp;bar_color=00ffcc&amp;bar_color_cover=false" /></a>
-
-</div>
 
 <table>
 <!--row:reading-->
 <tr>
 <td width="130"><code>reading</code></td>
-<td><i>Kiki: Ten Thousand Years in a Lifetime</i> &mdash; Albert Maori Kiki &middot; <samp>Internet Archive</samp></td>
+<td>Kiki: Ten Thousand Years in a Lifetime &mdash; Albert Maori Kiki &middot; Internet Archive</td>
 </tr>
 <!--row:exploring-->
 <tr>
 <td width="130"><code>exploring</code></td>
-<td><code>DeepSeek V4-Flash</code> &middot; <code>OpenCode</code></td>
+<td>DeepSeek V4-Flash &middot; OpenCode</td>
 </tr>
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
-<td><b>26&deg;C</b> &middot; partly cloudy &middot; 69% RH &middot; wind 27 km/h</td>
+<td>26&deg;C &middot; partly cloudy &middot; 69% RH &middot; wind 27 km/h</td>
 </tr>
 <!--row:markets-->
 <tr>
@@ -90,13 +84,13 @@
 </tr>
 </table>
 
-<sub><code>last sync</code> 06 Aug 2026 &middot; 17:47 GMT+10</sub>
+<sub>last sync &middot; 06 Aug 2026 &middot; 17:47 GMT+10</sub>
 
 <!-- NOW:END -->
 
 ---
 
-![02 · writing](https://img.shields.io/badge/02-writing-0D0221?style=for-the-badge&labelColor=00FFCC)
+### `02 · writing`
 
 <!-- MEDIUM:START -->
 
@@ -123,29 +117,29 @@
 </tr>
 </table>
 
-<sub><code>source</code> <a href="https://medium.com/@neomalesa">medium.com/@neomalesa</a></sub>
+<sub>source &middot; <a href="https://medium.com/@neomalesa">medium.com/@neomalesa</a></sub>
 
 <!-- MEDIUM:END -->
 
 ---
 
-![03 · stack](https://img.shields.io/badge/03-stack-0D0221?style=for-the-badge&labelColor=FF00CC)
+### `03 · stack`
 
 <table>
 <tr>
-<td width="120"><b><code>core</code></b></td>
+<td width="120"><code>core</code></td>
 <td><img alt="Python, Go, TypeScript, JavaScript, Kotlin" src="https://skillicons.dev/icons?i=python,go,typescript,javascript,kotlin&theme=dark&perline=5" /></td>
 </tr>
 <tr>
-<td><b><code>web</code></b></td>
+<td><code>web</code></td>
 <td><img alt="Svelte, Django, PHP, HTML, CSS" src="https://skillicons.dev/icons?i=svelte,django,php,html,css&theme=dark&perline=5" /></td>
 </tr>
 <tr>
-<td><b><code>ops</code></b></td>
+<td><code>ops</code></td>
 <td><img alt="Linux, Git" src="https://skillicons.dev/icons?i=linux,git&theme=dark&perline=5" /></td>
 </tr>
 <tr>
-<td><b><code>markets</code></b></td>
+<td><code>markets</code></td>
 <td>
 <img alt="MQL5" src="https://img.shields.io/badge/MQL5-0D0221?style=for-the-badge&labelColor=FF00CC" />
 <img alt="MetaTrader 5" src="https://img.shields.io/badge/MetaTrader%205-0D0221?style=for-the-badge&labelColor=0D0221" />
@@ -159,36 +153,23 @@
 
 ---
 
-![04 · stats](https://img.shields.io/badge/04-stats-0D0221?style=for-the-badge&labelColor=00FFCC)
+### `04 · stats`
 
 <div align="center">
 
-<table>
-<tr>
-<td><img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=n30dyn4m1c&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D0221&title_color=00FFCC&text_color=C9D1D9&icon_color=FF00CC&ring_color=FF00CC&card_width=420" /></td>
-<td><img alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=n30dyn4m1c&layout=compact&langs_count=8&hide_border=true&bg_color=0D0221&title_color=FF00CC&text_color=C9D1D9&card_width=330" /></td>
-</tr>
-</table>
+<img alt="contribution pulse" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/main/assets/pulse.svg" />
 
-<img alt="Contribution streak" src="https://streak-stats.demolab.com?user=n30dyn4m1c&hide_border=true&background=0D0221&stroke=FF00CC&ring=00FFCC&fire=FF00CC&currStreakNum=00FFCC&currStreakLabel=00FFCC&sideNums=C9D1D9&sideLabels=C9D1D9&dates=8B949E&card_width=760" />
+<img alt="languages" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/main/assets/langs.svg" />
 
-<img alt="Commit activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=n30dyn4m1c&hide_border=true&custom_title=commit%20activity&bg_color=0D0221&title_color=00FFCC&color=00FFCC&line=FF00CC&point=00FFCC&area=true&area_color=FF00CC" />
-
-<img alt="Contribution snake" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/main/dist/github-snake-dark.svg" />
-
-<details>
-<summary><b><code>▸ trophies</code></b></summary>
-<br />
-<img alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=n30dyn4m1c&theme=dark_lover&no-bg=true&no-frame=true&margin-w=6&margin-h=6" />
-</details>
+<img alt="contribution snake" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/output/github-snake-dark.svg" />
 
 </div>
 
 ---
 
-![05 · status](https://img.shields.io/badge/05-status-0D0221?style=for-the-badge&labelColor=FF00CC)
+### `05 · status`
 
-[![live-systems](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/now.yml?style=for-the-badge&label=now&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/now.yml)
+[![now](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/now.yml?style=for-the-badge&label=now&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/now.yml)
 [![medium](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/medium.yml?style=for-the-badge&label=medium&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/medium.yml)
 [![snake](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/snake.yml?style=for-the-badge&label=snake&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/snake.yml)
 [![last commit](https://img.shields.io/github/last-commit/n30dyn4m1c/n30dyn4m1c?style=for-the-badge&label=last%20commit&labelColor=0D0221&color=FF00CC&logo=git&logoColor=FF00CC)](https://github.com/n30dyn4m1c/n30dyn4m1c/commits)
