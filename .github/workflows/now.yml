@@ -1,0 +1,22 @@
+name: now
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: refresh live systems
+        run: python .github/scripts/now.py
+      - name: commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh live systems"
+          commit_author: "n30dyn4m1c <n30dyn4m1c@users.noreply.github.com>"

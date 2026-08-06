@@ -1,0 +1,25 @@
+name: snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: n30dyn4m1c
+          outputs: |
+            dist/github-snake-dark.svg
+      - uses: Platane/snk/action/push@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main

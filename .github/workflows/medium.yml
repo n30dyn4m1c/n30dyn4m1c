@@ -1,0 +1,22 @@
+name: medium
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: check for new articles
+        run: python .github/scripts/medium.py
+      - name: commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update latest from Medium"
+          commit_author: "n30dyn4m1c <n30dyn4m1c@users.noreply.github.com>"
