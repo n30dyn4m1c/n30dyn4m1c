@@ -37,8 +37,9 @@ def latest_in_readme(block):
 
 
 def build_block(items):
+    source = f'<sub><code>source</code> <a href="{PROFILE}">medium.com/@neomalesa</a></sub>'
     if not items:
-        return "<sub><i>feed quiet — nothing published yet.</i></sub>"
+        return source
     lines = ["<table>"]
     for it in items:
         lines.append(
@@ -47,9 +48,7 @@ def build_block(items):
             f'<td><a href="{html.escape(it["link"], quote=True)}">{html.escape(it["title"])}</a></td>\n'
             "</tr>"
         )
-    lines += ["</table>", "",
-              f'<sub><code>source</code> <a href="{PROFILE}">medium.com/@neomalesa</a> '
-              "&middot; synced daily from RSS</sub>"]
+    lines += ["</table>", "", source]
     return "\n".join(lines)
 
 
