@@ -43,11 +43,6 @@
 ..........................................................................
 ```
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=00FFCC&center=true&vCenter=true&width=700&height=52&lines=systems+%C2%B7+algorithmic+trading+%C2%B7+AI;decoding+markets+%26+machines;the+terminal+never+sleeps+in+GMT%2B10;hacking+PNG+into+the+future">
-  <img alt="systems · algorithmic trading · AI — decoding markets and machines" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=0D0221&center=true&vCenter=true&width=700&height=52&lines=systems+%C2%B7+algorithmic+trading+%C2%B7+AI;decoding+markets+%26+machines;the+terminal+never+sleeps+in+GMT%2B10;hacking+PNG+into+the+future">
-</picture>
-
 ![systems](https://img.shields.io/badge/systems-00FFCC?style=flat-square)
 ![algorithmic trading](https://img.shields.io/badge/algorithmic%20trading-FF00CC?style=flat-square)
 ![AI](https://img.shields.io/badge/AI-00FFCC?style=flat-square)
@@ -62,39 +57,7 @@
 
 ---
 
-![01 · whoami](https://img.shields.io/badge/01-whoami-0D0221?style=for-the-badge&labelColor=00FFCC)
-
-Systems engineer out of **Port Moresby, Papua New Guinea**. I build algorithmic trading
-infrastructure, AI tooling, and the automation that keeps both running while I sleep. Most of
-my work lands where markets, machines, and a still-wiring-itself digital economy collide —
-and I write about that last part between backtests.
-
-<table>
-<tr>
-<td width="130"><code>node</code></td>
-<td>Port Moresby, Papua New Guinea &middot; <code>GMT+10</code></td>
-</tr>
-<tr>
-<td><code>domains</code></td>
-<td>algorithmic trading &middot; AI systems &middot; full-stack &middot; mobile</td>
-</tr>
-<tr>
-<td><code>writes</code></td>
-<td><a href="https://medium.com/@neomalesa">medium.com/@neomalesa</a> &mdash; PNG ICT policy, blockchain, LLM workflows</td>
-</tr>
-<tr>
-<td><code>signals</code></td>
-<td><a href="https://x.com/n30dyn4m1c">@n30dyn4m1c</a> on X</td>
-</tr>
-<tr>
-<td><code>this readme</code></td>
-<td>self-updating &mdash; the blocks below are rewritten by cron, not by hand</td>
-</tr>
-</table>
-
----
-
-![02 · live systems](https://img.shields.io/badge/02-live%20systems-0D0221?style=for-the-badge&labelColor=FF00CC)
+![01 · live](https://img.shields.io/badge/01-live-0D0221?style=for-the-badge&labelColor=FF00CC)
 
 <!-- NOW:START -->
 
@@ -127,13 +90,13 @@ and I write about that last part between backtests.
 </tr>
 </table>
 
-<sub><code>last sync</code> 06 Aug 2026 &middot; 17:47 GMT+10 &middot; refreshed every 30 min by GitHub Actions</sub>
+<sub><code>last sync</code> 06 Aug 2026 &middot; 17:47 GMT+10</sub>
 
 <!-- NOW:END -->
 
 ---
 
-![03 · transmissions](https://img.shields.io/badge/03-transmissions-0D0221?style=for-the-badge&labelColor=00FFCC)
+![02 · writing](https://img.shields.io/badge/02-writing-0D0221?style=for-the-badge&labelColor=00FFCC)
 
 <!-- MEDIUM:START -->
 
@@ -160,13 +123,13 @@ and I write about that last part between backtests.
 </tr>
 </table>
 
-<sub><code>source</code> <a href="https://medium.com/@neomalesa">medium.com/@neomalesa</a> &middot; synced daily from RSS</sub>
+<sub><code>source</code> <a href="https://medium.com/@neomalesa">medium.com/@neomalesa</a></sub>
 
 <!-- MEDIUM:END -->
 
 ---
 
-![04 · arsenal](https://img.shields.io/badge/04-arsenal-0D0221?style=for-the-badge&labelColor=FF00CC)
+![03 · stack](https://img.shields.io/badge/03-stack-0D0221?style=for-the-badge&labelColor=FF00CC)
 
 <table>
 <tr>
@@ -181,20 +144,22 @@ and I write about that last part between backtests.
 <td><b><code>ops</code></b></td>
 <td><img alt="Linux, Git" src="https://skillicons.dev/icons?i=linux,git&theme=dark&perline=5" /></td>
 </tr>
+<tr>
+<td><b><code>markets</code></b></td>
+<td>
+<img alt="MQL5" src="https://img.shields.io/badge/MQL5-0D0221?style=for-the-badge&labelColor=FF00CC" />
+<img alt="MetaTrader 5" src="https://img.shields.io/badge/MetaTrader%205-0D0221?style=for-the-badge&labelColor=0D0221" />
+<img alt="Pine Script" src="https://img.shields.io/badge/Pine%20Script-0D0221?style=for-the-badge&labelColor=00FFCC" />
+<img alt="TradingView" src="https://img.shields.io/badge/TradingView-0D0221?style=for-the-badge&logo=tradingview&logoColor=00FFCC" />
+<img alt="Telegram bots" src="https://img.shields.io/badge/Telegram%20bots-0D0221?style=for-the-badge&logo=telegram&logoColor=00FFCC" />
+<img alt="Android" src="https://img.shields.io/badge/Android-0D0221?style=for-the-badge&logo=android&logoColor=FF00CC" />
+</td>
+</tr>
 </table>
-
-**markets & edge**
-
-![MQL5](https://img.shields.io/badge/MQL5-0D0221?style=for-the-badge&labelColor=FF00CC)
-![MetaTrader 5](https://img.shields.io/badge/MetaTrader%205-0D0221?style=for-the-badge&labelColor=0D0221)
-![Pine Script](https://img.shields.io/badge/Pine%20Script-0D0221?style=for-the-badge&labelColor=00FFCC)
-![TradingView](https://img.shields.io/badge/TradingView-0D0221?style=for-the-badge&logo=tradingview&logoColor=00FFCC)
-![Telegram bots](https://img.shields.io/badge/Telegram%20bots-0D0221?style=for-the-badge&logo=telegram&logoColor=00FFCC)
-![Android](https://img.shields.io/badge/Android-0D0221?style=for-the-badge&logo=android&logoColor=FF00CC)
 
 ---
 
-![05 · telemetry](https://img.shields.io/badge/05-telemetry-0D0221?style=for-the-badge&labelColor=00FFCC)
+![04 · stats](https://img.shields.io/badge/04-stats-0D0221?style=for-the-badge&labelColor=00FFCC)
 
 <div align="center">
 
@@ -212,7 +177,7 @@ and I write about that last part between backtests.
 <img alt="Contribution snake" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/main/dist/github-snake-dark.svg" />
 
 <details>
-<summary><b><code>▸ open trophy cabinet</code></b></summary>
+<summary><b><code>▸ trophies</code></b></summary>
 <br />
 <img alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=n30dyn4m1c&theme=dark_lover&no-bg=true&no-frame=true&margin-w=6&margin-h=6" />
 </details>
@@ -221,36 +186,12 @@ and I write about that last part between backtests.
 
 ---
 
-![06 · status](https://img.shields.io/badge/06-status-0D0221?style=for-the-badge&labelColor=FF00CC)
+![05 · status](https://img.shields.io/badge/05-status-0D0221?style=for-the-badge&labelColor=FF00CC)
 
-[![live-systems](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/now.yml?style=for-the-badge&label=live%20systems&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/now.yml)
+[![live-systems](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/now.yml?style=for-the-badge&label=now&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/now.yml)
 [![medium](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/medium.yml?style=for-the-badge&label=medium&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/medium.yml)
 [![snake](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/snake.yml?style=for-the-badge&label=snake&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/snake.yml)
 [![last commit](https://img.shields.io/github/last-commit/n30dyn4m1c/n30dyn4m1c?style=for-the-badge&label=last%20commit&labelColor=0D0221&color=FF00CC&logo=git&logoColor=FF00CC)](https://github.com/n30dyn4m1c/n30dyn4m1c/commits)
 [![commits/mo](https://img.shields.io/github/commit-activity/m/n30dyn4m1c/n30dyn4m1c?style=for-the-badge&label=commits%2Fmo&labelColor=0D0221&color=FF00CC&logo=git&logoColor=FF00CC)](https://github.com/n30dyn4m1c/n30dyn4m1c/commits)
-
-<details>
-<summary><b><code>▸ how this README stays alive</code></b></summary>
-
-<br />
-
-Three GitHub Actions keep the page honest — no block above is edited by hand:
-
-| workflow | cadence | what it rewrites |
-| :--- | :--- | :--- |
-| [`now.yml`](.github/workflows/now.yml) | every 30 min | **02 · live systems** — Spotify, reading, weather (Open-Meteo), XAUUSD + BTCUSD |
-| [`medium.yml`](.github/workflows/medium.yml) | daily · 01:00 UTC | **03 · transmissions** — pulled from the Medium RSS feed |
-| [`snake.yml`](.github/workflows/snake.yml) | daily + on push | the contribution snake in **05 · telemetry** |
-
-Reading list and current experiments live in [`now.json`](now.json) — the only file I touch
-to change what the live block says. If an upstream API goes dark, the script keeps the last
-good row instead of writing a gap.
-
-</details>
-
-<div align="center">
-<br />
-<sub><code>built in Port Moresby</code> · <code>GMT+10</code> · <code>the terminal never sleeps</code></sub>
-</div>
 
 <!-- This work is my worship unto GOD -->

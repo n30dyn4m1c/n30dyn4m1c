@@ -143,7 +143,7 @@ def build_block(cfg, current):
     if card:
         parts += [card, ""]
     parts += ["<table>", "\n".join(rows), "</table>", "",
-              f"<sub><code>last sync</code> {ts} &middot; refreshed every 30 min by GitHub Actions</sub>"]
+              f"<sub><code>last sync</code> {ts}</sub>"]
     return "\n".join(parts)
 
 
