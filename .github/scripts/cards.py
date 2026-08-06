@@ -131,19 +131,23 @@ def languages(limit=6, repo_cap=40):
         page += 1
     active = [r for r in repos if not r.get("fork") and not r.get("archived")]
     active.sort(key=lambda r: r.get("pushed_at") or "", reverse=True)
-    totals = {}
+    # Each repo contributes one unit, split by its own language mix. Summing raw
+    # bytes instead would let a single vendored dependency own the whole card.
+    weights = {}
     for repo in active[:repo_cap]:
         try:
-            for lang, size in json.loads(fetch(repo["languages_url"])).items():
-                totals[lang] = totals.get(lang, 0) + size
+            sizes = json.loads(fetch(repo["languages_url"]))
         except Exception:
             continue
-    if not totals:
+        total = sum(sizes.values())
+        for lang, size in sizes.items():
+            weights[lang] = weights.get(lang, 0) + size / total
+    if not weights:
         raise RuntimeError("no language bytes returned")
-    ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)[:limit]
-    grand = sum(totals.values())
+    ranked = sorted(weights.items(), key=lambda kv: kv[1], reverse=True)[:limit]
+    grand = sum(weights.values())
     stars = sum(r.get("stargazers_count", 0) for r in active)
-    return [(name, size / grand * 100) for name, size in ranked], stars, len(active)
+    return [(name, w / grand * 100) for name, w in ranked], stars, len(active)
 
 
 def profile():

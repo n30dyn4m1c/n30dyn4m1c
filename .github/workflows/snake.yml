@@ -24,6 +24,8 @@ jobs:
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # the generator runs in a container as root, so dist/ comes back unwritable
+          sudo chown -R "$(id -u):$(id -g)" dist
           cd dist
           git init -q
           git config user.name "n30dyn4m1c"
