@@ -10,8 +10,11 @@ import urllib.parse
 import urllib.request
 
 START, END = "<!-- NOW:START -->", "<!-- NOW:END -->"
-README = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "README.md"))
-NOW_JSON = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "now.json"))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+README = os.path.join(ROOT, "README.md")
+NOW_JSON = os.path.join(ROOT, "now.json")
+HISTORY = os.path.join(ROOT, "data", "history.json")
+MAX_POINTS = 336  # one week of half-hourly samples
 UA = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
     "Accept": "application/json, text/plain, */*",
@@ -70,7 +73,7 @@ def weather_row():
                "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&timezone=auto")
         cur = json.loads(fetch(url))["current"]
         desc = WMO.get(cur["weather_code"], "unknown")
-        value = (f"<b>{round(cur['temperature_2m'])}&deg;C</b> &middot; {desc} &middot; "
+        value = (f"{round(cur['temperature_2m'])}&deg;C &middot; {desc} &middot; "
                  f"{cur['relative_humidity_2m']}% RH &middot; wind {round(cur['wind_speed_10m'])} km/h")
         return row("weather", "port moresby", value)
     except Exception:
@@ -87,12 +90,32 @@ def market_badge(symbol, price, pct):
     return f'<img alt="{html.escape(symbol)} {html.escape(message)}" src="{html.escape(src)}" />'
 
 
+def append_history(xau, btc):
+    """Keep a rolling week of prices for the sparkline card. Never fatal."""
+    try:
+        with open(HISTORY, encoding="utf-8") as f:
+            hist = json.load(f)
+    except Exception:
+        hist = []
+    ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+    if hist and hist[-1][0] == ts:
+        return
+    hist.append([ts, round(xau, 2), round(btc, 2)])
+    try:
+        os.makedirs(os.path.dirname(HISTORY), exist_ok=True)
+        with open(HISTORY, "w", encoding="utf-8") as f:
+            json.dump(hist[-MAX_POINTS:], f, separators=(",", ":"))
+    except OSError as e:
+        print(f"history not written: {e}")
+
+
 def markets_row():
     try:
         btc = json.loads(fetch(
             "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true"
         ))["bitcoin"]
         gold = json.loads(fetch("https://data-asg.goldprice.org/dbXRates/USD"))["items"][0]
+        append_history(gold["xauPrice"], btc["usd"])
         value = "&nbsp;".join([
             market_badge("XAUUSD", f"${gold['xauPrice']:,.2f}", gold["pcXau"]),
             market_badge("BTCUSD", f"${btc['usd']:,.0f}", btc["usd_24h_change"]),
@@ -102,30 +125,17 @@ def markets_row():
         return None
 
 
-def spotify_card(cfg):
-    if not cfg.get("enabled") or not cfg.get("uid"):
-        return None
-    uid = cfg["uid"]
-    src = ("https://spotify-github-profile.kittinanx.com/api/view?uid={uid}"
-           "&cover_image=true&theme=default&show_offline=false&background_color=0d0221"
-           "&interchange=true&bar_color=00ffcc&bar_color_cover=false").format(uid=uid)
-    return ('<div align="center">\n\n'
-            f'<a href="https://open.spotify.com/user/{uid}">'
-            f'<img alt="now playing on Spotify" src="{html.escape(src)}" /></a>\n\n'
-            "</div>")
-
-
 def reading_row(cfg):
     title = html.escape(cfg.get("title", ""))
     author = html.escape(cfg.get("author", ""))
-    source = f" &middot; <samp>{html.escape(cfg['source'])}</samp>" if cfg.get("source") else ""
-    return row("reading", "reading", f"<i>{title}</i> &mdash; {author}{source}")
+    source = f" &middot; {html.escape(cfg['source'])}" if cfg.get("source") else ""
+    return row("reading", "reading", f"{title} &mdash; {author}{source}")
 
 
 def exploring_row(items):
     if not items:
-        return row("exploring", "exploring", "<i>idle</i>")
-    chips = " &middot; ".join(f"<code>{html.escape(str(p))}</code>" for p in items)
+        return row("exploring", "exploring", "idle")
+    chips = " &middot; ".join(html.escape(str(p)) for p in items)
     return row("exploring", "exploring", chips)
 
 
@@ -135,20 +145,16 @@ def build_block(cfg, current):
     rows = [
         reading_row(cfg.get("reading", {})),
         exploring_row(cfg.get("exploring", [])),
-        weather_row() or old_row(current, "weather") or row("weather", "port moresby", "<i>link down</i>"),
-        markets_row() or old_row(current, "markets") or row("markets", "markets", "<i>link down</i>"),
+        weather_row() or old_row(current, "weather") or row("weather", "port moresby", "link down"),
+        markets_row() or old_row(current, "markets") or row("markets", "markets", "link down"),
     ]
-    parts = []
-    card = spotify_card(cfg.get("spotify", {}))
-    if card:
-        parts += [card, ""]
-    parts += ["<table>", "\n".join(rows), "</table>", "",
-              f"<sub><code>last sync</code> {ts}</sub>"]
+    parts = ["<table>", "\n".join(rows), "</table>", "",
+              f"<sub>last sync &middot; {ts}</sub>"]
     return "\n".join(parts)
 
 
 def strip_sync(text):
-    return re.sub(r"<code>last sync</code>.*?GMT\+10", "", text)
+    return re.sub(r"<sub>last sync.*?GMT\+10</sub>", "", text)
 
 
 def main():

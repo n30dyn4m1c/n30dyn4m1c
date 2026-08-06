@@ -37,7 +37,7 @@ def latest_in_readme(block):
 
 
 def build_block(items):
-    source = f'<sub><code>source</code> <a href="{PROFILE}">medium.com/@neomalesa</a></sub>'
+    source = f'<sub>source &middot; <a href="{PROFILE}">medium.com/@neomalesa</a></sub>'
     if not items:
         return source
     lines = ["<table>"]

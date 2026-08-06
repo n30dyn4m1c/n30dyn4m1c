@@ -3,8 +3,6 @@ name: snake
 on:
   schedule:
     - cron: "0 0 * * *"
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -16,10 +14,22 @@ jobs:
     steps:
       - uses: Platane/snk@v3
         with:
-          github_user_name: n30dyn4m1c
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake-dark.svg?color_snake=#00ffcc&color_dots=#0d0221,#3d1a5b,#7b1fa2,#c31fd1,#ff00cc
-      - uses: Platane/snk/action/push@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+
+      # Published to its own branch so the daily regeneration never races the
+      # README commits on main. One orphan commit, force-pushed each run.
+      - name: publish to output branch
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # the generator runs in a container as root, so dist/ comes back unwritable
+          sudo chown -R "$(id -u):$(id -g)" dist
+          cd dist
+          git init -q
+          git config user.name "n30dyn4m1c"
+          git config user.email "n30dyn4m1c@users.noreply.github.com"
+          git add .
+          git commit -q -m "chore: regenerate contribution snake"
+          git push -qf "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:refs/heads/output
