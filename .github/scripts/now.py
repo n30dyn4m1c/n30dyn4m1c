@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Refresh the live systems block of README.md (now playing/reading/exploring, weather, markets)."""
 import datetime
+import html
 import json
 import os
 import re
 import time
+import urllib.parse
 import urllib.request
 
 START, END = "<!-- NOW:START -->", "<!-- NOW:END -->"
@@ -16,6 +18,8 @@ UA = {
     "Accept-Language": "en-US,en;q=0.9",
     "Referer": "https://www.goldprice.org/",
 }
+
+CYAN, MAGENTA, BASE = "00FFCC", "FF00CC", "0D0221"
 
 WMO = {
     0: "clear sky", 1: "partly cloudy", 2: "partly cloudy", 3: "overcast",
@@ -42,82 +46,109 @@ def fetch(url, retries=3):
     raise last
 
 
-def pct_str(value):
-    arrow = "\u25b2" if value >= 0 else "\u25bc"
-    return f"{arrow} {abs(value):.2f}%"
+def shield(text):
+    """Escape a segment for a shields.io badge path."""
+    return urllib.parse.quote(text.replace("-", "--").replace("_", "__"), safe="")
 
 
-def weather_line():
+def row(rid, label, value):
+    """One live-systems table row, tagged so a failed refresh can reuse the last good copy."""
+    return (f"<!--row:{rid}-->\n<tr>\n"
+            f'<td width="130"><code>{label}</code></td>\n'
+            f"<td>{value}</td>\n"
+            f"</tr>")
+
+
+def old_row(current, rid):
+    m = re.search(rf"<!--row:{rid}-->\n<tr>.*?</tr>", current, re.S)
+    return m.group(0) if m else None
+
+
+def weather_row():
     try:
         url = ("https://api.open-meteo.com/v1/forecast?latitude=-9.4438&longitude=147.1803"
                "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&timezone=auto")
         cur = json.loads(fetch(url))["current"]
         desc = WMO.get(cur["weather_code"], "unknown")
-        return (f"**weather · Port Moresby** — {round(cur['temperature_2m'])}°C · {desc} · "
-                f"{cur['relative_humidity_2m']}% RH · wind {round(cur['wind_speed_10m'])} km/h")
+        value = (f"<b>{round(cur['temperature_2m'])}&deg;C</b> &middot; {desc} &middot; "
+                 f"{cur['relative_humidity_2m']}% RH &middot; wind {round(cur['wind_speed_10m'])} km/h")
+        return row("weather", "port moresby", value)
     except Exception:
         return None
 
 
-def markets_line():
+def market_badge(symbol, price, pct):
+    """Neon pill per instrument — cyan when the tape is up, magenta when it bleeds."""
+    up = pct >= 0
+    arrow = "▲" if up else "▼"
+    message = f"{price} {arrow} {abs(pct):.2f}%"
+    src = (f"https://img.shields.io/badge/{shield(symbol)}-{shield(message)}-"
+           f"{CYAN if up else MAGENTA}?style=flat-square&labelColor={BASE}")
+    return f'<img alt="{html.escape(symbol)} {html.escape(message)}" src="{html.escape(src)}" />'
+
+
+def markets_row():
     try:
         btc = json.loads(fetch(
             "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true"
         ))["bitcoin"]
         gold = json.loads(fetch("https://data-asg.goldprice.org/dbXRates/USD"))["items"][0]
-        return (f"**markets** — XAUUSD ${gold['xauPrice']:,.2f} ({pct_str(gold['pcXau'])}) · "
-                f"BTCUSD ${btc['usd']:,.0f} ({pct_str(btc['usd_24h_change'])})")
+        value = "&nbsp;".join([
+            market_badge("XAUUSD", f"${gold['xauPrice']:,.2f}", gold["pcXau"]),
+            market_badge("BTCUSD", f"${btc['usd']:,.0f}", btc["usd_24h_change"]),
+        ])
+        return row("markets", "markets", value)
     except Exception:
         return None
 
 
-def spotify_lines(cfg):
+def spotify_card(cfg):
     if not cfg.get("enabled") or not cfg.get("uid"):
-        return []
-    url = ("https://spotify-github-profile.kittinanx.com/api/view?uid={uid}"
-           "&cover_image=true&theme=default&show_offline=false&background_color=121212"
-           "&interchange=true&bar_color=00ffcc&bar_color_cover=false").format(uid=cfg["uid"])
-    return [f"**now playing**", "", f"[![spotify]({url})](https://open.spotify.com/user/{cfg['uid']})"]
+        return None
+    uid = cfg["uid"]
+    src = ("https://spotify-github-profile.kittinanx.com/api/view?uid={uid}"
+           "&cover_image=true&theme=default&show_offline=false&background_color=0d0221"
+           "&interchange=true&bar_color=00ffcc&bar_color_cover=false").format(uid=uid)
+    return ('<div align="center">\n\n'
+            f'<a href="https://open.spotify.com/user/{uid}">'
+            f'<img alt="now playing on Spotify" src="{html.escape(src)}" /></a>\n\n'
+            "</div>")
 
 
-def reading_line(cfg):
-    title = cfg.get("title", "").replace("[", "\\[").replace("]", "\\]")
-    author = cfg.get("author", "").replace("[", "\\[").replace("]", "\\]")
-    source = f" · via {cfg['source']}" if cfg.get("source") else ""
-    return f"**now reading** — *{title}* by {author}{source}"
+def reading_row(cfg):
+    title = html.escape(cfg.get("title", ""))
+    author = html.escape(cfg.get("author", ""))
+    source = f" &middot; <samp>{html.escape(cfg['source'])}</samp>" if cfg.get("source") else ""
+    return row("reading", "reading", f"<i>{title}</i> &mdash; {author}{source}")
 
 
-def exploring_line(items):
+def exploring_row(items):
     if not items:
-        return "**now exploring** — *idle*"
-    parts = " · ".join(f"`{p}`" for p in items)
-    return f"**now exploring** — {parts}"
-
-
-def old_line(current, key):
-    for line in current.splitlines():
-        if line.startswith(f"**{key}**"):
-            return line
-    return None
+        return row("exploring", "exploring", "<i>idle</i>")
+    chips = " &middot; ".join(f"<code>{html.escape(str(p))}</code>" for p in items)
+    return row("exploring", "exploring", chips)
 
 
 def build_block(cfg, current):
     tz = datetime.timezone(datetime.timedelta(hours=10))
-    now = datetime.datetime.now(tz)
-    ts = now.strftime("%d %b %Y · %H:%M") + " GMT+10"
-    weather = weather_line() or old_line(current, "weather")
-    markets = markets_line() or old_line(current, "markets")
-    if weather is None:
-        weather = "**weather · Port Moresby** — link down"
-    if markets is None:
-        markets = "**markets** — link down"
-    lines = ["### \u258d live systems", "", f"_last sync: {ts}_", "",
-             *spotify_lines(cfg.get("spotify", {})), "",
-             reading_line(cfg.get("reading", {})), "",
-             exploring_line(cfg.get("exploring", [])), "",
-             weather, "", markets, "",
-             "<!-- x feed: coming soon (rss.app bridge) -->"]
-    return "\n".join(lines)
+    ts = datetime.datetime.now(tz).strftime("%d %b %Y &middot; %H:%M") + " GMT+10"
+    rows = [
+        reading_row(cfg.get("reading", {})),
+        exploring_row(cfg.get("exploring", [])),
+        weather_row() or old_row(current, "weather") or row("weather", "port moresby", "<i>link down</i>"),
+        markets_row() or old_row(current, "markets") or row("markets", "markets", "<i>link down</i>"),
+    ]
+    parts = []
+    card = spotify_card(cfg.get("spotify", {}))
+    if card:
+        parts += [card, ""]
+    parts += ["<table>", "\n".join(rows), "</table>", "",
+              f"<sub><code>last sync</code> {ts} &middot; refreshed every 30 min by GitHub Actions</sub>"]
+    return "\n".join(parts)
+
+
+def strip_sync(text):
+    return re.sub(r"<code>last sync</code>.*?GMT\+10", "", text)
 
 
 def main():
@@ -129,7 +160,7 @@ def main():
     b = text.index(END)
     current = text[a + len(START):b]
     block = build_block(cfg, current)
-    if re.sub(r"_last sync:.*GMT\+10_", "", current).strip() == re.sub(r"_last sync:.*GMT\+10_", "", block).strip():
+    if strip_sync(current).strip() == strip_sync(block).strip():
         print("no changes")
         return
     new_text = text[: a + len(START)] + "\n\n" + block + "\n\n" + text[b:]

@@ -18,7 +18,7 @@ jobs:
         with:
           github_user_name: n30dyn4m1c
           outputs: |
-            dist/github-snake-dark.svg
+            dist/github-snake-dark.svg?color_snake=#00ffcc&color_dots=#0d0221,#3d1a5b,#7b1fa2,#c31fd1,#ff00cc
       - uses: Platane/snk/action/push@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

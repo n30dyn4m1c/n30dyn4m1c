@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Daily check of the Medium feed: update README only when new articles exist."""
+import html
 import os
 import re
 import urllib.request
@@ -7,6 +8,8 @@ import xml.etree.ElementTree as ET
 
 START, END = "<!-- MEDIUM:START -->", "<!-- MEDIUM:END -->"
 README = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "README.md"))
+FEED = "https://medium.com/feed/@neomalesa"
+PROFILE = "https://medium.com/@neomalesa"
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"}
 
 
@@ -17,7 +20,7 @@ def fetch(url):
 
 
 def feed_items(limit=5):
-    xml_text = re.sub(r'\sxmlns="[^"]*"', "", fetch("https://medium.com/feed/@neomalesa"), count=1)
+    xml_text = re.sub(r'\sxmlns="[^"]*"', "", fetch(FEED), count=1)
     root = ET.fromstring(xml_text)
     items = []
     for it in root.findall(".//item")[:limit]:
@@ -29,17 +32,24 @@ def feed_items(limit=5):
 
 
 def latest_in_readme(block):
-    m = re.search(r"- \d{1,2} \w{3} — \[([^\]]+)\]", block)
-    return m.group(1) if m else None
+    m = re.search(r'<td><a href="[^"]*">(.*?)</a></td>', block, re.S)
+    return html.unescape(m.group(1)) if m else None
 
 
 def build_block(items):
     if not items:
-        return "**latest from Medium** — none yet"
-    lines = ["**latest from Medium**"]
+        return "<sub><i>feed quiet — nothing published yet.</i></sub>"
+    lines = ["<table>"]
     for it in items:
-        title = it["title"].replace("[", "\\[").replace("]", "\\]")
-        lines.append(f"- {it['date']} — [{title}]({it['link']})")
+        lines.append(
+            "<tr>\n"
+            f'<td width="90"><code>{html.escape(it["date"])}</code></td>\n'
+            f'<td><a href="{html.escape(it["link"], quote=True)}">{html.escape(it["title"])}</a></td>\n'
+            "</tr>"
+        )
+    lines += ["</table>", "",
+              f'<sub><code>source</code> <a href="{PROFILE}">medium.com/@neomalesa</a> '
+              "&middot; synced daily from RSS</sub>"]
     return "\n".join(lines)
 
 
