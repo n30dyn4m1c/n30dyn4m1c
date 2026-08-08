@@ -80,11 +80,11 @@
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $4,342.23 ▲ 2.38%" src="https://img.shields.io/badge/XAUUSD-%244%2C342.23%20%E2%96%B2%202.38%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $65,111 ▲ 0.01%" src="https://img.shields.io/badge/BTCUSD-%2465%2C111%20%E2%96%B2%200.01%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $4,342.23 ▲ 2.38%" src="https://img.shields.io/badge/XAUUSD-%244%2C342.23%20%E2%96%B2%202.38%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $65,045 ▲ 0.10%" src="https://img.shields.io/badge/BTCUSD-%2465%2C045%20%E2%96%B2%200.10%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 09 Aug 2026 &middot; 00:34 GMT+10</sub>
+<sub>last sync &middot; 09 Aug 2026 &middot; 01:33 GMT+10</sub>
 
 <!-- NOW:END -->
 
