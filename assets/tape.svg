@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="780" height="168" viewBox="0 0 780 168" role="img">
-<!-- generated:2026-08-13T15:06:12Z -->
+<!-- generated:2026-08-13T16:25:44Z -->
 <style>
 @keyframes draw{from{stroke-dashoffset:var(--len)}to{stroke-dashoffset:0}}
 @keyframes blip{0%,100%{opacity:.15}50%{opacity:.9}}
