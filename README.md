@@ -65,12 +65,22 @@
 <!--row:reading-->
 <tr>
 <td width="130"><code>reading</code></td>
-<td>Kiki: Ten Thousand Years in a Lifetime &mdash; Albert Maori Kiki &middot; Internet Archive</td>
+<td><a href="https://designmanifestos.org/bre-pettis-and-kio-stark-2009-the-cult-of-done-manifesto/">The Cult of Done Manifesto (2009)</a> &mdash; Bre Pettis and Kio Stark &middot; designmanifestos.org</td>
+</tr>
+<!--row:read-->
+<tr>
+<td width="130"><code>read</code></td>
+<td>Kiki: Ten Thousand Years in a Lifetime (1968) &mdash; Albert Maori Kiki &middot; Internet Archive</td>
 </tr>
 <!--row:exploring-->
 <tr>
 <td width="130"><code>exploring</code></td>
-<td>DeepSeek V4-Flash &middot; OpenCode</td>
+<td>DeepSeek V4-Flash <sub>since 22 Aug</sub> &middot; OpenCode <sub>since 22 Aug</sub> &middot; Kimi K3 <sub>since 24 Aug</sub> &middot; Ox Alpha <sub>since 24 Aug</sub> &middot; DeepSeek Harness <sub>since 24 Aug</sub></td>
+</tr>
+<!--row:listening-->
+<tr>
+<td width="130"><code>listening</code></td>
+<td>Greg Howe &mdash; Introspection (1993) &middot; Van Halen &mdash; Van Halen (1978)</td>
 </tr>
 <!--row:weather-->
 <tr>

@@ -127,16 +127,56 @@ def markets_row():
 
 def reading_row(cfg):
     title = html.escape(cfg.get("title", ""))
-    author = html.escape(cfg.get("author", ""))
+    year = f" ({cfg['year']})" if cfg.get("year") else ""
+    label = f"{title}{year}"
+    if cfg.get("url"):
+        label = f'<a href="{html.escape(cfg["url"])}">{label}</a>'
+    author = f" &mdash; {html.escape(cfg['author'])}" if cfg.get("author") else ""
     source = f" &middot; {html.escape(cfg['source'])}" if cfg.get("source") else ""
-    return row("reading", "reading", f"{title} &mdash; {author}{source}")
+    return row("reading", "reading", f"{label}{author}{source}")
+
+
+def read_row(items):
+    if not items:
+        return None
+    entries = []
+    for it in items:
+        title = html.escape(it.get("title", ""))
+        year = f" ({it['year']})" if it.get("year") else ""
+        author = f" &mdash; {html.escape(it['author'])}" if it.get("author") else ""
+        source = f" &middot; {html.escape(it['source'])}" if it.get("source") else ""
+        entries.append(f"{title}{year}{author}{source}")
+    return row("read", "read", "<br />".join(entries))
 
 
 def exploring_row(items):
     if not items:
         return row("exploring", "exploring", "idle")
-    chips = " &middot; ".join(html.escape(str(p)) for p in items)
-    return row("exploring", "exploring", chips)
+    chips = []
+    for it in items:
+        if isinstance(it, str):
+            chips.append(html.escape(it))
+            continue
+        name = html.escape(it.get("name", ""))
+        since = it.get("since")
+        if since:
+            stamp = datetime.date.fromisoformat(since).strftime("%d %b")
+            chips.append(f"{name} <sub>since {stamp}</sub>")
+        else:
+            chips.append(name)
+    return row("exploring", "exploring", " &middot; ".join(chips))
+
+
+def listening_row(items):
+    if not items:
+        return None
+    chips = []
+    for it in items:
+        artist = html.escape(it.get("artist", ""))
+        album = html.escape(it.get("album", ""))
+        year = f" ({it['year']})" if it.get("year") else ""
+        chips.append(f"{artist} &mdash; {album}{year}")
+    return row("listening", "listening", " &middot; ".join(chips))
 
 
 def build_block(cfg, current):
@@ -144,10 +184,13 @@ def build_block(cfg, current):
     ts = datetime.datetime.now(tz).strftime("%d %b %Y &middot; %H:%M") + " GMT+10"
     rows = [
         reading_row(cfg.get("reading", {})),
+        read_row(cfg.get("read", [])),
         exploring_row(cfg.get("exploring", [])),
+        listening_row(cfg.get("listening", [])),
         weather_row() or old_row(current, "weather") or row("weather", "port moresby", "link down"),
         markets_row() or old_row(current, "markets") or row("markets", "markets", "link down"),
     ]
+    rows = [r for r in rows if r]
     parts = ["<table>", "\n".join(rows), "</table>", "",
               f"<sub>last sync &middot; {ts}</sub>"]
     return "\n".join(parts)

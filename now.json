@@ -1,12 +1,28 @@
 {
   "reading": {
-    "title": "Kiki: Ten Thousand Years in a Lifetime",
-    "author": "Albert Maori Kiki",
-    "source": "Internet Archive",
-    "progress": 10
+    "title": "The Cult of Done Manifesto",
+    "author": "Bre Pettis and Kio Stark",
+    "year": 2009,
+    "source": "designmanifestos.org",
+    "url": "https://designmanifestos.org/bre-pettis-and-kio-stark-2009-the-cult-of-done-manifesto/"
   },
+  "read": [
+    {
+      "title": "Kiki: Ten Thousand Years in a Lifetime",
+      "author": "Albert Maori Kiki",
+      "year": 1968,
+      "source": "Internet Archive"
+    }
+  ],
   "exploring": [
-    "DeepSeek V4-Flash",
-    "OpenCode"
+    { "name": "DeepSeek V4-Flash", "since": "2026-08-22" },
+    { "name": "OpenCode", "since": "2026-08-22" },
+    { "name": "Kimi K3", "since": "2026-08-24" },
+    { "name": "Ox Alpha", "since": "2026-08-24" },
+    { "name": "DeepSeek Harness", "since": "2026-08-24" }
+  ],
+  "listening": [
+    { "artist": "Greg Howe", "album": "Introspection", "year": 1993 },
+    { "artist": "Van Halen", "album": "Van Halen", "year": 1978 }
   ]
 }
