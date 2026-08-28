@@ -75,7 +75,12 @@
 <!--row:exploring-->
 <tr>
 <td width="130"><code>exploring</code></td>
-<td>DeepSeek V4-Flash <sub>since 22 Aug</sub> &middot; OpenCode <sub>since 22 Aug</sub> &middot; Kimi K3 <sub>since 24 Aug</sub> &middot; Ox Alpha <sub>since 24 Aug</sub> &middot; DeepSeek Harness <sub>since 24 Aug</sub></td>
+<td>OpenRouter <sub>since 28 Aug</sub> &middot; GLM 5.3 Flash <sub>since 28 Aug</sub> &middot; TikTok Studio Live <sub>since 28 Aug</sub> &middot; Scrollytelling <sub>since 28 Aug</sub> &middot; Claude Code Routines <sub>since 28 Aug</sub></td>
+</tr>
+<!--row:explored-->
+<tr>
+<td width="130"><code>explored</code></td>
+<td>DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub></td>
 </tr>
 <!--row:listening-->
 <tr>
@@ -94,7 +99,7 @@
 </tr>
 </table>
 
-<sub>last sync &middot; 28 Aug 2026 &middot; 15:32 GMT+10</sub>
+<sub>last sync &middot; 28 Aug 2026 &middot; 16:25 GMT+10</sub>
 
 <!-- NOW:END -->
 
