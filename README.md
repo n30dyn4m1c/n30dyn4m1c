@@ -75,7 +75,7 @@
 <!--row:exploring-->
 <tr>
 <td width="130"><code>exploring</code></td>
-<td>OpenRouter <sub>since 28 Aug</sub> &middot; GLM 5.3 Flash <sub>since 28 Aug</sub> &middot; TikTok Studio Live <sub>since 28 Aug</sub> &middot; Scrollytelling <sub>since 28 Aug</sub> &middot; Claude Code Routines <sub>since 28 Aug</sub></td>
+<td>OpenRouter <sub>since 28 Aug</sub> &middot; GLM 5.3 Flash <sub>since 28 Aug</sub> &middot; TikTok Studio Live <sub>since 28 Aug</sub> &middot; Scrollytelling <sub>since 28 Aug</sub> &middot; Claude Code Routines <sub>since 28 Aug</sub> &middot; Market Profile MT5 Indicator <sub>since 28 Aug</sub></td>
 </tr>
 <!--row:explored-->
 <tr>
@@ -99,7 +99,7 @@
 </tr>
 </table>
 
-<sub>last sync &middot; 28 Aug 2026 &middot; 16:25 GMT+10</sub>
+<sub>last sync &middot; 28 Aug 2026 &middot; 16:29 GMT+10</sub>
 
 <!-- NOW:END -->
 

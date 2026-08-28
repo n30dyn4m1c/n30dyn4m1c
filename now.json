@@ -19,7 +19,8 @@
     { "name": "GLM 5.3 Flash", "since": "2026-08-28" },
     { "name": "TikTok Studio Live", "since": "2026-08-28" },
     { "name": "Scrollytelling", "since": "2026-08-28" },
-    { "name": "Claude Code Routines", "since": "2026-08-28" }
+    { "name": "Claude Code Routines", "since": "2026-08-28" },
+    { "name": "Market Profile MT5 Indicator", "since": "2026-08-28" }
   ],
   "explored": [
     { "name": "DeepSeek V4-Flash", "since": "2026-08-22", "until": "2026-08-28" },
