@@ -149,22 +149,35 @@ def read_row(items):
     return row("read", "read", "<br />".join(entries))
 
 
+def stamp(value):
+    return datetime.date.fromisoformat(value).strftime("%d %b")
+
+
+def chip(item):
+    """One exploring/explored entry: a name plus the window it was open."""
+    if isinstance(item, str):
+        return html.escape(item)
+    name = html.escape(item.get("name", ""))
+    since, until = item.get("since"), item.get("until")
+    if since and until:
+        return f"{name} <sub>{stamp(since)} &ndash; {stamp(until)}</sub>"
+    if since:
+        return f"{name} <sub>since {stamp(since)}</sub>"
+    if until:
+        return f"{name} <sub>to {stamp(until)}</sub>"
+    return name
+
+
 def exploring_row(items):
     if not items:
         return row("exploring", "exploring", "idle")
-    chips = []
-    for it in items:
-        if isinstance(it, str):
-            chips.append(html.escape(it))
-            continue
-        name = html.escape(it.get("name", ""))
-        since = it.get("since")
-        if since:
-            stamp = datetime.date.fromisoformat(since).strftime("%d %b")
-            chips.append(f"{name} <sub>since {stamp}</sub>")
-        else:
-            chips.append(name)
-    return row("exploring", "exploring", " &middot; ".join(chips))
+    return row("exploring", "exploring", " &middot; ".join(chip(it) for it in items))
+
+
+def explored_row(items):
+    if not items:
+        return None
+    return row("explored", "explored", " &middot; ".join(chip(it) for it in items))
 
 
 def listening_row(items):
@@ -186,6 +199,7 @@ def build_block(cfg, current):
         reading_row(cfg.get("reading", {})),
         read_row(cfg.get("read", [])),
         exploring_row(cfg.get("exploring", [])),
+        explored_row(cfg.get("explored", [])),
         listening_row(cfg.get("listening", [])),
         weather_row() or old_row(current, "weather") or row("weather", "port moresby", "link down"),
         markets_row() or old_row(current, "markets") or row("markets", "markets", "link down"),
