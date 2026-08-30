@@ -31,6 +31,9 @@
   ],
   "listening": [
     { "artist": "Greg Howe", "album": "Introspection", "year": 1993 },
+    { "artist": "Polyphia", "album": "Muse", "year": 2014 }
+  ],
+  "listened": [
     { "artist": "Van Halen", "album": "Van Halen", "year": 1978 }
   ]
 }
