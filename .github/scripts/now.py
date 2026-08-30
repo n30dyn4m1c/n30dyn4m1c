@@ -192,6 +192,18 @@ def listening_row(items):
     return row("listening", "listening", " &middot; ".join(chips))
 
 
+def listened_row(items):
+    if not items:
+        return None
+    chips = []
+    for it in items:
+        artist = html.escape(it.get("artist", ""))
+        album = html.escape(it.get("album", ""))
+        year = f" ({it['year']})" if it.get("year") else ""
+        chips.append(f"{artist} &mdash; {album}{year}")
+    return row("listened", "listened", " &middot; ".join(chips))
+
+
 def build_block(cfg, current):
     tz = datetime.timezone(datetime.timedelta(hours=10))
     ts = datetime.datetime.now(tz).strftime("%d %b %Y &middot; %H:%M") + " GMT+10"
@@ -201,6 +213,7 @@ def build_block(cfg, current):
         exploring_row(cfg.get("exploring", [])),
         explored_row(cfg.get("explored", [])),
         listening_row(cfg.get("listening", [])),
+        listened_row(cfg.get("listened", [])),
         weather_row() or old_row(current, "weather") or row("weather", "port moresby", "link down"),
         markets_row() or old_row(current, "markets") or row("markets", "markets", "link down"),
     ]

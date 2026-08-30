@@ -85,7 +85,12 @@
 <!--row:listening-->
 <tr>
 <td width="130"><code>listening</code></td>
-<td>Greg Howe &mdash; Introspection (1993) &middot; Van Halen &mdash; Van Halen (1978)</td>
+<td>Greg Howe &mdash; Introspection (1993) &middot; Polyphia &mdash; Muse (2014)</td>
+</tr>
+<!--row:listened-->
+<tr>
+<td width="130"><code>listened</code></td>
+<td>Van Halen &mdash; Van Halen (1978)</td>
 </tr>
 <!--row:weather-->
 <tr>
@@ -99,7 +104,7 @@
 </tr>
 </table>
 
-<sub>last sync &middot; 30 Aug 2026 &middot; 18:04 GMT+10</sub>
+<sub>last sync &middot; 30 Aug 2026 &middot; 21:36 GMT+10</sub>
 
 <!-- NOW:END -->
 
