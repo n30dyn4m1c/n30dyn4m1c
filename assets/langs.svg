@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="780" height="252" viewBox="0 0 780 252" role="img">
-<!-- generated:2026-09-04T03:42:45Z -->
+<!-- generated:2026-09-04T23:49:32Z -->
 <style>
 @keyframes grow{from{width:0}to{width:var(--w)}}
 .b{animation:grow 1.1s cubic-bezier(.2,.8,.2,1) both}
