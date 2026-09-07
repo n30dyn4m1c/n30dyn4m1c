@@ -85,12 +85,12 @@
 <!--row:listening-->
 <tr>
 <td width="130"><code>listening</code></td>
-<td>Greg Howe &mdash; Introspection (1993) &middot; Polyphia &mdash; Muse (2014)</td>
+<td>CASIOPEA</td>
 </tr>
 <!--row:listened-->
 <tr>
 <td width="130"><code>listened</code></td>
-<td>Van Halen &mdash; Van Halen (1978)</td>
+<td>Greg Howe &mdash; Introspection (1993) &middot; Polyphia &mdash; Muse (2014) &middot; Van Halen &mdash; Van Halen (1978)</td>
 </tr>
 <!--row:weather-->
 <tr>

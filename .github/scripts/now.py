@@ -180,28 +180,26 @@ def explored_row(items):
     return row("explored", "explored", " &middot; ".join(chip(it) for it in items))
 
 
+def track(item):
+    """One listening/listened entry: artist, plus the album when the record is named."""
+    artist = html.escape(item.get("artist", ""))
+    album = html.escape(item.get("album", ""))
+    if not album:
+        return artist
+    year = f" ({item['year']})" if item.get("year") else ""
+    return f"{artist} &mdash; {album}{year}"
+
+
 def listening_row(items):
     if not items:
         return None
-    chips = []
-    for it in items:
-        artist = html.escape(it.get("artist", ""))
-        album = html.escape(it.get("album", ""))
-        year = f" ({it['year']})" if it.get("year") else ""
-        chips.append(f"{artist} &mdash; {album}{year}")
-    return row("listening", "listening", " &middot; ".join(chips))
+    return row("listening", "listening", " &middot; ".join(track(it) for it in items))
 
 
 def listened_row(items):
     if not items:
         return None
-    chips = []
-    for it in items:
-        artist = html.escape(it.get("artist", ""))
-        album = html.escape(it.get("album", ""))
-        year = f" ({it['year']})" if it.get("year") else ""
-        chips.append(f"{artist} &mdash; {album}{year}")
-    return row("listened", "listened", " &middot; ".join(chips))
+    return row("listened", "listened", " &middot; ".join(track(it) for it in items))
 
 
 def build_block(cfg, current):
