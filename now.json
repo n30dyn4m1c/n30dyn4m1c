@@ -30,10 +30,11 @@
     { "name": "DeepSeek Harness", "since": "2026-08-24", "until": "2026-08-28" }
   ],
   "listening": [
-    { "artist": "Greg Howe", "album": "Introspection", "year": 1993 },
-    { "artist": "Polyphia", "album": "Muse", "year": 2014 }
+    { "artist": "CASIOPEA" }
   ],
   "listened": [
+    { "artist": "Greg Howe", "album": "Introspection", "year": 1993 },
+    { "artist": "Polyphia", "album": "Muse", "year": 2014 },
     { "artist": "Van Halen", "album": "Van Halen", "year": 1978 }
   ]
 }
