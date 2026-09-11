@@ -85,7 +85,7 @@
 <!--row:listening-->
 <tr>
 <td width="130"><code>listening</code></td>
-<td>CASIOPEA</td>
+<td>CASIOPEA &middot; Cloudkicker</td>
 </tr>
 <!--row:listened-->
 <tr>

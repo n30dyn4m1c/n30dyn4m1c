@@ -30,7 +30,8 @@
     { "name": "DeepSeek Harness", "since": "2026-08-24", "until": "2026-08-28" }
   ],
   "listening": [
-    { "artist": "CASIOPEA" }
+    { "artist": "CASIOPEA" },
+    { "artist": "Cloudkicker" }
   ],
   "listened": [
     { "artist": "Greg Howe", "album": "Introspection", "year": 1993 },
