@@ -65,12 +65,12 @@
 <!--row:reading-->
 <tr>
 <td width="130"><code>reading</code></td>
-<td><a href="https://designmanifestos.org/bre-pettis-and-kio-stark-2009-the-cult-of-done-manifesto/">The Cult of Done Manifesto (2009)</a> &mdash; Bre Pettis and Kio Stark &middot; designmanifestos.org</td>
+<td>Isaac Newton: The Last Sorcerer (1997) &mdash; Michael White &middot; Internet Archive</td>
 </tr>
 <!--row:read-->
 <tr>
 <td width="130"><code>read</code></td>
-<td>Kiki: Ten Thousand Years in a Lifetime (1968) &mdash; Albert Maori Kiki &middot; Internet Archive</td>
+<td>The Cult of Done Manifesto (2009) &mdash; Bre Pettis and Kio Stark &middot; designmanifestos.org<br />Kiki: Ten Thousand Years in a Lifetime (1968) &mdash; Albert Maori Kiki &middot; Internet Archive</td>
 </tr>
 <!--row:exploring-->
 <tr>
@@ -104,7 +104,7 @@
 </tr>
 </table>
 
-<sub>last sync &middot; 21 Sep 2026 &middot; 11:26 GMT+10</sub>
+<sub>last sync &middot; 21 Sep 2026 &middot; 11:47 GMT+10</sub>
 
 <!-- NOW:END -->
 
