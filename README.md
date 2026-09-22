@@ -118,6 +118,14 @@
 
 <table>
 <tr>
+<td width="90"><code>22 Sep</code></td>
+<td><a href="https://medium.com/@neomalesa/the-great-southland-of-the-holy-spirit-origin-context-and-historiographical-evolution-6a81cf482765">The Great Southland of the Holy Spirit: Origin, Context, and Historiographical Evolution</a></td>
+</tr>
+<tr>
+<td width="90"><code>22 Sep</code></td>
+<td><a href="https://medium.com/@neomalesa/the-ocean-knows-first-what-i-learned-about-el-ni%C3%B1o-while-building-this-project-d6fde9b6981e">The Ocean Knows First: What I Learned About El Niño While Building This Project</a></td>
+</tr>
+<tr>
 <td width="90"><code>29 Jul</code></td>
 <td><a href="https://medium.com/@neomalesa/a-short-history-of-ict-regulation-in-papua-new-guinea-85e68a25d49d">A Short History of ICT Regulation in Papua New Guinea</a></td>
 </tr>
@@ -128,14 +136,6 @@
 <tr>
 <td width="90"><code>20 Jul</code></td>
 <td><a href="https://medium.com/@neomalesa/papua-new-guineas-2010s-digital-ambitions-the-tech-promises-that-stalled-and-what-s-changing-in-89b8e292f0a8">Papua New Guinea’s Digital Ambitions: The Promises That Stalled</a></td>
-</tr>
-<tr>
-<td width="90"><code>19 Jul</code></td>
-<td><a href="https://medium.com/@neomalesa/from-chatgpt-chatbots-to-graphs-the-rapid-evolution-of-how-we-work-with-llms-c29894e87718">From ChatGPT Chatbots to Graphs: The Rapid Evolution of How We Work with LLMs</a></td>
-</tr>
-<tr>
-<td width="90"><code>11 May</code></td>
-<td><a href="https://medium.com/@neomalesa/%EB%B9%A8%EB%A6%AC%EB%B9%A8%EB%A6%AC-what-hurry-hurry-really-means-24fe37440aa5">빨리빨리 — What “Hurry-Hurry” Really Means</a></td>
 </tr>
 </table>
 
