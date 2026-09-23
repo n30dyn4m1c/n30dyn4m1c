@@ -42,5 +42,12 @@
     { "artist": "Greg Howe", "album": "Introspection", "year": 1993 },
     { "artist": "Polyphia", "album": "Muse", "year": 2014 },
     { "artist": "Van Halen", "album": "Van Halen", "year": 1978 }
+  ],
+  "audiobooks": [
+    { "title": "The Fear of the Lord (series)", "author": "Derek Prince", "source": "YouTube" },
+    { "title": "Book of Matthew, NKJV Audio Bible", "author": "Main Point Ministries", "source": "YouTube" },
+    { "title": "Double Decade of Open Heavens Papua New Guinea", "author": "Dr Jonathan David" },
+    { "title": "Word Bot", "source": "YouTube" },
+    { "title": "The Fear of the Lord", "author": "Benny Hinn", "source": "YouTube" }
   ]
 }

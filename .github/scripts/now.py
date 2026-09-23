@@ -202,6 +202,20 @@ def listened_row(items):
     return row("listened", "listened", " &middot; ".join(track(it) for it in items))
 
 
+def audiobook(item):
+    """One audio books/messages entry: title, plus speaker/ministry and platform when named."""
+    title = html.escape(item.get("title", ""))
+    author = f" &mdash; {html.escape(item['author'])}" if item.get("author") else ""
+    source = f" &middot; {html.escape(item['source'])}" if item.get("source") else ""
+    return f"{title}{author}{source}"
+
+
+def audiobooks_row(items):
+    if not items:
+        return None
+    return row("audiobooks", "audio books/messages", "<br />".join(audiobook(it) for it in items))
+
+
 def build_block(cfg, current):
     tz = datetime.timezone(datetime.timedelta(hours=10))
     ts = datetime.datetime.now(tz).strftime("%d %b %Y &middot; %H:%M") + " GMT+10"
@@ -212,6 +226,7 @@ def build_block(cfg, current):
         explored_row(cfg.get("explored", [])),
         listening_row(cfg.get("listening", [])),
         listened_row(cfg.get("listened", [])),
+        audiobooks_row(cfg.get("audiobooks", [])),
         weather_row() or old_row(current, "weather") or row("weather", "port moresby", "link down"),
         markets_row() or old_row(current, "markets") or row("markets", "markets", "link down"),
     ]
