@@ -92,6 +92,11 @@
 <td width="130"><code>listened</code></td>
 <td>Greg Howe &mdash; Introspection (1993) &middot; Polyphia &mdash; Muse (2014) &middot; Van Halen &mdash; Van Halen (1978)</td>
 </tr>
+<!--row:audiobooks-->
+<tr>
+<td width="130"><code>audio books/messages</code></td>
+<td>The Fear of the Lord (series) &mdash; Derek Prince &middot; YouTube<br />Book of Matthew, NKJV Audio Bible &mdash; Main Point Ministries &middot; YouTube<br />Double Decade of Open Heavens Papua New Guinea &mdash; Dr Jonathan David<br />Word Bot &middot; YouTube<br />The Fear of the Lord &mdash; Benny Hinn &middot; YouTube</td>
+</tr>
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
@@ -104,7 +109,7 @@
 </tr>
 </table>
 
-<sub>last sync &middot; 24 Sep 2026 &middot; 07:22 GMT+10</sub>
+<sub>last sync &middot; 24 Sep 2026 &middot; 09:33 GMT+10</sub>
 
 <!-- NOW:END -->
 
