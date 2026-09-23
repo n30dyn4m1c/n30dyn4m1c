@@ -20,28 +20,30 @@
     }
   ],
   "exploring": [
-    { "name": "OpenRouter", "since": "2026-08-28" },
-    { "name": "GLM 5.3 Flash", "since": "2026-08-28" },
-    { "name": "TikTok Studio Live", "since": "2026-08-28" },
-    { "name": "Scrollytelling", "since": "2026-08-28" },
-    { "name": "Claude Code Routines", "since": "2026-08-28" },
-    { "name": "Market Profile MT5 Indicator", "since": "2026-08-28" }
+    { "name": "Claude Opus 5.5", "since": "2026-09-23" },
+    { "name": "MT5 Unraided Liquidity Indicator", "since": "2026-09-23" },
+    { "name": "Pen and Paper Journaling", "since": "2026-09-23" }
   ],
   "explored": [
     { "name": "DeepSeek V4-Flash", "since": "2026-08-22", "until": "2026-08-28" },
     { "name": "OpenCode", "since": "2026-08-22", "until": "2026-08-28" },
     { "name": "Kimi K3", "since": "2026-08-24", "until": "2026-08-28" },
     { "name": "Ox Alpha", "since": "2026-08-24", "until": "2026-08-28" },
-    { "name": "DeepSeek Harness", "since": "2026-08-24", "until": "2026-08-28" }
+    { "name": "DeepSeek Harness", "since": "2026-08-24", "until": "2026-08-28" },
+    { "name": "OpenRouter", "since": "2026-08-28", "until": "2026-09-23" },
+    { "name": "GLM 5.3 Flash", "since": "2026-08-28", "until": "2026-09-23" },
+    { "name": "TikTok Studio Live", "since": "2026-08-28", "until": "2026-09-23" },
+    { "name": "Scrollytelling", "since": "2026-08-28", "until": "2026-09-23" },
+    { "name": "Claude Code Routines", "since": "2026-08-28", "until": "2026-09-23" },
+    { "name": "Market Profile MT5 Indicator", "since": "2026-08-28", "until": "2026-09-23" }
   ],
-  "listening": [
-    { "artist": "CASIOPEA" },
-    { "artist": "Cloudkicker" }
-  ],
+  "listening": [],
   "listened": [
     { "artist": "Greg Howe", "album": "Introspection", "year": 1993 },
     { "artist": "Polyphia", "album": "Muse", "year": 2014 },
-    { "artist": "Van Halen", "album": "Van Halen", "year": 1978 }
+    { "artist": "Van Halen", "album": "Van Halen", "year": 1978 },
+    { "artist": "CASIOPEA" },
+    { "artist": "Cloudkicker" }
   ],
   "audiobooks": [
     { "title": "The Fear of the Lord (series)", "author": "Derek Prince", "source": "YouTube" },
