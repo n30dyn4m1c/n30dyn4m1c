@@ -133,7 +133,7 @@ def reading_row(cfg):
         label = f'<a href="{html.escape(cfg["url"])}">{label}</a>'
     author = f" &mdash; {html.escape(cfg['author'])}" if cfg.get("author") else ""
     source = f" &middot; {html.escape(cfg['source'])}" if cfg.get("source") else ""
-    return row("reading", "reading", f"{label}{author}{source}")
+    return row("reading", "currently reading", f"{label}{author}{source}")
 
 
 def read_row(items):
@@ -146,7 +146,7 @@ def read_row(items):
         author = f" &mdash; {html.escape(it['author'])}" if it.get("author") else ""
         source = f" &middot; {html.escape(it['source'])}" if it.get("source") else ""
         entries.append(f"{title}{year}{author}{source}")
-    return row("read", "read", "<br />".join(entries))
+    return row("read", "old reading", "<br />".join(entries))
 
 
 def stamp(value):
@@ -170,14 +170,14 @@ def chip(item):
 
 def exploring_row(items):
     if not items:
-        return row("exploring", "exploring", "idle")
-    return row("exploring", "exploring", " &middot; ".join(chip(it) for it in items))
+        return row("exploring", "currently exploring", "idle")
+    return row("exploring", "currently exploring", " &middot; ".join(chip(it) for it in items))
 
 
 def explored_row(items):
     if not items:
         return None
-    return row("explored", "explored", " &middot; ".join(chip(it) for it in items))
+    return row("explored", "old exploring", " &middot; ".join(chip(it) for it in items))
 
 
 def track(item):
@@ -193,13 +193,13 @@ def track(item):
 def listening_row(items):
     if not items:
         return None
-    return row("listening", "listening", " &middot; ".join(track(it) for it in items))
+    return row("listening", "current music", " &middot; ".join(track(it) for it in items))
 
 
 def listened_row(items):
     if not items:
         return None
-    return row("listened", "listened", " &middot; ".join(track(it) for it in items))
+    return row("listened", "old music", " &middot; ".join(track(it) for it in items))
 
 
 def audiobook(item):
@@ -213,7 +213,7 @@ def audiobook(item):
 def audiobooks_row(items):
     if not items:
         return None
-    return row("audiobooks", "audio books/messages", "<br />".join(audiobook(it) for it in items))
+    return row("audiobooks", "currently audio books/messages", "<br />".join(audiobook(it) for it in items))
 
 
 def build_block(cfg, current):

@@ -64,37 +64,32 @@
 <table>
 <!--row:reading-->
 <tr>
-<td width="130"><code>reading</code></td>
+<td width="130"><code>currently reading</code></td>
 <td>Isaac Newton: The Last Sorcerer (1997) &mdash; Michael White &middot; Internet Archive</td>
 </tr>
 <!--row:read-->
 <tr>
-<td width="130"><code>read</code></td>
+<td width="130"><code>old reading</code></td>
 <td>The Cult of Done Manifesto (2009) &mdash; Bre Pettis and Kio Stark &middot; designmanifestos.org<br />Kiki: Ten Thousand Years in a Lifetime (1968) &mdash; Albert Maori Kiki &middot; Internet Archive</td>
 </tr>
 <!--row:exploring-->
 <tr>
-<td width="130"><code>exploring</code></td>
-<td>OpenRouter <sub>since 28 Aug</sub> &middot; GLM 5.3 Flash <sub>since 28 Aug</sub> &middot; TikTok Studio Live <sub>since 28 Aug</sub> &middot; Scrollytelling <sub>since 28 Aug</sub> &middot; Claude Code Routines <sub>since 28 Aug</sub> &middot; Market Profile MT5 Indicator <sub>since 28 Aug</sub></td>
+<td width="130"><code>currently exploring</code></td>
+<td>Claude Opus 5.5 <sub>since 23 Sep</sub> &middot; MT5 Unraided Liquidity Indicator <sub>since 23 Sep</sub> &middot; Pen and Paper Journaling <sub>since 23 Sep</sub></td>
 </tr>
 <!--row:explored-->
 <tr>
-<td width="130"><code>explored</code></td>
-<td>DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub></td>
-</tr>
-<!--row:listening-->
-<tr>
-<td width="130"><code>listening</code></td>
-<td>CASIOPEA &middot; Cloudkicker</td>
+<td width="130"><code>old exploring</code></td>
+<td>DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub> &middot; OpenRouter <sub>28 Aug &ndash; 23 Sep</sub> &middot; GLM 5.3 Flash <sub>28 Aug &ndash; 23 Sep</sub> &middot; TikTok Studio Live <sub>28 Aug &ndash; 23 Sep</sub> &middot; Scrollytelling <sub>28 Aug &ndash; 23 Sep</sub> &middot; Claude Code Routines <sub>28 Aug &ndash; 23 Sep</sub> &middot; Market Profile MT5 Indicator <sub>28 Aug &ndash; 23 Sep</sub></td>
 </tr>
 <!--row:listened-->
 <tr>
-<td width="130"><code>listened</code></td>
-<td>Greg Howe &mdash; Introspection (1993) &middot; Polyphia &mdash; Muse (2014) &middot; Van Halen &mdash; Van Halen (1978)</td>
+<td width="130"><code>old music</code></td>
+<td>Greg Howe &mdash; Introspection (1993) &middot; Polyphia &mdash; Muse (2014) &middot; Van Halen &mdash; Van Halen (1978) &middot; CASIOPEA &middot; Cloudkicker</td>
 </tr>
 <!--row:audiobooks-->
 <tr>
-<td width="130"><code>audio books/messages</code></td>
+<td width="130"><code>currently audio books/messages</code></td>
 <td>The Fear of the Lord (series) &mdash; Derek Prince &middot; YouTube<br />Book of Matthew, NKJV Audio Bible &mdash; Main Point Ministries &middot; YouTube<br />Double Decade of Open Heavens Papua New Guinea &mdash; Dr Jonathan David<br />Word Bot &middot; YouTube<br />The Fear of the Lord &mdash; Benny Hinn &middot; YouTube</td>
 </tr>
 <!--row:weather-->
@@ -109,7 +104,7 @@
 </tr>
 </table>
 
-<sub>last sync &middot; 24 Sep 2026 &middot; 09:33 GMT+10</sub>
+<sub>last sync &middot; 24 Sep 2026 &middot; 09:45 GMT+10</sub>
 
 <!-- NOW:END -->
 
