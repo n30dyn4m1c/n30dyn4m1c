@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Daily check of the Medium feed: update README only when new articles exist."""
+"""Daily check of the Medium feed: rewrite the README wire only when new articles exist."""
 import html
 import os
 import re
@@ -7,7 +7,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 START, END = "<!-- MEDIUM:START -->", "<!-- MEDIUM:END -->"
-README = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "README.md"))
+README = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "README.md"))
 FEED = "https://medium.com/feed/@neomalesa"
 PROFILE = "https://medium.com/@neomalesa"
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"}
@@ -19,33 +19,33 @@ def fetch(url):
         return resp.read().decode("utf-8", "replace")
 
 
-def feed_items(limit=5):
+def feed_items(limit=3):
     xml_text = re.sub(r'\sxmlns="[^"]*"', "", fetch(FEED), count=1)
     root = ET.fromstring(xml_text)
     items = []
     for it in root.findall(".//item")[:limit]:
         title = (it.findtext("title") or "untitled").strip()
         link = (it.findtext("link") or "#").split("?")[0]
-        date = " ".join((it.findtext("pubDate") or "").split()[1:3])
+        date = " ".join((it.findtext("pubDate") or "").split()[1:3]).upper()
         items.append({"title": title, "link": link, "date": date})
     return items
 
 
 def latest_in_readme(block):
-    m = re.search(r'<td><a href="[^"]*">(.*?)</a></td>', block, re.S)
+    m = re.search(r'<td>&rsaquo; <a href="[^"]*">(.*?)</a></td>', block, re.S)
     return html.unescape(m.group(1)) if m else None
 
 
 def build_block(items):
-    source = f'<sub>source &middot; <a href="{PROFILE}">medium.com/@neomalesa</a></sub>'
+    source = f'<sub>wire &middot; <a href="{PROFILE}">medium.com/@neomalesa</a></sub>'
     if not items:
         return source
     lines = ["<table>"]
     for it in items:
         lines.append(
             "<tr>\n"
-            f'<td width="90"><code>{html.escape(it["date"])}</code></td>\n'
-            f'<td><a href="{html.escape(it["link"], quote=True)}">{html.escape(it["title"])}</a></td>\n'
+            f'<td width="72"><code>{html.escape(it["date"]).replace(" ", "&nbsp;")}</code></td>\n'
+            f'<td>&rsaquo; <a href="{html.escape(it["link"], quote=True)}">{html.escape(it["title"])}</a></td>\n'
             "</tr>"
         )
     lines += ["</table>", "", source]
