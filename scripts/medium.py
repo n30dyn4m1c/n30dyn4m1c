@@ -44,7 +44,7 @@ def build_block(items):
     for it in items:
         lines.append(
             "<tr>\n"
-            f'<td width="72"><code>{html.escape(it["date"])}</code></td>\n'
+            f'<td width="72"><code>{html.escape(it["date"]).replace(" ", "&nbsp;")}</code></td>\n'
             f'<td>&rsaquo; <a href="{html.escape(it["link"], quote=True)}">{html.escape(it["title"])}</a></td>\n'
             "</tr>"
         )

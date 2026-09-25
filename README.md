@@ -98,15 +98,15 @@
 
 <table>
 <tr>
-<td width="72"><code>25 SEP</code></td>
+<td width="72"><code>25&nbsp;SEP</code></td>
 <td>&rsaquo; <a href="https://medium.com/@neomalesa/voting-technology-is-a-stack-not-a-product-44abc9fa70fd">Voting Technology Is a Stack, Not a Product</a></td>
 </tr>
 <tr>
-<td width="72"><code>22 SEP</code></td>
+<td width="72"><code>22&nbsp;SEP</code></td>
 <td>&rsaquo; <a href="https://medium.com/@neomalesa/the-great-southland-of-the-holy-spirit-origin-context-and-historiographical-evolution-6a81cf482765">The Great Southland of the Holy Spirit: Origin, Context, and Historiographical Evolution</a></td>
 </tr>
 <tr>
-<td width="72"><code>22 SEP</code></td>
+<td width="72"><code>22&nbsp;SEP</code></td>
 <td>&rsaquo; <a href="https://medium.com/@neomalesa/the-ocean-knows-first-what-i-learned-about-el-ni%C3%B1o-while-building-this-project-d6fde9b6981e">The Ocean Knows First: What I Learned About El Niño While Building This Project</a></td>
 </tr>
 </table>
@@ -118,8 +118,8 @@
 ### `$ which stack`
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,go,ts,kotlin,svelte,django,linux&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,go,ts,kotlin,svelte,django,linux&theme=light" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python%2Cgo%2Cts%2Ckotlin%2Csvelte%2Cdjango%2Clinux&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python%2Cgo%2Cts%2Ckotlin%2Csvelte%2Cdjango%2Clinux&theme=light" />
   <img alt="Python, Go, TypeScript, Kotlin, Svelte, Django, Linux" src="https://skillicons.dev/icons?i=python,go,ts,kotlin,svelte,django,linux&theme=dark" height="36" />
 </picture>
 <img alt="MQL5" src="https://img.shields.io/badge/MQL5-MetaTrader%205-0D0221?style=for-the-badge&labelColor=FF00CC" height="36" />
