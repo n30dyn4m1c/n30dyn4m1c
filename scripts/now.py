@@ -10,7 +10,7 @@ import urllib.parse
 import urllib.request
 
 START, END = "<!-- NOW:START -->", "<!-- NOW:END -->"
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 README = os.path.join(ROOT, "README.md")
 NOW_JSON = os.path.join(ROOT, "now.json")
 HISTORY = os.path.join(ROOT, "data", "history.json")

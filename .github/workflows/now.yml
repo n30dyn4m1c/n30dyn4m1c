@@ -14,10 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: refresh live systems
-        run: python .github/scripts/now.py
+        run: python scripts/now.py
       - name: refresh cards
         # no-ops until the committed cards are a day old, so this stays cheap
-        run: python .github/scripts/cards.py
+        run: python scripts/cards.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: commit changes

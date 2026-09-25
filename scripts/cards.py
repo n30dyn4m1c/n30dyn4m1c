@@ -15,7 +15,7 @@ import urllib.error
 import urllib.request
 
 USER = "n30dyn4m1c"
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ASSETS = os.path.join(ROOT, "assets")
 STAMP = "<!-- generated:"
 
