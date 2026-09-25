@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: check for new articles
-        run: python scripts/medium.py
+        run: python .github/scripts/medium.py
       - name: commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:

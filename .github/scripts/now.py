@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Refresh the now.log block of README.md (reading, exploring, listening, weather) and
-record the XAUUSD/BTCUSD prices the desk ticker draws from."""
+"""Refresh the live systems block of README.md (now playing/reading/exploring, weather, markets)."""
 import datetime
 import html
 import json
 import os
 import re
 import time
+import urllib.parse
 import urllib.request
 
 START, END = "<!-- NOW:START -->", "<!-- NOW:END -->"
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 README = os.path.join(ROOT, "README.md")
 NOW_JSON = os.path.join(ROOT, "now.json")
 HISTORY = os.path.join(ROOT, "data", "history.json")
@@ -22,7 +22,7 @@ UA = {
     "Referer": "https://www.goldprice.org/",
 }
 
-EXPLORED_SHOWN = 5  # newest explored items in view; the rest fold into <details>
+CYAN, MAGENTA, BASE = "00FFCC", "FF00CC", "0D0221"
 
 WMO = {
     0: "clear sky", 1: "partly cloudy", 2: "partly cloudy", 3: "overcast",
@@ -49,10 +49,15 @@ def fetch(url, retries=3):
     raise last
 
 
+def shield(text):
+    """Escape a segment for a shields.io badge path."""
+    return urllib.parse.quote(text.replace("-", "--").replace("_", "__"), safe="")
+
+
 def row(rid, label, value):
     """One live-systems table row, tagged so a failed refresh can reuse the last good copy."""
     return (f"<!--row:{rid}-->\n<tr>\n"
-            f'<td width="96"><code>{label}</code></td>\n'
+            f'<td width="130"><code>{label}</code></td>\n'
             f"<td>{value}</td>\n"
             f"</tr>")
 
@@ -70,9 +75,19 @@ def weather_row():
         desc = WMO.get(cur["weather_code"], "unknown")
         value = (f"{round(cur['temperature_2m'])}&deg;C &middot; {desc} &middot; "
                  f"{cur['relative_humidity_2m']}% RH &middot; wind {round(cur['wind_speed_10m'])} km/h")
-        return row("weather", "weather", f"port moresby &middot; {value}")
+        return row("weather", "port moresby", value)
     except Exception:
         return None
+
+
+def market_badge(symbol, price, pct):
+    """Neon pill per instrument — cyan when the tape is up, magenta when it bleeds."""
+    up = pct >= 0
+    arrow = "▲" if up else "▼"
+    message = f"{price} {arrow} {abs(pct):.2f}%"
+    src = (f"https://img.shields.io/badge/{shield(symbol)}-{shield(message)}-"
+           f"{CYAN if up else MAGENTA}?style=flat-square&labelColor={BASE}")
+    return f'<img alt="{html.escape(symbol)} {html.escape(message)}" src="{html.escape(src)}" />'
 
 
 def append_history(xau, btc):
@@ -94,16 +109,20 @@ def append_history(xau, btc):
         print(f"history not written: {e}")
 
 
-def record_prices():
-    """Sample XAUUSD and BTCUSD for the desk ticker. The README shows them via the desk card."""
+def markets_row():
     try:
         btc = json.loads(fetch(
-            "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+            "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true"
         ))["bitcoin"]
         gold = json.loads(fetch("https://data-asg.goldprice.org/dbXRates/USD"))["items"][0]
         append_history(gold["xauPrice"], btc["usd"])
-    except Exception as e:
-        print(f"prices not sampled: {e}")
+        value = "&nbsp;".join([
+            market_badge("XAUUSD", f"${gold['xauPrice']:,.2f}", gold["pcXau"]),
+            market_badge("BTCUSD", f"${btc['usd']:,.0f}", btc["usd_24h_change"]),
+        ])
+        return row("markets", "markets", value)
+    except Exception:
+        return None
 
 
 def reading_row(cfg):
@@ -114,7 +133,7 @@ def reading_row(cfg):
         label = f'<a href="{html.escape(cfg["url"])}">{label}</a>'
     author = f" &mdash; {html.escape(cfg['author'])}" if cfg.get("author") else ""
     source = f" &middot; {html.escape(cfg['source'])}" if cfg.get("source") else ""
-    return row("reading", "reading", f"{label}{author}{source}")
+    return row("reading", "currently reading", f"{label}{author}{source}")
 
 
 def read_row(items):
@@ -127,7 +146,7 @@ def read_row(items):
         author = f" &mdash; {html.escape(it['author'])}" if it.get("author") else ""
         source = f" &middot; {html.escape(it['source'])}" if it.get("source") else ""
         entries.append(f"{title}{year}{author}{source}")
-    return row("read", "read", "<br />".join(entries))
+    return row("read", "old reading", "<br />".join(entries))
 
 
 def stamp(value):
@@ -151,21 +170,14 @@ def chip(item):
 
 def exploring_row(items):
     if not items:
-        return row("exploring", "exploring", "idle")
-    return row("exploring", "exploring", " &middot; ".join(chip(it) for it in items))
+        return row("exploring", "currently exploring", "idle")
+    return row("exploring", "currently exploring", " &middot; ".join(chip(it) for it in items))
 
 
 def explored_row(items):
-    """Newest few in view; older ones fold away so the row never becomes a wall."""
     if not items:
         return None
-    recent, older = items[-EXPLORED_SHOWN:], items[:-EXPLORED_SHOWN]
-    value = " &middot; ".join(chip(it) for it in reversed(recent))
-    if older:
-        value += (f"<details><summary><sub>{len(older)} older</sub></summary>"
-                  + " &middot; ".join(chip(it) for it in reversed(older))
-                  + "</details>")
-    return row("explored", "explored", value)
+    return row("explored", "old exploring", " &middot; ".join(chip(it) for it in items))
 
 
 def track(item):
@@ -181,13 +193,13 @@ def track(item):
 def listening_row(items):
     if not items:
         return None
-    return row("listening", "listening", " &middot; ".join(track(it) for it in items))
+    return row("listening", "current music", " &middot; ".join(track(it) for it in items))
 
 
 def listened_row(items):
     if not items:
         return None
-    return row("listened", "listened", " &middot; ".join(track(it) for it in items))
+    return row("listened", "old music", " &middot; ".join(track(it) for it in items))
 
 
 def audiobook(item):
@@ -215,7 +227,8 @@ def build_block(cfg, current):
         listening_row(cfg.get("listening", [])),
         listened_row(cfg.get("listened", [])),
         audiobooks_row(cfg.get("audiobooks", [])),
-        weather_row() or old_row(current, "weather") or row("weather", "weather", "link down"),
+        weather_row() or old_row(current, "weather") or row("weather", "port moresby", "link down"),
+        markets_row() or old_row(current, "markets") or row("markets", "markets", "link down"),
     ]
     rows = [r for r in rows if r]
     parts = ["<table>", "\n".join(rows), "</table>", "",
@@ -235,7 +248,6 @@ def main():
     a = text.index(START)
     b = text.index(END)
     current = text[a + len(START):b]
-    record_prices()
     block = build_block(cfg, current)
     if strip_sync(current).strip() == strip_sync(block).strip():
         print("no changes")

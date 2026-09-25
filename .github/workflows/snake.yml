@@ -16,8 +16,7 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake-dark.svg?color_snake=#00ffcc&color_dots=#160a33,#3d1a5b,#7b1fa2,#c31fd1,#ff00cc
-            dist/github-snake-light.svg?color_snake=#141414&color_dots=#efe7d6,#f7e08a,#fcd116,#e88a1a,#ce1126
+            dist/github-snake-dark.svg?color_snake=#00ffcc&color_dots=#0d0221,#3d1a5b,#7b1fa2,#c31fd1,#ff00cc
 
       # Published to its own branch so the daily regeneration never races the
       # README commits on main. One orphan commit, force-pushed each run.
