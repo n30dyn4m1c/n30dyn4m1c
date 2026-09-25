@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg" />
-  <img alt="n30dyn4m1c@pom:~$ whoami — neo malesa · technologist · developer · trader · writer" src="assets/hero-dark.svg" width="100%" />
+  <img alt="n30dyn4m1c@pom:~$ whoami — N30 PNG. neo malesa · technologist · developer · trader · writer, beside a bird of paradise" src="assets/hero-dark.svg" width="100%" />
 </picture>
 
 <picture>
