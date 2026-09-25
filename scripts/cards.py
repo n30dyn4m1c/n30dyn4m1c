@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Render the self-hosted profile cards into assets/: contribution pulse, language
-bars, and the market tape drawn from the prices now.py collects.
+"""Render the self-hosted profile cards into assets/, each as a -dark and -light
+variant: contribution pulse, language bars, and the desk ticker drawn from the
+prices now.py collects.
 
 The cards are committed to the repo, so the README never depends on a third-party
 renderer being up. A failed refresh leaves the previous card in place.
@@ -19,12 +20,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ASSETS = os.path.join(ROOT, "assets")
 STAMP = "<!-- generated:"
 
-BASE, CYAN, MAGENTA = "#0D0221", "#00FFCC", "#FF00CC"
-TEXT, MUTED, GRID = "#C9D1D9", "#8B949E", "#1B0940"
-MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace"
-# level 0-4 heat, dark violet through to magenta
-HEAT = ["#160A33", "#1F3D63", "#177C8E", "#00C6A8", "#00FFCC"]
-LANG_COLORS = ["#00FFCC", "#FF00CC", "#00C6A8", "#C31FD1", "#177C8E", "#7B1FA2"]
+from theme import MONO, THEMES
 
 API = "https://api.github.com"
 UA = {
@@ -155,6 +151,7 @@ def profile():
     return json.loads(fetch(f"{API}/users/{USER}"))
 
 
+
 # -------------------------------------------------------------------- rendering
 
 def streaks(weeks):
@@ -189,29 +186,33 @@ def level(count):
     return 4
 
 
-def text_el(x, y, body, size=12, fill=TEXT, anchor="start", weight="400"):
+def text_el(x, y, body, size=12, fill="#000", anchor="start", weight="400"):
     return (f'<text x="{x}" y="{y}" font-family="{MONO}" font-size="{size}" '
             f'fill="{fill}" text-anchor="{anchor}" font-weight="{weight}">{html.escape(body)}</text>')
 
 
-def frame(width, height, body, css):
+def frame(t, width, height, title, body, css):
+    """Card chrome: a desk panel with a `$ command` title bar."""
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
             f'viewBox="0 0 {width} {height}" role="img">\n'
             f"{STAMP}{stamp} -->\n"
             f"<style>\n{css}\n</style>\n"
-            f'<rect width="{width}" height="{height}" rx="10" fill="{BASE}" />\n'
+            f'<rect width="{width}" height="{height}" rx="10" fill="{t["bg"]}" />\n'
             f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="10" '
-            f'fill="none" stroke="{GRID}" />\n'
-            f"{body}\n</svg>\n")
+            f'fill="none" stroke="{t["grid"]}" />\n'
+            f'<line x1="0" y1="40" x2="{width}" y2="40" stroke="{t["grid"]}" />\n'
+            + text_el(20, 26, "$ ", 13, t["cyan"])
+            + text_el(36, 26, title, 13, t["text"])
+            + f"\n{body}\n</svg>\n")
 
 
-def pulse_card(weeks, total):
+def pulse_card(t, weeks, total):
     cell, gap, pad = 12, 2, 20
     step = cell + gap
     cols = len(weeks)
     width = pad * 2 + cols * step - gap
-    top = 56
+    top = 72
     height = top + 7 * step - gap + 46
     current, longest, best = streaks(weeks)
 
@@ -223,23 +224,23 @@ def pulse_card(weeks, total):
             x, y = pad + col * step, top + row * step
             squares.append(
                 f'<rect class="c w{col}" x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" '
-                f'fill="{HEAT[level(count)]}"><title>{date} · {count}</title></rect>')
+                f'fill="{t["heat"][level(count)]}"><title>{date} · {count}</title></rect>')
 
     legend_end = width - pad - 34
-    legend_start = legend_end - (len(HEAT) * step - gap)
+    legend_start = legend_end - (len(t["heat"]) * step - gap)
     labels = [
-        text_el(pad, 30, "contributions", 13, CYAN),
-        text_el(width - pad, 30,
-                f"total {total} · streak {current} · best day {best} · longest {longest}",
-                12, TEXT, anchor="end"),
-        text_el(pad, height - 16, f"{weeks[0][0][0]} → {weeks[-1][-1][0]}", 11, MUTED),
-        text_el(legend_start - 8, height - 16, "less", 11, MUTED, anchor="end"),
-        text_el(width - pad, height - 16, "more", 11, MUTED, anchor="end"),
+        text_el(pad, 60, f"total {total}", 12, t["cyan"]),
+        text_el(width - pad, 60,
+                f"streak {current} · best day {best} · longest {longest}",
+                12, t["text"], anchor="end"),
+        text_el(pad, height - 16, f"{weeks[0][0][0]} → {weeks[-1][-1][0]}", 11, t["muted"]),
+        text_el(legend_start - 8, height - 16, "less", 11, t["muted"], anchor="end"),
+        text_el(width - pad, height - 16, "more", 11, t["muted"], anchor="end"),
     ]
     legend = "".join(
         f'<rect x="{legend_start + i * step}" y="{height - 26}" width="{cell}" '
         f'height="{cell}" rx="2" fill="{shade}" />'
-        for i, shade in enumerate(HEAT))
+        for i, shade in enumerate(t["heat"]))
 
     # one delay class per column: the negative offsets turn a single keyframe into
     # a wave that travels left to right across the grid.
@@ -247,37 +248,36 @@ def pulse_card(weeks, total):
     css = ("@keyframes pulse{0%,88%{opacity:.72}94%{opacity:1}100%{opacity:.72}}\n"
            ".c{opacity:.72;animation:pulse 6s ease-in-out infinite}\n"
            "@media(prefers-reduced-motion:reduce){.c{animation:none;opacity:1}}\n" + delays)
-    return frame(width, height, "".join(squares) + "".join(labels) + legend, css)
+    return frame(t, width, height, "git log --graph", "".join(squares) + "".join(labels) + legend, css)
 
 
-def langs_card(ranked, stars, repo_count, followers):
+def langs_card(t, ranked, stars, repo_count, followers):
     pad, row_h, bar_h = 20, 26, 10
     width = 780
-    top = 56
-    height = top + len(ranked) * row_h + 40
+    top = 60
+    height = top + len(ranked) * row_h + 36
     bar_x = pad + 132
     bar_w = width - bar_x - pad - 62
 
     rows = []
     for i, (name, pct) in enumerate(ranked):
         y = top + i * row_h
-        color = LANG_COLORS[i % len(LANG_COLORS)]
+        color = t["langs"][i % len(t["langs"])]
         filled = max(2, round(bar_w * pct / 100))
         rows.append(
-            text_el(pad, y + bar_h, name, 12, TEXT)
-            + f'<rect x="{bar_x}" y="{y + 2}" width="{bar_w}" height="{bar_h}" rx="5" fill="{GRID}" />'
+            text_el(pad, y + bar_h, name, 12, t["text"])
+            + f'<rect x="{bar_x}" y="{y + 2}" width="{bar_w}" height="{bar_h}" rx="5" fill="{t["grid"]}" />'
             + f'<rect class="b b{i}" x="{bar_x}" y="{y + 2}" width="{filled}" height="{bar_h}" '
               f'rx="5" fill="{color}" style="--w:{filled}px" />'
-            + text_el(width - pad, y + bar_h, f"{pct:.1f}%", 12, MUTED, anchor="end"))
+            + text_el(width - pad, y + bar_h, f"{pct:.1f}%", 12, t["muted"], anchor="end"))
 
-    header = text_el(pad, 30, "languages", 13, MAGENTA)
     footer = text_el(pad, height - 16,
-                     f"repos {repo_count} · stars {stars} · followers {followers}", 12, TEXT)
+                     f"repos {repo_count} · stars {stars} · followers {followers}", 11, t["muted"])
     delays = "\n".join(f".b{i}{{animation-delay:{i * 0.12:.2f}s}}" for i in range(len(ranked)))
     css = ("@keyframes grow{from{width:0}to{width:var(--w)}}\n"
            ".b{animation:grow 1.1s cubic-bezier(.2,.8,.2,1) both}\n"
            "@media(prefers-reduced-motion:reduce){.b{animation:none}}\n" + delays)
-    return frame(width, height, header + "".join(rows) + footer, css)
+    return frame(t, width, height, "wc -l --by-language", "".join(rows) + footer, css)
 
 
 def spark(points, x0, y0, w, h, color, index):
@@ -291,58 +291,114 @@ def spark(points, x0, y0, w, h, color, index):
     path = " ".join(f"{x:.1f},{y:.1f}" for x, y in xy)
     hx, hy = xy[-1]
     return (f'<polyline class="l l{index}" points="{path}" fill="none" stroke="{color}" '
-            f'stroke-width="2" stroke-linecap="round" stroke-linejoin="round" '
+            f'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" '
             f'style="--len:{length:.0f}" />'
             f'<circle class="ring r{index}" cx="{hx:.1f}" cy="{hy:.1f}" r="5.5" fill="none" '
             f'stroke="{color}" stroke-width="1.5" />'
             f'<circle cx="{hx:.1f}" cy="{hy:.1f}" r="2.5" fill="{color}" />')
 
 
-def tape_card(history):
+def parse_ts(stamp):
+    return datetime.datetime.strptime(stamp, "%Y-%m-%dT%H:%MZ")
+
+
+def change_since(history, col, hours):
+    """Percent move from the last sample at least `hours` old (or the oldest we hold)."""
+    last_ts = parse_ts(history[-1][0])
+    base = history[0]
+    for row in reversed(history):
+        if last_ts - parse_ts(row[0]) >= datetime.timedelta(hours=hours):
+            base = row
+            break
+    return (history[-1][col] - base[col]) / base[col] * 100 if base[col] else 0.0
+
+
+def price(symbol, value):
+    return f"{value:,.0f}" if symbol == "BTCUSD" else f"{value:,.2f}"
+
+
+def move(t, pct):
+    """Arrow, text and colour for a move: cyan when it rises, magenta when it bleeds."""
+    up = pct >= 0
+    return f"{'▲' if up else '▼'} {abs(pct):.2f}%", t["cyan"] if up else t["magenta"]
+
+
+def desk_card(t, history):
     if len(history) < 2:
         raise RuntimeError("not enough samples yet")
-    width, height = 780, 168
-    pad, gap = 20, 24
-    panel = (width - pad * 2 - gap) / 2
-    spark_y, spark_h = 74, 58
+    width, height, pad = 800, 214, 20
+    band_y, band_h = 52, 28
+    series = [("XAUUSD", 1), ("BTCUSD", 2)]
 
-    series = [("XAUUSD", [row[1] for row in history], CYAN),
-              ("BTCUSD", [row[2] for row in history], MAGENTA)]
-    body = [text_el(pad, 30, "tape", 13, CYAN)]
-    for i, (name, values, color) in enumerate(series):
-        x0 = pad + i * (panel + gap)
-        change = (values[-1] - values[0]) / values[0] * 100 if values[0] else 0.0
-        arrow = "▲" if change >= 0 else "▼"
+    # ticker band: quotes spaced on a fixed pitch and repeated past one period so
+    # a single translate loop reads as an endless tape
+    pitch = 300
+    period = pitch * len(series)
+    quotes = []
+    for k in range((width + period) // pitch + 2):
+        sym, col = series[k % len(series)]
+        last = history[-1][col]
+        label, color = move(t, change_since(history, col, 24))
+        x = pad + k * pitch
+        quotes.append(
+            f'<text x="{x}" y="{band_y + 19}" font-family="{MONO}" font-size="13">'
+            f'<tspan fill="{t["text"]}">{sym}</tspan>'
+            f'<tspan fill="{t["text"]}" dx="10">{price(sym, last)}</tspan>'
+            f'<tspan fill="{color}" dx="10">{label}</tspan>'
+            f'<tspan fill="{t["muted"]}" dx="14">┊</tspan></text>')
+    band = (f'<rect x="1" y="{band_y}" width="{width - 2}" height="{band_h}" fill="{t["panel"]}" />'
+            f'<g clip-path="url(#band)"><g class="tape">{"".join(quotes)}</g></g>')
+
+    # two panels: 24h move up top, sparkline over the whole window, hi/lo underneath.
+    # The window is whatever history.json holds, so label it with its real span.
+    hours = (parse_ts(history[-1][0]) - parse_ts(history[0][0])).total_seconds() / 3600
+    if hours < 1:
+        span = f"{hours * 60:.0f}m"
+    elif hours < 48:
+        span = f"{hours:.0f}h"
+    else:
+        span = f"{hours / 24:.0f}d"
+    top = band_y + band_h + 14
+    gap = 20
+    panel_w = (width - pad * 2 - gap) / 2
+    body = []
+    for i, (sym, col) in enumerate(series):
+        values = [row[col] for row in history]
+        x0 = pad + i * (panel_w + gap)
+        day, day_color = move(t, change_since(history, col, 24))
+        window, window_color = move(t, (values[-1] - values[0]) / values[0] * 100 if values[0] else 0.0)
         body += [
-            text_el(x0, 56, name, 12, TEXT),
-            text_el(x0 + panel, 56, f"{values[-1]:,.2f}  {arrow} {abs(change):.2f}%", 12,
-                    CYAN if change >= 0 else MAGENTA, anchor="end"),
-            f'<line x1="{x0}" y1="{spark_y + spark_h + 8}" x2="{x0 + panel}" '
-            f'y2="{spark_y + spark_h + 8}" stroke="{GRID}" stroke-width="1" />',
-            spark(values, x0, spark_y, panel - 8, spark_h, color, i),
+            text_el(x0, top + 12, sym, 12, t["muted"]),
+            text_el(x0 + 72, top + 12, price(sym, values[-1]), 13, t["text"], weight="600"),
+            text_el(x0 + panel_w, top + 12, f"24h {day}", 12, day_color, anchor="end"),
+            f'<line x1="{x0}" y1="{top + 88}" x2="{x0 + panel_w}" y2="{top + 88}" stroke="{t["grid"]}" />',
+            spark(values, x0, top + 26, panel_w - 8, 56, window_color, i),
+            text_el(x0, top + 106, f"hi {price(sym, max(values))}  lo {price(sym, min(values))}",
+                    11, t["muted"]),
+            text_el(x0 + panel_w, top + 106, f"{span} {window}", 11, window_color, anchor="end"),
         ]
 
-    hours = (datetime.datetime.strptime(history[-1][0], "%Y-%m-%dT%H:%MZ")
-             - datetime.datetime.strptime(history[0][0], "%Y-%m-%dT%H:%MZ")).total_seconds() / 3600
-    if hours < 1:
-        window = f"{hours * 60:.0f}m"
-    elif hours < 48:
-        window = f"{hours:.0f}h"
-    else:
-        window = f"{hours / 24:.1f}d"
-    body.append(text_el(pad, height - 16,
-                        f"window {window} · {len(history)} samples · % over window",
-                        11, MUTED))
+    live = (f'<circle class="live" cx="{width - pad - 4}" cy="21" r="4" fill="{t["magenta"]}" />'
+            + text_el(width - pad - 16, 26, f"{len(history)} ticks · last {parse_ts(history[-1][0]):%d %b %H:%M}Z",
+                      11, t["muted"], anchor="end"))
 
-    css = ("@keyframes draw{from{stroke-dashoffset:var(--len)}to{stroke-dashoffset:0}}\n"
+    css = (f"@keyframes run{{from{{transform:translateX(0)}}to{{transform:translateX(-{period}px)}}}}\n"
+           ".tape{animation:run 16s linear infinite}\n"
+           "@keyframes draw{from{stroke-dashoffset:var(--len)}to{stroke-dashoffset:0}}\n"
            "@keyframes blip{0%,100%{opacity:.15}50%{opacity:.9}}\n"
+           "@keyframes live{0%,100%{opacity:1}50%{opacity:.25}}\n"
            ".l{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);"
            "animation:draw 1.8s ease-out forwards}\n"
            ".ring{opacity:.15;animation:blip 2.4s ease-in-out infinite 1.8s}\n"
+           ".live{animation:live 1.6s ease-in-out infinite}\n"
            ".l1{animation-delay:.25s}.r1{animation-delay:2.05s}\n"
-           "@media(prefers-reduced-motion:reduce){.l{stroke-dasharray:none;stroke-dashoffset:0;"
-           "animation:none}.ring{animation:none;opacity:.6}}")
-    return frame(width, height, "".join(body), css)
+           "@media(prefers-reduced-motion:reduce){.tape,.live{animation:none}"
+           ".l{stroke-dasharray:none;stroke-dashoffset:0;animation:none}"
+           ".ring{animation:none;opacity:.6}}")
+    defs = (f'<defs><clipPath id="band"><rect x="1" y="{band_y}" width="{width - 2}" '
+            f'height="{band_h}" /></clipPath></defs>')
+    return frame(t, width, height, "desk --watch XAUUSD BTCUSD",
+                 defs + live + band + "".join(body), css)
 
 
 # ------------------------------------------------------------------ entry point
@@ -369,6 +425,12 @@ def write(path, svg):
     print(f"wrote {os.path.relpath(path, ROOT)}")
 
 
+def write_both(name, render):
+    """Render one card in every theme: assets/<name>-dark.svg and assets/<name>-light.svg."""
+    for theme, t in THEMES.items():
+        write(os.path.join(ASSETS, f"{name}-{theme}.svg"), render(t))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--max-age-hours", type=float, default=20.0,
@@ -377,42 +439,41 @@ def main():
     ap.add_argument("--fixture", help="render from a JSON fixture instead of the GitHub API")
     args = ap.parse_args()
 
-    pulse_path = os.path.join(ASSETS, "pulse.svg")
-    langs_path = os.path.join(ASSETS, "langs.svg")
-    tape_path = os.path.join(ASSETS, "tape.svg")
-
     if args.fixture:
         data = json.load(open(args.fixture, encoding="utf-8"))
         weeks = [[(d[0], d[1]) for d in week] for week in data["weeks"]]
-        write(pulse_path, pulse_card(weeks, data["total"]))
-        write(langs_path, langs_card([tuple(x) for x in data["languages"]],
-                                     data["stars"], data["repos"], data["followers"]))
+        write_both("pulse", lambda t: pulse_card(t, weeks, data["total"]))
+        write_both("langs", lambda t: langs_card(t, [tuple(x) for x in data["languages"]],
+                                                 data["stars"], data["repos"], data["followers"]))
         if data.get("history"):
-            write(tape_path, tape_card(data["history"]))
+            write_both("desk", lambda t: desk_card(t, data["history"]))
         return
 
-    # The tape reads prices now.py already collected, so it refreshes every run
+    # The desk reads prices now.py already collected, so it refreshes every run
     # rather than on the daily cadence the API-backed cards use.
     try:
         with open(os.path.join(ROOT, "data", "history.json"), encoding="utf-8") as f:
-            write(tape_path, tape_card(json.load(f)))
+            history = json.load(f)
+        write_both("desk", lambda t: desk_card(t, history))
     except Exception as e:
-        print(f"tape kept (refresh failed: {e})")
+        print(f"desk kept (refresh failed: {e})")
 
-    if not args.force and is_fresh(pulse_path, args.max_age_hours) and is_fresh(langs_path, args.max_age_hours):
+    fresh = all(is_fresh(os.path.join(ASSETS, f"{name}-dark.svg"), args.max_age_hours)
+                for name in ("pulse", "langs"))
+    if not args.force and fresh:
         print("cards are fresh")
         return
 
     try:
         weeks, total = calendar()
-        write(pulse_path, pulse_card(weeks, total))
+        write_both("pulse", lambda t: pulse_card(t, weeks, total))
     except Exception as e:
         print(f"contribution pulse kept (refresh failed: {e})")
 
     try:
         me = profile()
         ranked, stars, repo_count = languages()
-        write(langs_path, langs_card(ranked, stars, repo_count, me.get("followers", 0)))
+        write_both("langs", lambda t: langs_card(t, ranked, stars, repo_count, me.get("followers", 0)))
     except Exception as e:
         print(f"language card kept (refresh failed: {e})")
 
