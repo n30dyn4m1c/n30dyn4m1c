@@ -202,7 +202,7 @@ def frame(t, width, height, title, body, css):
             f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="10" '
             f'fill="none" stroke="{t["grid"]}" />\n'
             f'<line x1="0" y1="40" x2="{width}" y2="40" stroke="{t["grid"]}" />\n'
-            + text_el(20, 26, "$ ", 13, t["cyan"])
+            + text_el(20, 26, "$ ", 13, t["accent"])
             + text_el(36, 26, title, 13, t["text"])
             + f"\n{body}\n</svg>\n")
 
@@ -229,7 +229,7 @@ def pulse_card(t, weeks, total):
     legend_end = width - pad - 34
     legend_start = legend_end - (len(t["heat"]) * step - gap)
     labels = [
-        text_el(pad, 60, f"total {total}", 12, t["cyan"]),
+        text_el(pad, 60, f"total {total}", 12, t["accent"]),
         text_el(width - pad, 60,
                 f"streak {current} · best day {best} · longest {longest}",
                 12, t["text"], anchor="end"),
@@ -318,9 +318,9 @@ def price(symbol, value):
 
 
 def move(t, pct):
-    """Arrow, text and colour for a move: cyan when it rises, magenta when it bleeds."""
+    """Arrow, text and colour for a move: accent when it rises, hot when it bleeds."""
     up = pct >= 0
-    return f"{'▲' if up else '▼'} {abs(pct):.2f}%", t["cyan"] if up else t["magenta"]
+    return f"{'▲' if up else '▼'} {abs(pct):.2f}%", t["accent"] if up else t["hot"]
 
 
 def desk_card(t, history):
@@ -378,7 +378,7 @@ def desk_card(t, history):
             text_el(x0 + panel_w, top + 106, f"{span} {window}", 11, window_color, anchor="end"),
         ]
 
-    live = (f'<circle class="live" cx="{width - pad - 4}" cy="21" r="4" fill="{t["magenta"]}" />'
+    live = (f'<circle class="live" cx="{width - pad - 4}" cy="21" r="4" fill="{t["hot"]}" />'
             + text_el(width - pad - 16, 26, f"{len(history)} ticks · last {parse_ts(history[-1][0]):%d %b %H:%M}Z",
                       11, t["muted"], anchor="end"))
 

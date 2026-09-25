@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="214" viewBox="0 0 800 214" role="img">
-<!-- generated:2026-09-25T14:32:42Z -->
+<!-- generated:2026-09-25T14:51:16Z -->
 <style>
 @keyframes run{from{transform:translateX(0)}to{transform:translateX(-600px)}}
 .tape{animation:run 16s linear infinite}
