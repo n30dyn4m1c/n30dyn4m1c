@@ -118,6 +118,10 @@
 
 <table>
 <tr>
+<td width="90"><code>25 Sep</code></td>
+<td><a href="https://medium.com/@neomalesa/voting-technology-is-a-stack-not-a-product-44abc9fa70fd">Voting Technology Is a Stack, Not a Product</a></td>
+</tr>
+<tr>
 <td width="90"><code>22 Sep</code></td>
 <td><a href="https://medium.com/@neomalesa/the-great-southland-of-the-holy-spirit-origin-context-and-historiographical-evolution-6a81cf482765">The Great Southland of the Holy Spirit: Origin, Context, and Historiographical Evolution</a></td>
 </tr>
@@ -132,10 +136,6 @@
 <tr>
 <td width="90"><code>22 Jul</code></td>
 <td><a href="https://medium.com/@neomalesa/blockchain-initiatives-in-papua-new-guinea-a-research-summary-and-assessment-of-problem-solution-3488ab24623e">A Decade of Blockchain in Papua New Guinea</a></td>
-</tr>
-<tr>
-<td width="90"><code>20 Jul</code></td>
-<td><a href="https://medium.com/@neomalesa/papua-new-guineas-2010s-digital-ambitions-the-tech-promises-that-stalled-and-what-s-changing-in-89b8e292f0a8">Papua New Guinea’s Digital Ambitions: The Promises That Stalled</a></td>
 </tr>
 </table>
 
