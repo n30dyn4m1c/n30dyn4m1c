@@ -1,24 +1,4 @@
 {
-  "reading": {
-    "title": "Isaac Newton: The Last Sorcerer",
-    "author": "Michael White",
-    "year": 1997,
-    "source": "Internet Archive"
-  },
-  "read": [
-    {
-      "title": "The Cult of Done Manifesto",
-      "author": "Bre Pettis and Kio Stark",
-      "year": 2009,
-      "source": "designmanifestos.org"
-    },
-    {
-      "title": "Kiki: Ten Thousand Years in a Lifetime",
-      "author": "Albert Maori Kiki",
-      "year": 1968,
-      "source": "Internet Archive"
-    }
-  ],
   "exploring": [
     { "name": "Claude Opus 5.5", "since": "2026-09-23" },
     { "name": "MT5 Unraided Liquidity Indicator", "since": "2026-09-23" },
@@ -37,55 +17,61 @@
     { "name": "Claude Code Routines", "since": "2026-08-28", "until": "2026-09-23" },
     { "name": "Market Profile MT5 Indicator", "since": "2026-08-28", "until": "2026-09-23" }
   ],
-  "listening": [],
-  "listened": [
-    { "artist": "Greg Howe", "album": "Introspection", "year": 1993 },
-    { "artist": "Polyphia", "album": "Muse", "year": 2014 },
-    { "artist": "Van Halen", "album": "Van Halen", "year": 1978 },
-    { "artist": "CASIOPEA" },
-    { "artist": "Cloudkicker" }
-  ],
-  "audiobooks": [
-    { "title": "The Fear of the Lord (series)", "author": "Derek Prince", "source": "YouTube" },
-    { "title": "Book of Matthew, NKJV Audio Bible", "author": "Main Point Ministries", "source": "YouTube" },
-    { "title": "Double Decade of Open Heavens Papua New Guinea", "author": "Dr Jonathan David" },
-    { "title": "Word Bot", "source": "YouTube" },
-    { "title": "The Fear of the Lord", "author": "Benny Hinn", "source": "YouTube" }
-  ],
-  "watching": [
-    { "name": "Outdoor Boys", "url": "https://www.youtube.com/@OutdoorBoys" },
-    { "name": "Outdoor Tom", "url": "https://www.youtube.com/@outdoortom9675" },
-    { "name": "Ash Maurya", "url": "https://www.youtube.com/@AshMaurya" },
-    { "name": "Predictive History", "url": "https://www.youtube.com/@PredictiveHistory" }
-  ],
-  "series": [
-    { "name": "Mindhunter" },
-    { "name": "Midnight Diner" },
-    { "name": "House of Cards" },
-    { "name": "The Crown" },
-    { "name": "Better Call Saul" },
-    { "name": "Breaking Bad" },
-    { "name": "Ozark" },
-    { "name": "Rick & Morty" },
-    { "name": "Black Mirror" },
-    { "name": "Seinfeld" },
-    { "name": "Lupin" },
-    { "name": "The Diplomat" },
-    { "name": "3 Body Problem" },
-    { "name": "Bet" }
-  ],
-  "movies": [
-    { "name": "Rush", "year": 2013 },
-    { "name": "Inception", "year": 2010 },
-    { "name": "Lord of the Rings Trilogy" },
-    { "name": "Star Wars Trilogies" },
-    { "name": "Kung Fu Hustle", "year": 2004 },
-    { "name": "Kill Bill 1", "year": 2003 },
-    { "name": "Kill Bill 2", "year": 2004 },
-    { "name": "Scarface", "year": 1983 }
-  ],
-  "comedians": [
-    { "name": "Dave Chappelle", "known_for": ["stand-up"] },
-    { "name": "Rowan Atkinson", "known_for": ["The Thin Blue Line", "Blackadder"] }
-  ]
+  "likes": {
+    "books": [
+      { "title": "Isaac Newton: The Last Sorcerer", "author": "Michael White", "year": 1997, "source": "Internet Archive" },
+      { "title": "The Cult of Done Manifesto", "author": "Bre Pettis and Kio Stark", "year": 2009, "source": "designmanifestos.org" },
+      { "title": "Kiki: Ten Thousand Years in a Lifetime", "author": "Albert Maori Kiki", "year": 1968, "source": "Internet Archive" }
+    ],
+    "music": [
+      { "artist": "Greg Howe", "album": "Introspection", "year": 1993 },
+      { "artist": "Polyphia", "album": "Muse", "year": 2014 },
+      { "artist": "Van Halen", "album": "Van Halen", "year": 1978 },
+      { "artist": "CASIOPEA" },
+      { "artist": "Cloudkicker" }
+    ],
+    "audio": [
+      { "title": "The Fear of the Lord (series)", "author": "Derek Prince", "source": "YouTube" },
+      { "title": "Book of Matthew, NKJV Audio Bible", "author": "Main Point Ministries", "source": "YouTube" },
+      { "title": "Double Decade of Open Heavens Papua New Guinea", "author": "Dr Jonathan David" },
+      { "title": "Word Bot", "source": "YouTube" },
+      { "title": "The Fear of the Lord", "author": "Benny Hinn", "source": "YouTube" }
+    ],
+    "youtube": [
+      { "name": "Outdoor Boys", "url": "https://www.youtube.com/@OutdoorBoys" },
+      { "name": "Outdoor Tom", "url": "https://www.youtube.com/@outdoortom9675" },
+      { "name": "Ash Maurya", "url": "https://www.youtube.com/@AshMaurya" },
+      { "name": "Predictive History", "url": "https://www.youtube.com/@PredictiveHistory" }
+    ],
+    "series": [
+      { "name": "Mindhunter" },
+      { "name": "Midnight Diner" },
+      { "name": "House of Cards" },
+      { "name": "The Crown" },
+      { "name": "Better Call Saul" },
+      { "name": "Breaking Bad" },
+      { "name": "Ozark" },
+      { "name": "Rick & Morty" },
+      { "name": "Black Mirror" },
+      { "name": "Seinfeld" },
+      { "name": "Lupin" },
+      { "name": "The Diplomat" },
+      { "name": "3 Body Problem" },
+      { "name": "Bet" }
+    ],
+    "movies": [
+      { "name": "Rush", "year": 2013 },
+      { "name": "Inception", "year": 2010 },
+      { "name": "Lord of the Rings Trilogy" },
+      { "name": "Star Wars Trilogies" },
+      { "name": "Kung Fu Hustle", "year": 2004 },
+      { "name": "Kill Bill 1", "year": 2003 },
+      { "name": "Kill Bill 2", "year": 2004 },
+      { "name": "Scarface", "year": 1983 }
+    ],
+    "comedians": [
+      { "name": "Dave Chappelle", "known_for": ["stand-up"] },
+      { "name": "Rowan Atkinson", "known_for": ["The Thin Blue Line", "Blackadder"] }
+    ]
+  }
 }

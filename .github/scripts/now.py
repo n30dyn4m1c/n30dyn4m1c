@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh the live systems block of README.md (now playing/reading/exploring, weather, markets)."""
+"""Refresh the live systems block of README.md (exploring, weather, markets) and the stuff-i-like block."""
 import datetime
 import html
 import json
@@ -10,6 +10,7 @@ import urllib.parse
 import urllib.request
 
 START, END = "<!-- NOW:START -->", "<!-- NOW:END -->"
+LIKES_START, LIKES_END = "<!-- LIKES:START -->", "<!-- LIKES:END -->"
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 README = os.path.join(ROOT, "README.md")
 NOW_JSON = os.path.join(ROOT, "now.json")
@@ -125,30 +126,6 @@ def markets_row():
         return None
 
 
-def reading_row(cfg):
-    title = html.escape(cfg.get("title", ""))
-    year = f" ({cfg['year']})" if cfg.get("year") else ""
-    label = f"{title}{year}"
-    if cfg.get("url"):
-        label = f'<a href="{html.escape(cfg["url"])}">{label}</a>'
-    author = f" &mdash; {html.escape(cfg['author'])}" if cfg.get("author") else ""
-    source = f" &middot; {html.escape(cfg['source'])}" if cfg.get("source") else ""
-    return row("reading", "currently reading", f"{label}{author}{source}")
-
-
-def read_row(items):
-    if not items:
-        return None
-    entries = []
-    for it in items:
-        title = html.escape(it.get("title", ""))
-        year = f" ({it['year']})" if it.get("year") else ""
-        author = f" &mdash; {html.escape(it['author'])}" if it.get("author") else ""
-        source = f" &middot; {html.escape(it['source'])}" if it.get("source") else ""
-        entries.append(f"{title}{year}{author}{source}")
-    return row("read", "old reading", "<br />".join(entries))
-
-
 def stamp(value):
     return datetime.date.fromisoformat(value).strftime("%d %b")
 
@@ -180,8 +157,20 @@ def explored_row(items):
     return row("explored", "old exploring", " &middot; ".join(chip(it) for it in items))
 
 
+def book(item):
+    """One book entry: title and year, plus author and where it was read when named."""
+    title = html.escape(item.get("title", ""))
+    year = f" ({item['year']})" if item.get("year") else ""
+    label = f"{title}{year}"
+    if item.get("url"):
+        label = f'<a href="{html.escape(item["url"])}">{label}</a>'
+    author = f" &mdash; {html.escape(item['author'])}" if item.get("author") else ""
+    source = f" &middot; {html.escape(item['source'])}" if item.get("source") else ""
+    return f"{label}{author}{source}"
+
+
 def track(item):
-    """One listening/listened entry: artist, plus the album when the record is named."""
+    """One music entry: artist, plus the album when the record is named."""
     artist = html.escape(item.get("artist", ""))
     album = html.escape(item.get("album", ""))
     if not album:
@@ -190,30 +179,12 @@ def track(item):
     return f"{artist} &mdash; {album}{year}"
 
 
-def listening_row(items):
-    if not items:
-        return None
-    return row("listening", "current music", " &middot; ".join(track(it) for it in items))
-
-
-def listened_row(items):
-    if not items:
-        return None
-    return row("listened", "old music", " &middot; ".join(track(it) for it in items))
-
-
 def audiobook(item):
     """One audio books/messages entry: title, plus speaker/ministry and platform when named."""
     title = html.escape(item.get("title", ""))
     author = f" &mdash; {html.escape(item['author'])}" if item.get("author") else ""
     source = f" &middot; {html.escape(item['source'])}" if item.get("source") else ""
     return f"{title}{author}{source}"
-
-
-def audiobooks_row(items):
-    if not items:
-        return None
-    return row("audiobooks", "currently audio books/messages", "<br />".join(audiobook(it) for it in items))
 
 
 def named(item):
@@ -225,24 +196,6 @@ def named(item):
     return name
 
 
-def watching_row(items):
-    if not items:
-        return None
-    return row("watching", "youtube channels", " &middot; ".join(named(it) for it in items))
-
-
-def series_row(items):
-    if not items:
-        return None
-    return row("series", "netflix series", " &middot; ".join(named(it) for it in items))
-
-
-def movies_row(items):
-    if not items:
-        return None
-    return row("movies", "netflix movies", " &middot; ".join(named(it) for it in items))
-
-
 def comedian(item):
     """One comedian entry: a name, plus the shows/specials they are here for."""
     name = html.escape(item.get("name", ""))
@@ -250,27 +203,30 @@ def comedian(item):
     return f"{name} &mdash; {work}" if work else name
 
 
-def comedians_row(items):
-    if not items:
-        return None
-    return row("comedians", "comedians", " &middot; ".join(comedian(it) for it in items))
+# stuff i like: (now.json key, row label, entry formatter, separator)
+LIKES = [
+    ("books", "books i like", book, "<br />"),
+    ("music", "music i like", track, " &middot; "),
+    ("audio", "audio books/messages i like", audiobook, "<br />"),
+    ("youtube", "youtube channels i like", named, " &middot; "),
+    ("series", "netflix series i like", named, " &middot; "),
+    ("movies", "netflix movies i like", named, " &middot; "),
+    ("comedians", "comedians i like", comedian, " &middot; "),
+]
+
+
+def build_likes(cfg):
+    rows = [row(key, label, sep.join(fmt(it) for it in cfg[key]))
+            for key, label, fmt, sep in LIKES if cfg.get(key)]
+    return "\n".join(["<table>", "\n".join(rows), "</table>"])
 
 
 def build_block(cfg, current):
     tz = datetime.timezone(datetime.timedelta(hours=10))
     ts = datetime.datetime.now(tz).strftime("%d %b %Y &middot; %H:%M") + " GMT+10"
     rows = [
-        reading_row(cfg.get("reading", {})),
-        read_row(cfg.get("read", [])),
         exploring_row(cfg.get("exploring", [])),
         explored_row(cfg.get("explored", [])),
-        listening_row(cfg.get("listening", [])),
-        listened_row(cfg.get("listened", [])),
-        audiobooks_row(cfg.get("audiobooks", [])),
-        watching_row(cfg.get("watching", [])),
-        series_row(cfg.get("series", [])),
-        movies_row(cfg.get("movies", [])),
-        comedians_row(cfg.get("comedians", [])),
         weather_row() or old_row(current, "weather") or row("weather", "port moresby", "link down"),
         markets_row() or old_row(current, "markets") or row("markets", "markets", "link down"),
     ]
@@ -284,19 +240,23 @@ def strip_sync(text):
     return re.sub(r"<sub>last sync.*?GMT\+10</sub>", "", text)
 
 
+def splice(text, start, end, block):
+    a = text.index(start) + len(start)
+    b = text.index(end)
+    return text[:a] + "\n\n" + block + "\n\n" + text[b:]
+
+
 def main():
     with open(NOW_JSON, encoding="utf-8") as f:
         cfg = json.load(f)
     with open(README, encoding="utf-8") as f:
         text = f.read()
-    a = text.index(START)
-    b = text.index(END)
-    current = text[a + len(START):b]
-    block = build_block(cfg, current)
-    if strip_sync(current).strip() == strip_sync(block).strip():
+    current = text[text.index(START) + len(START):text.index(END)]
+    new_text = splice(text, START, END, build_block(cfg, current))
+    new_text = splice(new_text, LIKES_START, LIKES_END, build_likes(cfg.get("likes", {})))
+    if strip_sync(text) == strip_sync(new_text):
         print("no changes")
         return
-    new_text = text[: a + len(START)] + "\n\n" + block + "\n\n" + text[b:]
     with open(README, "w", encoding="utf-8") as f:
         f.write(new_text)
     print("README refreshed")

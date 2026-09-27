@@ -62,16 +62,6 @@
 <!-- NOW:START -->
 
 <table>
-<!--row:reading-->
-<tr>
-<td width="130"><code>currently reading</code></td>
-<td>Isaac Newton: The Last Sorcerer (1997) &mdash; Michael White &middot; Internet Archive</td>
-</tr>
-<!--row:read-->
-<tr>
-<td width="130"><code>old reading</code></td>
-<td>The Cult of Done Manifesto (2009) &mdash; Bre Pettis and Kio Stark &middot; designmanifestos.org<br />Kiki: Ten Thousand Years in a Lifetime (1968) &mdash; Albert Maori Kiki &middot; Internet Archive</td>
-</tr>
 <!--row:exploring-->
 <tr>
 <td width="130"><code>currently exploring</code></td>
@@ -82,36 +72,6 @@
 <td width="130"><code>old exploring</code></td>
 <td>DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub> &middot; OpenRouter <sub>28 Aug &ndash; 23 Sep</sub> &middot; GLM 5.3 Flash <sub>28 Aug &ndash; 23 Sep</sub> &middot; TikTok Studio Live <sub>28 Aug &ndash; 23 Sep</sub> &middot; Scrollytelling <sub>28 Aug &ndash; 23 Sep</sub> &middot; Claude Code Routines <sub>28 Aug &ndash; 23 Sep</sub> &middot; Market Profile MT5 Indicator <sub>28 Aug &ndash; 23 Sep</sub></td>
 </tr>
-<!--row:listened-->
-<tr>
-<td width="130"><code>old music</code></td>
-<td>Greg Howe &mdash; Introspection (1993) &middot; Polyphia &mdash; Muse (2014) &middot; Van Halen &mdash; Van Halen (1978) &middot; CASIOPEA &middot; Cloudkicker</td>
-</tr>
-<!--row:audiobooks-->
-<tr>
-<td width="130"><code>currently audio books/messages</code></td>
-<td>The Fear of the Lord (series) &mdash; Derek Prince &middot; YouTube<br />Book of Matthew, NKJV Audio Bible &mdash; Main Point Ministries &middot; YouTube<br />Double Decade of Open Heavens Papua New Guinea &mdash; Dr Jonathan David<br />Word Bot &middot; YouTube<br />The Fear of the Lord &mdash; Benny Hinn &middot; YouTube</td>
-</tr>
-<!--row:watching-->
-<tr>
-<td width="130"><code>youtube channels</code></td>
-<td><a href="https://www.youtube.com/@OutdoorBoys">Outdoor Boys</a> &middot; <a href="https://www.youtube.com/@outdoortom9675">Outdoor Tom</a> &middot; <a href="https://www.youtube.com/@AshMaurya">Ash Maurya</a> &middot; <a href="https://www.youtube.com/@PredictiveHistory">Predictive History</a></td>
-</tr>
-<!--row:series-->
-<tr>
-<td width="130"><code>netflix series</code></td>
-<td>Mindhunter &middot; Midnight Diner &middot; House of Cards &middot; The Crown &middot; Better Call Saul &middot; Breaking Bad &middot; Ozark &middot; Rick &amp; Morty &middot; Black Mirror &middot; Seinfeld &middot; Lupin &middot; The Diplomat &middot; 3 Body Problem &middot; Bet</td>
-</tr>
-<!--row:movies-->
-<tr>
-<td width="130"><code>netflix movies</code></td>
-<td>Rush (2013) &middot; Inception (2010) &middot; Lord of the Rings Trilogy &middot; Star Wars Trilogies &middot; Kung Fu Hustle (2004) &middot; Kill Bill 1 (2003) &middot; Kill Bill 2 (2004) &middot; Scarface (1983)</td>
-</tr>
-<!--row:comedians-->
-<tr>
-<td width="130"><code>comedians</code></td>
-<td>Dave Chappelle &mdash; stand-up &middot; Rowan Atkinson &mdash; The Thin Blue Line, Blackadder</td>
-</tr>
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
@@ -120,11 +80,11 @@
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,984 ▲ 0.98%" src="https://img.shields.io/badge/BTCUSD-%2484%2C984%20%E2%96%B2%200.98%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,973 ▲ 1.04%" src="https://img.shields.io/badge/BTCUSD-%2484%2C973%20%E2%96%B2%201.04%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 27 Sep 2026 &middot; 22:20 GMT+10</sub>
+<sub>last sync &middot; 27 Sep 2026 &middot; 22:25 GMT+10</sub>
 
 <!-- NOW:END -->
 
@@ -132,7 +92,53 @@
 
 ---
 
-### `02 · writing`
+### `02 · stuff i like`
+
+<!-- LIKES:START -->
+
+<table>
+<!--row:books-->
+<tr>
+<td width="130"><code>books i like</code></td>
+<td>Isaac Newton: The Last Sorcerer (1997) &mdash; Michael White &middot; Internet Archive<br />The Cult of Done Manifesto (2009) &mdash; Bre Pettis and Kio Stark &middot; designmanifestos.org<br />Kiki: Ten Thousand Years in a Lifetime (1968) &mdash; Albert Maori Kiki &middot; Internet Archive</td>
+</tr>
+<!--row:music-->
+<tr>
+<td width="130"><code>music i like</code></td>
+<td>Greg Howe &mdash; Introspection (1993) &middot; Polyphia &mdash; Muse (2014) &middot; Van Halen &mdash; Van Halen (1978) &middot; CASIOPEA &middot; Cloudkicker</td>
+</tr>
+<!--row:audio-->
+<tr>
+<td width="130"><code>audio books/messages i like</code></td>
+<td>The Fear of the Lord (series) &mdash; Derek Prince &middot; YouTube<br />Book of Matthew, NKJV Audio Bible &mdash; Main Point Ministries &middot; YouTube<br />Double Decade of Open Heavens Papua New Guinea &mdash; Dr Jonathan David<br />Word Bot &middot; YouTube<br />The Fear of the Lord &mdash; Benny Hinn &middot; YouTube</td>
+</tr>
+<!--row:youtube-->
+<tr>
+<td width="130"><code>youtube channels i like</code></td>
+<td><a href="https://www.youtube.com/@OutdoorBoys">Outdoor Boys</a> &middot; <a href="https://www.youtube.com/@outdoortom9675">Outdoor Tom</a> &middot; <a href="https://www.youtube.com/@AshMaurya">Ash Maurya</a> &middot; <a href="https://www.youtube.com/@PredictiveHistory">Predictive History</a></td>
+</tr>
+<!--row:series-->
+<tr>
+<td width="130"><code>netflix series i like</code></td>
+<td>Mindhunter &middot; Midnight Diner &middot; House of Cards &middot; The Crown &middot; Better Call Saul &middot; Breaking Bad &middot; Ozark &middot; Rick &amp; Morty &middot; Black Mirror &middot; Seinfeld &middot; Lupin &middot; The Diplomat &middot; 3 Body Problem &middot; Bet</td>
+</tr>
+<!--row:movies-->
+<tr>
+<td width="130"><code>netflix movies i like</code></td>
+<td>Rush (2013) &middot; Inception (2010) &middot; Lord of the Rings Trilogy &middot; Star Wars Trilogies &middot; Kung Fu Hustle (2004) &middot; Kill Bill 1 (2003) &middot; Kill Bill 2 (2004) &middot; Scarface (1983)</td>
+</tr>
+<!--row:comedians-->
+<tr>
+<td width="130"><code>comedians i like</code></td>
+<td>Dave Chappelle &mdash; stand-up &middot; Rowan Atkinson &mdash; The Thin Blue Line, Blackadder</td>
+</tr>
+</table>
+
+<!-- LIKES:END -->
+
+---
+
+### `03 · writing`
 
 <!-- MEDIUM:START -->
 
@@ -165,7 +171,7 @@
 
 ---
 
-### `03 · stack`
+### `04 · stack`
 
 <table>
 <tr>
@@ -195,7 +201,7 @@
 
 ---
 
-### `04 · stats`
+### `05 · stats`
 
 <div align="center">
 
@@ -209,7 +215,7 @@
 
 ---
 
-### `05 · status`
+### `06 · status`
 
 [![now](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/now.yml?style=for-the-badge&label=now&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/now.yml)
 [![medium](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/medium.yml?style=for-the-badge&label=medium&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/medium.yml)
