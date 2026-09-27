@@ -19,8 +19,6 @@
   ],
   "likes": {
     "books": [
-      { "title": "Isaac Newton: The Last Sorcerer", "author": "Michael White", "year": 1997, "source": "Internet Archive" },
-      { "title": "The Cult of Done Manifesto", "author": "Bre Pettis and Kio Stark", "year": 2009, "source": "designmanifestos.org" },
       { "title": "Seven Ways of Knowing", "author": "David Lazear", "year": 1991 },
       { "title": "Eight Ways of Knowing", "author": "David Lazear", "year": 1999 },
       { "title": "Grit", "author": "Angela Duckworth", "year": 2016 },

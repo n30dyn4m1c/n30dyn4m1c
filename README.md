@@ -80,11 +80,11 @@
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,980 ▲ 1.07%" src="https://img.shields.io/badge/BTCUSD-%2484%2C980%20%E2%96%B2%201.07%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,983 ▲ 1.12%" src="https://img.shields.io/badge/BTCUSD-%2484%2C983%20%E2%96%B2%201.12%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 27 Sep 2026 &middot; 22:42 GMT+10</sub>
+<sub>last sync &middot; 27 Sep 2026 &middot; 22:43 GMT+10</sub>
 
 <!-- NOW:END -->
 
@@ -100,7 +100,7 @@
 <!--row:books-->
 <tr>
 <td width="130"><code>books</code></td>
-<td>Isaac Newton: The Last Sorcerer (1997) &mdash; Michael White &middot; Internet Archive<br />The Cult of Done Manifesto (2009) &mdash; Bre Pettis and Kio Stark &middot; designmanifestos.org<br />Seven Ways of Knowing (1991) &mdash; David Lazear<br />Eight Ways of Knowing (1999) &mdash; David Lazear<br />Grit (2016) &mdash; Angela Duckworth<br />The 4 Disciplines of Execution (2012) &mdash; Chris McChesney, Sean Covey and Jim Huling<br />Running Lean (2012) &mdash; Ash Maurya<br />Scaling Lean (2016) &mdash; Ash Maurya<br />The Zurich Axioms (1985) &mdash; Max Gunther<br />Trading with Ichimoku: A practical guide to low-risk Ichimoku strategies (2017) &mdash; Karen Péloille<br />Reminiscences of a Stock Operator (1923) &mdash; Edwin Lefèvre</td>
+<td>Seven Ways of Knowing (1991) &mdash; David Lazear<br />Eight Ways of Knowing (1999) &mdash; David Lazear<br />Grit (2016) &mdash; Angela Duckworth<br />The 4 Disciplines of Execution (2012) &mdash; Chris McChesney, Sean Covey and Jim Huling<br />Running Lean (2012) &mdash; Ash Maurya<br />Scaling Lean (2016) &mdash; Ash Maurya<br />The Zurich Axioms (1985) &mdash; Max Gunther<br />Trading with Ichimoku: A practical guide to low-risk Ichimoku strategies (2017) &mdash; Karen Péloille<br />Reminiscences of a Stock Operator (1923) &mdash; Edwin Lefèvre</td>
 </tr>
 <!--row:png_books-->
 <tr>
