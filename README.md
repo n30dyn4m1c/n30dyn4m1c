@@ -75,16 +75,16 @@
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
-<td>24&deg;C &middot; overcast &middot; 74% RH &middot; wind 21 km/h</td>
+<td>25&deg;C &middot; overcast &middot; 74% RH &middot; wind 21 km/h</td>
 </tr>
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,946 ▲ 1.01%" src="https://img.shields.io/badge/BTCUSD-%2484%2C946%20%E2%96%B2%201.01%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,939 ▲ 1.01%" src="https://img.shields.io/badge/BTCUSD-%2484%2C939%20%E2%96%B2%201.01%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 27 Sep 2026 &middot; 22:30 GMT+10</sub>
+<sub>last sync &middot; 27 Sep 2026 &middot; 22:32 GMT+10</sub>
 
 <!-- NOW:END -->
 
@@ -136,6 +136,11 @@
 <tr>
 <td width="130"><code>comedians</code></td>
 <td>Dave Chappelle &mdash; stand-up &middot; Rowan Atkinson &mdash; The Thin Blue Line, Blackadder</td>
+</tr>
+<!--row:websites-->
+<tr>
+<td width="130"><code>websites</code></td>
+<td><a href="https://oceanofpdf.com">oceanofpdf.com</a> &middot; <a href="https://pudding.cool">pudding.cool</a></td>
 </tr>
 </table>
 

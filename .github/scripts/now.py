@@ -213,6 +213,7 @@ LIKES = [
     ("series", "netflix series", named, " &middot; "),
     ("movies", "netflix movies", named, " &middot; "),
     ("comedians", "comedians", comedian, " &middot; "),
+    ("websites", "websites", named, " &middot; "),
 ]
 
 

@@ -74,6 +74,10 @@
     "comedians": [
       { "name": "Dave Chappelle", "known_for": ["stand-up"] },
       { "name": "Rowan Atkinson", "known_for": ["The Thin Blue Line", "Blackadder"] }
+    ],
+    "websites": [
+      { "name": "oceanofpdf.com", "url": "https://oceanofpdf.com" },
+      { "name": "pudding.cool", "url": "https://pudding.cool" }
     ]
   }
 }
