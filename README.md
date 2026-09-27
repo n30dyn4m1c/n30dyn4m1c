@@ -80,11 +80,11 @@
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,939 ▲ 1.01%" src="https://img.shields.io/badge/BTCUSD-%2484%2C939%20%E2%96%B2%201.01%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,948 ▲ 1.02%" src="https://img.shields.io/badge/BTCUSD-%2484%2C948%20%E2%96%B2%201.02%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 27 Sep 2026 &middot; 22:32 GMT+10</sub>
+<sub>last sync &middot; 27 Sep 2026 &middot; 22:33 GMT+10</sub>
 
 <!-- NOW:END -->
 
@@ -111,11 +111,6 @@
 <tr>
 <td width="130"><code>music</code></td>
 <td>Greg Howe &mdash; Introspection (1993) &middot; Polyphia &mdash; Muse (2014) &middot; Van Halen &mdash; Van Halen (1978) &middot; CASIOPEA &middot; Cloudkicker</td>
-</tr>
-<!--row:audio-->
-<tr>
-<td width="130"><code>audio books/messages</code></td>
-<td>The Fear of the Lord (series) &mdash; Derek Prince &middot; YouTube<br />Book of Matthew, NKJV Audio Bible &mdash; Main Point Ministries &middot; YouTube<br />Double Decade of Open Heavens Papua New Guinea &mdash; Dr Jonathan David<br />Word Bot &middot; YouTube<br />The Fear of the Lord &mdash; Benny Hinn &middot; YouTube</td>
 </tr>
 <!--row:youtube-->
 <tr>

@@ -179,14 +179,6 @@ def track(item):
     return f"{artist} &mdash; {album}{year}"
 
 
-def audiobook(item):
-    """One audio books/messages entry: title, plus speaker/ministry and platform when named."""
-    title = html.escape(item.get("title", ""))
-    author = f" &mdash; {html.escape(item['author'])}" if item.get("author") else ""
-    source = f" &middot; {html.escape(item['source'])}" if item.get("source") else ""
-    return f"{title}{author}{source}"
-
-
 def named(item):
     """One channel/series/movie entry: a name plus its year, linked when a url is given."""
     year = f" ({item['year']})" if item.get("year") else ""
@@ -208,7 +200,6 @@ LIKES = [
     ("books", "books", book, "<br />"),
     ("png_books", "books by png authors", book, "<br />"),
     ("music", "music", track, " &middot; "),
-    ("audio", "audio books/messages", audiobook, "<br />"),
     ("youtube", "youtube channels", named, " &middot; "),
     ("series", "netflix series", named, " &middot; "),
     ("movies", "netflix movies", named, " &middot; "),

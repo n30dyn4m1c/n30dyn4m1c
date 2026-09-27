@@ -32,13 +32,6 @@
       { "artist": "CASIOPEA" },
       { "artist": "Cloudkicker" }
     ],
-    "audio": [
-      { "title": "The Fear of the Lord (series)", "author": "Derek Prince", "source": "YouTube" },
-      { "title": "Book of Matthew, NKJV Audio Bible", "author": "Main Point Ministries", "source": "YouTube" },
-      { "title": "Double Decade of Open Heavens Papua New Guinea", "author": "Dr Jonathan David" },
-      { "title": "Word Bot", "source": "YouTube" },
-      { "title": "The Fear of the Lord", "author": "Benny Hinn", "source": "YouTube" }
-    ],
     "youtube": [
       { "name": "Outdoor Boys", "url": "https://www.youtube.com/@OutdoorBoys" },
       { "name": "Outdoor Tom", "url": "https://www.youtube.com/@outdoortom9675" },
