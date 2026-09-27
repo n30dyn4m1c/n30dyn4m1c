@@ -216,6 +216,20 @@ def audiobooks_row(items):
     return row("audiobooks", "currently audio books/messages", "<br />".join(audiobook(it) for it in items))
 
 
+def channel(item):
+    """One YouTube channel entry, linked to the channel when a url is given."""
+    name = html.escape(item.get("name", ""))
+    if item.get("url"):
+        return f'<a href="{html.escape(item["url"])}">{name}</a>'
+    return name
+
+
+def watching_row(items):
+    if not items:
+        return None
+    return row("watching", "youtube channels", " &middot; ".join(channel(it) for it in items))
+
+
 def build_block(cfg, current):
     tz = datetime.timezone(datetime.timedelta(hours=10))
     ts = datetime.datetime.now(tz).strftime("%d %b %Y &middot; %H:%M") + " GMT+10"
@@ -227,6 +241,7 @@ def build_block(cfg, current):
         listening_row(cfg.get("listening", [])),
         listened_row(cfg.get("listened", [])),
         audiobooks_row(cfg.get("audiobooks", [])),
+        watching_row(cfg.get("watching", [])),
         weather_row() or old_row(current, "weather") or row("weather", "port moresby", "link down"),
         markets_row() or old_row(current, "markets") or row("markets", "markets", "link down"),
     ]

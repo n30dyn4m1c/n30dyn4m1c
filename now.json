@@ -51,5 +51,11 @@
     { "title": "Double Decade of Open Heavens Papua New Guinea", "author": "Dr Jonathan David" },
     { "title": "Word Bot", "source": "YouTube" },
     { "title": "The Fear of the Lord", "author": "Benny Hinn", "source": "YouTube" }
+  ],
+  "watching": [
+    { "name": "Outdoor Boys", "url": "https://www.youtube.com/@OutdoorBoys" },
+    { "name": "Outdoor Tom", "url": "https://www.youtube.com/@outdoortom9675" },
+    { "name": "Ash Maurya", "url": "https://www.youtube.com/@AshMaurya" },
+    { "name": "Predictive History", "url": "https://www.youtube.com/@PredictiveHistory" }
   ]
 }

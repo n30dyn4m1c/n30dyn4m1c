@@ -92,19 +92,24 @@
 <td width="130"><code>currently audio books/messages</code></td>
 <td>The Fear of the Lord (series) &mdash; Derek Prince &middot; YouTube<br />Book of Matthew, NKJV Audio Bible &mdash; Main Point Ministries &middot; YouTube<br />Double Decade of Open Heavens Papua New Guinea &mdash; Dr Jonathan David<br />Word Bot &middot; YouTube<br />The Fear of the Lord &mdash; Benny Hinn &middot; YouTube</td>
 </tr>
+<!--row:watching-->
+<tr>
+<td width="130"><code>youtube channels</code></td>
+<td><a href="https://www.youtube.com/@OutdoorBoys">Outdoor Boys</a> &middot; <a href="https://www.youtube.com/@outdoortom9675">Outdoor Tom</a> &middot; <a href="https://www.youtube.com/@AshMaurya">Ash Maurya</a> &middot; <a href="https://www.youtube.com/@PredictiveHistory">Predictive History</a></td>
+</tr>
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
-<td>26&deg;C &middot; clear sky &middot; 73% RH &middot; wind 31 km/h</td>
+<td>24&deg;C &middot; overcast &middot; 74% RH &middot; wind 22 km/h</td>
 </tr>
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,502 ▲ 0.71%" src="https://img.shields.io/badge/BTCUSD-%2484%2C502%20%E2%96%B2%200.71%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,981 ▲ 0.97%" src="https://img.shields.io/badge/BTCUSD-%2484%2C981%20%E2%96%B2%200.97%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 27 Sep 2026 &middot; 16:56 GMT+10</sub>
+<sub>last sync &middot; 27 Sep 2026 &middot; 22:18 GMT+10</sub>
 
 <!-- NOW:END -->
 
