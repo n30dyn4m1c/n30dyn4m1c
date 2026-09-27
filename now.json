@@ -34,11 +34,13 @@
       { "title": "Maiba", "author": "Russell Soaba", "year": 1979 }
     ],
     "music": [
-      { "artist": "Greg Howe", "album": "Introspection", "year": 1993 },
-      { "artist": "Polyphia", "album": "Muse", "year": 2014 },
-      { "artist": "Van Halen", "album": "Van Halen", "year": 1978 },
-      { "artist": "CASIOPEA" },
-      { "artist": "Cloudkicker" }
+      { "artist": "Guthrie Govan" },
+      { "artist": "Polyphia" },
+      { "artist": "Van Halen" },
+      { "artist": "Greg Howe" },
+      { "artist": "Joe Satriani" },
+      { "artist": "Cloudkicker" },
+      { "artist": "CASIOPEA" }
     ],
     "youtube": [
       { "name": "Outdoor Boys", "url": "https://www.youtube.com/@OutdoorBoys" },
