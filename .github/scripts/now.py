@@ -216,9 +216,10 @@ def audiobooks_row(items):
     return row("audiobooks", "currently audio books/messages", "<br />".join(audiobook(it) for it in items))
 
 
-def channel(item):
-    """One YouTube channel entry, linked to the channel when a url is given."""
-    name = html.escape(item.get("name", ""))
+def named(item):
+    """One channel/series/movie entry: a name plus its year, linked when a url is given."""
+    year = f" ({item['year']})" if item.get("year") else ""
+    name = html.escape(item.get("name", "")) + year
     if item.get("url"):
         return f'<a href="{html.escape(item["url"])}">{name}</a>'
     return name
@@ -227,7 +228,32 @@ def channel(item):
 def watching_row(items):
     if not items:
         return None
-    return row("watching", "youtube channels", " &middot; ".join(channel(it) for it in items))
+    return row("watching", "youtube channels", " &middot; ".join(named(it) for it in items))
+
+
+def series_row(items):
+    if not items:
+        return None
+    return row("series", "netflix series", " &middot; ".join(named(it) for it in items))
+
+
+def movies_row(items):
+    if not items:
+        return None
+    return row("movies", "netflix movies", " &middot; ".join(named(it) for it in items))
+
+
+def comedian(item):
+    """One comedian entry: a name, plus the shows/specials they are here for."""
+    name = html.escape(item.get("name", ""))
+    work = ", ".join(html.escape(w) for w in item.get("known_for", []))
+    return f"{name} &mdash; {work}" if work else name
+
+
+def comedians_row(items):
+    if not items:
+        return None
+    return row("comedians", "comedians", " &middot; ".join(comedian(it) for it in items))
 
 
 def build_block(cfg, current):
@@ -242,6 +268,9 @@ def build_block(cfg, current):
         listened_row(cfg.get("listened", [])),
         audiobooks_row(cfg.get("audiobooks", [])),
         watching_row(cfg.get("watching", [])),
+        series_row(cfg.get("series", [])),
+        movies_row(cfg.get("movies", [])),
+        comedians_row(cfg.get("comedians", [])),
         weather_row() or old_row(current, "weather") or row("weather", "port moresby", "link down"),
         markets_row() or old_row(current, "markets") or row("markets", "markets", "link down"),
     ]

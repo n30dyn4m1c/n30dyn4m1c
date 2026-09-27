@@ -57,5 +57,34 @@
     { "name": "Outdoor Tom", "url": "https://www.youtube.com/@outdoortom9675" },
     { "name": "Ash Maurya", "url": "https://www.youtube.com/@AshMaurya" },
     { "name": "Predictive History", "url": "https://www.youtube.com/@PredictiveHistory" }
+  ],
+  "series": [
+    { "name": "Mindhunter" },
+    { "name": "Midnight Diner" },
+    { "name": "House of Cards" },
+    { "name": "The Crown" },
+    { "name": "Better Call Saul" },
+    { "name": "Breaking Bad" },
+    { "name": "Ozark" },
+    { "name": "Rick & Morty" },
+    { "name": "Black Mirror" },
+    { "name": "Seinfeld" },
+    { "name": "Lupin" },
+    { "name": "The Diplomat" },
+    { "name": "3 Body Problem" },
+    { "name": "Bet" }
+  ],
+  "movies": [
+    { "name": "Rush", "year": 2013 },
+    { "name": "Inception", "year": 2010 },
+    { "name": "The Lord of the Rings" },
+    { "name": "Star Wars" },
+    { "name": "Kung Fu Hustle", "year": 2004 },
+    { "name": "Kill Bill" },
+    { "name": "Scarface", "year": 1983 }
+  ],
+  "comedians": [
+    { "name": "Dave Chappelle", "known_for": ["stand-up"] },
+    { "name": "Rowan Atkinson", "known_for": ["The Thin Blue Line", "Blackadder"] }
   ]
 }

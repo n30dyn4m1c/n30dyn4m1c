@@ -97,6 +97,21 @@
 <td width="130"><code>youtube channels</code></td>
 <td><a href="https://www.youtube.com/@OutdoorBoys">Outdoor Boys</a> &middot; <a href="https://www.youtube.com/@outdoortom9675">Outdoor Tom</a> &middot; <a href="https://www.youtube.com/@AshMaurya">Ash Maurya</a> &middot; <a href="https://www.youtube.com/@PredictiveHistory">Predictive History</a></td>
 </tr>
+<!--row:series-->
+<tr>
+<td width="130"><code>netflix series</code></td>
+<td>Mindhunter &middot; Midnight Diner &middot; House of Cards &middot; The Crown &middot; Better Call Saul &middot; Breaking Bad &middot; Ozark &middot; Rick &amp; Morty &middot; Black Mirror &middot; Seinfeld &middot; Lupin &middot; The Diplomat &middot; 3 Body Problem &middot; Bet</td>
+</tr>
+<!--row:movies-->
+<tr>
+<td width="130"><code>netflix movies</code></td>
+<td>Rush (2013) &middot; Inception (2010) &middot; The Lord of the Rings &middot; Star Wars &middot; Kung Fu Hustle (2004) &middot; Kill Bill &middot; Scarface (1983)</td>
+</tr>
+<!--row:comedians-->
+<tr>
+<td width="130"><code>comedians</code></td>
+<td>Dave Chappelle &mdash; stand-up &middot; Rowan Atkinson &mdash; The Thin Blue Line, Blackadder</td>
+</tr>
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
