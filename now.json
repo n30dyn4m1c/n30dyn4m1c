@@ -77,8 +77,8 @@
   "movies": [
     { "name": "Rush", "year": 2013 },
     { "name": "Inception", "year": 2010 },
-    { "name": "The Lord of the Rings" },
-    { "name": "Star Wars" },
+    { "name": "Lord of the Rings Trilogy" },
+    { "name": "Star Wars Trilogies" },
     { "name": "Kung Fu Hustle", "year": 2004 },
     { "name": "Kill Bill" },
     { "name": "Scarface", "year": 1983 }
