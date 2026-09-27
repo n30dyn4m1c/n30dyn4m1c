@@ -205,13 +205,13 @@ def comedian(item):
 
 # stuff i like: (now.json key, row label, entry formatter, separator)
 LIKES = [
-    ("books", "books i like", book, "<br />"),
-    ("music", "music i like", track, " &middot; "),
-    ("audio", "audio books/messages i like", audiobook, "<br />"),
-    ("youtube", "youtube channels i like", named, " &middot; "),
-    ("series", "netflix series i like", named, " &middot; "),
-    ("movies", "netflix movies i like", named, " &middot; "),
-    ("comedians", "comedians i like", comedian, " &middot; "),
+    ("books", "books", book, "<br />"),
+    ("music", "music", track, " &middot; "),
+    ("audio", "audio books/messages", audiobook, "<br />"),
+    ("youtube", "youtube channels", named, " &middot; "),
+    ("series", "netflix series", named, " &middot; "),
+    ("movies", "netflix movies", named, " &middot; "),
+    ("comedians", "comedians", comedian, " &middot; "),
 ]
 
 
