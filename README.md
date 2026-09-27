@@ -84,7 +84,7 @@
 </tr>
 </table>
 
-<sub>last sync &middot; 27 Sep 2026 &middot; 22:27 GMT+10</sub>
+<sub>last sync &middot; 27 Sep 2026 &middot; 22:30 GMT+10</sub>
 
 <!-- NOW:END -->
 
@@ -100,7 +100,12 @@
 <!--row:books-->
 <tr>
 <td width="130"><code>books</code></td>
-<td>Isaac Newton: The Last Sorcerer (1997) &mdash; Michael White &middot; Internet Archive<br />The Cult of Done Manifesto (2009) &mdash; Bre Pettis and Kio Stark &middot; designmanifestos.org<br />Kiki: Ten Thousand Years in a Lifetime (1968) &mdash; Albert Maori Kiki &middot; Internet Archive</td>
+<td>Isaac Newton: The Last Sorcerer (1997) &mdash; Michael White &middot; Internet Archive<br />The Cult of Done Manifesto (2009) &mdash; Bre Pettis and Kio Stark &middot; designmanifestos.org</td>
+</tr>
+<!--row:png_books-->
+<tr>
+<td width="130"><code>books by png authors</code></td>
+<td>Kiki: Ten Thousand Years in a Lifetime (1968) &mdash; Albert Maori Kiki &middot; Internet Archive</td>
 </tr>
 <!--row:music-->
 <tr>

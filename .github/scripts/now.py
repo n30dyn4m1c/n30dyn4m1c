@@ -206,6 +206,7 @@ def comedian(item):
 # stuff i like: (now.json key, row label, entry formatter, separator)
 LIKES = [
     ("books", "books", book, "<br />"),
+    ("png_books", "books by png authors", book, "<br />"),
     ("music", "music", track, " &middot; "),
     ("audio", "audio books/messages", audiobook, "<br />"),
     ("youtube", "youtube channels", named, " &middot; "),

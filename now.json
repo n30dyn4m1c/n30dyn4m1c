@@ -20,7 +20,9 @@
   "likes": {
     "books": [
       { "title": "Isaac Newton: The Last Sorcerer", "author": "Michael White", "year": 1997, "source": "Internet Archive" },
-      { "title": "The Cult of Done Manifesto", "author": "Bre Pettis and Kio Stark", "year": 2009, "source": "designmanifestos.org" },
+      { "title": "The Cult of Done Manifesto", "author": "Bre Pettis and Kio Stark", "year": 2009, "source": "designmanifestos.org" }
+    ],
+    "png_books": [
       { "title": "Kiki: Ten Thousand Years in a Lifetime", "author": "Albert Maori Kiki", "year": 1968, "source": "Internet Archive" }
     ],
     "music": [
