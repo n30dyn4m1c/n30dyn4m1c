@@ -32,7 +32,8 @@
       { "title": "Reminiscences of a Stock Operator", "author": "Edwin Lefèvre", "year": 1923 }
     ],
     "png_books": [
-      { "title": "Kiki: Ten Thousand Years in a Lifetime", "author": "Albert Maori Kiki", "year": 1968, "source": "Internet Archive" }
+      { "title": "Kiki: Ten Thousand Years in a Lifetime", "author": "Albert Maori Kiki", "year": 1968 },
+      { "title": "Maiba", "author": "Russell Soaba", "year": 1979 }
     ],
     "music": [
       { "artist": "Greg Howe", "album": "Introspection", "year": 1993 },

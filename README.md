@@ -84,7 +84,7 @@
 </tr>
 </table>
 
-<sub>last sync &middot; 27 Sep 2026 &middot; 22:41 GMT+10</sub>
+<sub>last sync &middot; 27 Sep 2026 &middot; 22:42 GMT+10</sub>
 
 <!-- NOW:END -->
 
@@ -105,7 +105,7 @@
 <!--row:png_books-->
 <tr>
 <td width="130"><code>books by png authors</code></td>
-<td>Kiki: Ten Thousand Years in a Lifetime (1968) &mdash; Albert Maori Kiki &middot; Internet Archive</td>
+<td>Kiki: Ten Thousand Years in a Lifetime (1968) &mdash; Albert Maori Kiki<br />Maiba (1979) &mdash; Russell Soaba</td>
 </tr>
 <!--row:music-->
 <tr>
