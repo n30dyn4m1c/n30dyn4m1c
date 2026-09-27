@@ -105,7 +105,7 @@
 <!--row:movies-->
 <tr>
 <td width="130"><code>netflix movies</code></td>
-<td>Rush (2013) &middot; Inception (2010) &middot; Lord of the Rings Trilogy &middot; Star Wars Trilogies &middot; Kung Fu Hustle (2004) &middot; Kill Bill &middot; Scarface (1983)</td>
+<td>Rush (2013) &middot; Inception (2010) &middot; Lord of the Rings Trilogy &middot; Star Wars Trilogies &middot; Kung Fu Hustle (2004) &middot; Kill Bill 1 (2003) &middot; Kill Bill 2 (2004) &middot; Scarface (1983)</td>
 </tr>
 <!--row:comedians-->
 <tr>
@@ -120,7 +120,7 @@
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,988 ▲ 0.97%" src="https://img.shields.io/badge/BTCUSD-%2484%2C988%20%E2%96%B2%200.97%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $4,285.29 ▲ 0.52%" src="https://img.shields.io/badge/XAUUSD-%244%2C285.29%20%E2%96%B2%200.52%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $84,984 ▲ 0.98%" src="https://img.shields.io/badge/BTCUSD-%2484%2C984%20%E2%96%B2%200.98%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 

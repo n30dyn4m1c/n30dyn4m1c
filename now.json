@@ -80,7 +80,8 @@
     { "name": "Lord of the Rings Trilogy" },
     { "name": "Star Wars Trilogies" },
     { "name": "Kung Fu Hustle", "year": 2004 },
-    { "name": "Kill Bill" },
+    { "name": "Kill Bill 1", "year": 2003 },
+    { "name": "Kill Bill 2", "year": 2004 },
     { "name": "Scarface", "year": 1983 }
   ],
   "comedians": [
