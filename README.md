@@ -100,7 +100,7 @@
 <!--row:books-->
 <tr>
 <td width="130"><code>books</code></td>
-<td>Seven Ways of Knowing (1991) &mdash; David Lazear<br />Eight Ways of Knowing (1999) &mdash; David Lazear<br />Grit (2016) &mdash; Angela Duckworth<br />The 4 Disciplines of Execution (2012) &mdash; Chris McChesney, Sean Covey and Jim Huling<br />Running Lean (2012) &mdash; Ash Maurya<br />Scaling Lean (2016) &mdash; Ash Maurya<br />The Zurich Axioms (1985) &mdash; Max Gunther<br />Trading with Ichimoku: A practical guide to low-risk Ichimoku strategies (2017) &mdash; Karen Péloille<br />Reminiscences of a Stock Operator (1923) &mdash; Edwin Lefèvre</td>
+<td>Seven Ways of Knowing (1991) &mdash; David Lazear<br />Eight Ways of Knowing (1999) &mdash; David Lazear<br />Grit (2016) &mdash; Angela Duckworth<br />The 4 Disciplines of Execution (2012) &mdash; Chris McChesney, Sean Covey and Jim Huling<br />Running Lean (2012) &mdash; Ash Maurya<br />Scaling Lean (2016) &mdash; Ash Maurya<br />The Zurich Axioms (1985) &mdash; Max Gunther<br />Trading with Ichimoku: A practical guide to low-risk Ichimoku strategies (2017) &mdash; Karen Péloille<br />Reminiscences of a Stock Operator (1923) &mdash; Edwin Lefèvre<br />Zero to One (2014) &mdash; Peter Thiel<br />Games People Play (1964) &mdash; Eric Berne<br />The 7 Habits of Highly Effective People (1989) &mdash; Stephen R. Covey<br />100 Ways to Improve Your Writing (1985) &mdash; Gary Provost<br />Feeling Is the Secret (1944) &mdash; Neville Goddard</td>
 </tr>
 <!--row:png_books-->
 <tr>
