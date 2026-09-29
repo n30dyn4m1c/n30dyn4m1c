@@ -75,16 +75,16 @@
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
-<td>28&deg;C &middot; partly cloudy &middot; 62% RH &middot; wind 17 km/h</td>
+<td>26&deg;C &middot; clear sky &middot; 74% RH &middot; wind 29 km/h</td>
 </tr>
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $4,124.50 ▼ 3.58%" src="https://img.shields.io/badge/XAUUSD-%244%2C124.50%20%E2%96%BC%203.58%25-FF00CC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $83,511 ▼ 1.12%" src="https://img.shields.io/badge/BTCUSD-%2483%2C511%20%E2%96%BC%201.12%25-FF00CC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $4,126.67 ▼ 0.22%" src="https://img.shields.io/badge/XAUUSD-%244%2C126.67%20%E2%96%BC%200.22%25-FF00CC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $83,173 ▼ 0.38%" src="https://img.shields.io/badge/BTCUSD-%2483%2C173%20%E2%96%BC%200.38%25-FF00CC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 29 Sep 2026 &middot; 09:53 GMT+10</sub>
+<sub>last sync &middot; 29 Sep 2026 &middot; 15:00 GMT+10</sub>
 
 <!-- NOW:END -->
 
@@ -100,7 +100,7 @@
 <!--row:books-->
 <tr>
 <td width="130"><code>books</code></td>
-<td>Seven Ways of Knowing (1991) &mdash; David Lazear<br />Eight Ways of Knowing (1999) &mdash; David Lazear<br />Grit (2016) &mdash; Angela Duckworth<br />The 4 Disciplines of Execution (2012) &mdash; Chris McChesney, Sean Covey and Jim Huling<br />Running Lean (2012) &mdash; Ash Maurya<br />Scaling Lean (2016) &mdash; Ash Maurya<br />The Zurich Axioms (1985) &mdash; Max Gunther<br />Trading with Ichimoku: A practical guide to low-risk Ichimoku strategies (2017) &mdash; Karen Péloille<br />Reminiscences of a Stock Operator (1923) &mdash; Edwin Lefèvre<br />Zero to One (2014) &mdash; Peter Thiel<br />Games People Play (1964) &mdash; Eric Berne<br />The 7 Habits of Highly Effective People (1989) &mdash; Stephen R. Covey<br />100 Ways to Improve Your Writing (1985) &mdash; Gary Provost<br />Feeling Is the Secret (1944) &mdash; Neville Goddard</td>
+<td>Seven Ways of Knowing (1991) &mdash; David Lazear<br />Eight Ways of Knowing (1999) &mdash; David Lazear<br />Grit (2016) &mdash; Angela Duckworth<br />The 4 Disciplines of Execution (2012) &mdash; Chris McChesney, Sean Covey and Jim Huling<br />Running Lean (2012) &mdash; Ash Maurya<br />Scaling Lean (2016) &mdash; Ash Maurya<br />The Zurich Axioms (1985) &mdash; Max Gunther<br />Trading with Ichimoku: A practical guide to low-risk Ichimoku strategies (2017) &mdash; Karen Péloille<br />Reminiscences of a Stock Operator (1923) &mdash; Edwin Lefèvre</td>
 </tr>
 <!--row:png_books-->
 <tr>
