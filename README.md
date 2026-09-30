@@ -75,7 +75,7 @@
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
-<td>25&deg;C &middot; clear sky &middot; 76% RH &middot; wind 8 km/h</td>
+<td>27&deg;C &middot; partly cloudy &middot; 73% RH &middot; wind 22 km/h</td>
 </tr>
 <!--row:markets-->
 <tr>
@@ -84,7 +84,7 @@
 </tr>
 </table>
 
-<sub>last sync &middot; 30 Sep 2026 &middot; 07:21 GMT+10</sub>
+<sub>last sync &middot; 30 Sep 2026 &middot; 10:41 GMT+10</sub>
 
 <!-- NOW:END -->
 
