@@ -125,7 +125,7 @@
 <!--row:movies-->
 <tr>
 <td width="130"><code>netflix movies</code></td>
-<td>Rush (2013) &middot; Inception (2010) &middot; Lord of the Rings Trilogy &middot; Star Wars Trilogies &middot; Kung Fu Hustle (2004) &middot; Kill Bill 1 (2003) &middot; Kill Bill 2 (2004) &middot; Scarface (1983)</td>
+<td>Rush (2013) &middot; Inception (2010) &middot; Lord of the Rings Trilogy &middot; Star Wars Trilogies &middot; Kung Fu Hustle (2004) &middot; Kill Bill 1 (2003) &middot; Kill Bill 2 (2004) &middot; Scarface (1983) &middot; Oppenheimer (2023)</td>
 </tr>
 <!--row:comedians-->
 <tr>

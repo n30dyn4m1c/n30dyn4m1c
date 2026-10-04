@@ -72,7 +72,8 @@
       { "name": "Kung Fu Hustle", "year": 2004 },
       { "name": "Kill Bill 1", "year": 2003 },
       { "name": "Kill Bill 2", "year": 2004 },
-      { "name": "Scarface", "year": 1983 }
+      { "name": "Scarface", "year": 1983 },
+      { "name": "Oppenheimer", "year": 2023 }
     ],
     "comedians": [
       { "name": "Dave Chappelle", "known_for": ["stand-up"] },
