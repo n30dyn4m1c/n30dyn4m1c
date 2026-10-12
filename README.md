@@ -65,12 +65,12 @@
 <!--row:exploring-->
 <tr>
 <td width="130"><code>currently exploring</code></td>
-<td>Claude Opus 5.5 <sub>since 23 Sep</sub> &middot; MT5 Unraided Liquidity Indicator <sub>since 23 Sep</sub> &middot; Pen and Paper Journaling <sub>since 23 Sep</sub></td>
+<td>Sonnet 5.5 <sub>since 12 Oct</sub> &middot; Claude Projects <sub>since 12 Oct</sub> &middot; Speech Feedback Loops <sub>since 12 Oct</sub> &middot; Grok Voice Mode <sub>since 12 Oct</sub></td>
 </tr>
 <!--row:explored-->
 <tr>
 <td width="130"><code>old exploring</code></td>
-<td>DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub> &middot; OpenRouter <sub>28 Aug &ndash; 23 Sep</sub> &middot; GLM 5.3 Flash <sub>28 Aug &ndash; 23 Sep</sub> &middot; TikTok Studio Live <sub>28 Aug &ndash; 23 Sep</sub> &middot; Scrollytelling <sub>28 Aug &ndash; 23 Sep</sub> &middot; Claude Code Routines <sub>28 Aug &ndash; 23 Sep</sub> &middot; Market Profile MT5 Indicator <sub>28 Aug &ndash; 23 Sep</sub></td>
+<td>Claude Opus 5.5 <sub>23 Sep &ndash; 12 Oct</sub> &middot; MT5 Unraided Liquidity Indicator <sub>23 Sep &ndash; 12 Oct</sub> &middot; Pen and Paper Journaling <sub>23 Sep &ndash; 12 Oct</sub> &middot; DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub> &middot; OpenRouter <sub>28 Aug &ndash; 23 Sep</sub> &middot; GLM 5.3 Flash <sub>28 Aug &ndash; 23 Sep</sub> &middot; TikTok Studio Live <sub>28 Aug &ndash; 23 Sep</sub> &middot; Scrollytelling <sub>28 Aug &ndash; 23 Sep</sub> &middot; Claude Code Routines <sub>28 Aug &ndash; 23 Sep</sub> &middot; Market Profile MT5 Indicator <sub>28 Aug &ndash; 23 Sep</sub></td>
 </tr>
 <!--row:weather-->
 <tr>
