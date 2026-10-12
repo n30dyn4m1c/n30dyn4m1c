@@ -2,7 +2,8 @@
   "exploring": [
     { "name": "Sonnet 5.5", "since": "2026-10-12" },
     { "name": "Claude Projects", "since": "2026-10-12" },
-    { "name": "Speech Feedback Loops", "since": "2026-10-12" }
+    { "name": "Speech Feedback Loops", "since": "2026-10-12" },
+    { "name": "Grok Voice Mode", "since": "2026-10-12" }
   ],
   "explored": [
     { "name": "Claude Opus 5.5", "since": "2026-09-23", "until": "2026-10-12" },

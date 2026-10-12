@@ -65,7 +65,7 @@
 <!--row:exploring-->
 <tr>
 <td width="130"><code>currently exploring</code></td>
-<td>Sonnet 5.5 <sub>since 12 Oct</sub> &middot; Claude Projects <sub>since 12 Oct</sub> &middot; Speech Feedback Loops <sub>since 12 Oct</sub></td>
+<td>Sonnet 5.5 <sub>since 12 Oct</sub> &middot; Claude Projects <sub>since 12 Oct</sub> &middot; Speech Feedback Loops <sub>since 12 Oct</sub> &middot; Grok Voice Mode <sub>since 12 Oct</sub></td>
 </tr>
 <!--row:explored-->
 <tr>
