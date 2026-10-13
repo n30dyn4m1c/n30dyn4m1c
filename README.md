@@ -149,6 +149,10 @@
 
 <table>
 <tr>
+<td width="90"><code>13 Oct</code></td>
+<td><a href="https://medium.com/@neomalesa/speaking-and-hearing-mathematics-the-missing-channels-in-advanced-maths-2cab5c777651">Speaking and Hearing Mathematics: The Missing Channels in Advanced Maths</a></td>
+</tr>
+<tr>
 <td width="90"><code>25 Sep</code></td>
 <td><a href="https://medium.com/@neomalesa/voting-technology-is-a-stack-not-a-product-44abc9fa70fd">Voting Technology Is a Stack, Not a Product</a></td>
 </tr>
@@ -163,10 +167,6 @@
 <tr>
 <td width="90"><code>29 Jul</code></td>
 <td><a href="https://medium.com/@neomalesa/a-short-history-of-ict-regulation-in-papua-new-guinea-85e68a25d49d">A Short History of ICT Regulation in Papua New Guinea</a></td>
-</tr>
-<tr>
-<td width="90"><code>22 Jul</code></td>
-<td><a href="https://medium.com/@neomalesa/blockchain-initiatives-in-papua-new-guinea-a-research-summary-and-assessment-of-problem-solution-3488ab24623e">A Decade of Blockchain in Papua New Guinea</a></td>
 </tr>
 </table>
 
