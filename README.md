@@ -65,26 +65,26 @@
 <!--row:exploring-->
 <tr>
 <td width="130"><code>currently exploring</code></td>
-<td>Sonnet 5.5 <sub>since 12 Oct</sub> &middot; Claude Projects <sub>since 12 Oct</sub> &middot; Speech Feedback Loops <sub>since 12 Oct</sub> &middot; Grok Voice Mode <sub>since 12 Oct</sub></td>
+<td>DeepSeek V4.1 Flash 1017 <sub>since 18 Oct</sub> &middot; Claude in Google Docs <sub>since 18 Oct</sub> &middot; Opus 5.5 optimizing PC <sub>since 18 Oct</sub></td>
 </tr>
 <!--row:explored-->
 <tr>
 <td width="130"><code>old exploring</code></td>
-<td>Claude Opus 5.5 <sub>23 Sep &ndash; 12 Oct</sub> &middot; MT5 Unraided Liquidity Indicator <sub>23 Sep &ndash; 12 Oct</sub> &middot; Pen and Paper Journaling <sub>23 Sep &ndash; 12 Oct</sub> &middot; DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub> &middot; OpenRouter <sub>28 Aug &ndash; 23 Sep</sub> &middot; GLM 5.3 Flash <sub>28 Aug &ndash; 23 Sep</sub> &middot; TikTok Studio Live <sub>28 Aug &ndash; 23 Sep</sub> &middot; Scrollytelling <sub>28 Aug &ndash; 23 Sep</sub> &middot; Claude Code Routines <sub>28 Aug &ndash; 23 Sep</sub> &middot; Market Profile MT5 Indicator <sub>28 Aug &ndash; 23 Sep</sub></td>
+<td>Sonnet 5.5 <sub>12 Oct &ndash; 18 Oct</sub> &middot; Claude Projects <sub>12 Oct &ndash; 18 Oct</sub> &middot; Speech Feedback Loops <sub>12 Oct &ndash; 18 Oct</sub> &middot; Grok Voice Mode <sub>12 Oct &ndash; 18 Oct</sub> &middot; Claude Opus 5.5 <sub>23 Sep &ndash; 12 Oct</sub> &middot; MT5 Unraided Liquidity Indicator <sub>23 Sep &ndash; 12 Oct</sub> &middot; Pen and Paper Journaling <sub>23 Sep &ndash; 12 Oct</sub> &middot; DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub> &middot; OpenRouter <sub>28 Aug &ndash; 23 Sep</sub> &middot; GLM 5.3 Flash <sub>28 Aug &ndash; 23 Sep</sub> &middot; TikTok Studio Live <sub>28 Aug &ndash; 23 Sep</sub> &middot; Scrollytelling <sub>28 Aug &ndash; 23 Sep</sub> &middot; Claude Code Routines <sub>28 Aug &ndash; 23 Sep</sub> &middot; Market Profile MT5 Indicator <sub>28 Aug &ndash; 23 Sep</sub></td>
 </tr>
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
-<td>25&deg;C &middot; clear sky &middot; 73% RH &middot; wind 15 km/h</td>
+<td>24&deg;C &middot; partly cloudy &middot; 76% RH &middot; wind 14 km/h</td>
 </tr>
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $4,165.58 ▲ 0.40%" src="https://img.shields.io/badge/XAUUSD-%244%2C165.58%20%E2%96%B2%200.40%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $81,870 ▲ 0.51%" src="https://img.shields.io/badge/BTCUSD-%2481%2C870%20%E2%96%B2%200.51%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $4,165.58 ▲ 0.40%" src="https://img.shields.io/badge/XAUUSD-%244%2C165.58%20%E2%96%B2%200.40%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $81,016 ▼ 0.58%" src="https://img.shields.io/badge/BTCUSD-%2481%2C016%20%E2%96%BC%200.58%25-FF00CC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 18 Oct 2026 &middot; 23:05 GMT+10</sub>
+<sub>last sync &middot; 19 Oct 2026 &middot; 00:56 GMT+10</sub>
 
 <!-- NOW:END -->
 
