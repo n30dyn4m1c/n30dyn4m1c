@@ -65,7 +65,7 @@
 <!--row:exploring-->
 <tr>
 <td width="130"><code>currently exploring</code></td>
-<td>DeepSeek V4.1 Flash 1017 <sub>since 18 Oct</sub> &middot; Claude in Google Docs <sub>since 18 Oct</sub> &middot; Opus 5.5 optimizing PC <sub>since 18 Oct</sub></td>
+<td>DeepSeek V4.1 Flash 1017 <sub>since 18 Oct</sub> &middot; Claude in Google Docs <sub>since 18 Oct</sub> &middot; Opus 5.5 optimizing PC <sub>since 18 Oct</sub> &middot; Qwen uncensored local models: JOSIEFIED-Qwen3-8B, Huihui-Qwen3.5-9B <sub>since 21 Oct</sub></td>
 </tr>
 <!--row:explored-->
 <tr>
