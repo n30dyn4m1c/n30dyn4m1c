@@ -2,7 +2,8 @@
   "exploring": [
     { "name": "DeepSeek V4.1 Flash 1017", "since": "2026-10-18" },
     { "name": "Claude in Google Docs", "since": "2026-10-18" },
-    { "name": "Opus 5.5 optimizing PC", "since": "2026-10-18" }
+    { "name": "Opus 5.5 optimizing PC", "since": "2026-10-18" },
+    { "name": "Qwen uncensored local models: JOSIEFIED-Qwen3-8B, Huihui-Qwen3.5-9B", "since": "2026-10-21" }
   ],
   "explored": [
     { "name": "Sonnet 5.5", "since": "2026-10-12", "until": "2026-10-18" },
