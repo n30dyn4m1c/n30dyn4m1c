@@ -4,7 +4,8 @@
     { "name": "Claude in Google Docs", "since": "2026-10-18" },
     { "name": "Opus 5.5 optimizing PC", "since": "2026-10-18" },
     { "name": "Qwen uncensored local models: JOSIEFIED-Qwen3-8B, Huihui-Qwen3.5-9B", "since": "2026-10-21" },
-    { "name": "OpenCode free models: DeepSeek v4.1-Flash-Free and GLM 5.3-Flash-Free", "since": "2026-10-21" }
+    { "name": "OpenCode free models: DeepSeek v4.1-Flash-Free and GLM 5.3-Flash-Free", "since": "2026-10-21" },
+    { "name": "Liquid AI LFM3", "since": "2026-10-29" }
   ],
   "explored": [
     { "name": "Sonnet 5.5", "since": "2026-10-12", "until": "2026-10-18" },
