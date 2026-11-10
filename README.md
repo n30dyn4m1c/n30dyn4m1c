@@ -65,12 +65,12 @@
 <!--row:exploring-->
 <tr>
 <td width="130"><code>currently exploring</code></td>
-<td>DeepSeek V4.1 Flash 1017 <sub>since 18 Oct</sub> &middot; Claude in Google Docs <sub>since 18 Oct</sub> &middot; Opus 5.5 optimizing PC <sub>since 18 Oct</sub> &middot; Qwen uncensored local models: JOSIEFIED-Qwen3-8B, Huihui-Qwen3.5-9B <sub>since 21 Oct</sub> &middot; OpenCode free models: DeepSeek v4.1-Flash-Free and GLM 5.3-Flash-Free <sub>since 21 Oct</sub> &middot; Liquid AI LFM3 <sub>since 29 Oct</sub></td>
+<td>Fable 5.2 <sub>since 10 Nov</sub></td>
 </tr>
 <!--row:explored-->
 <tr>
 <td width="130"><code>old exploring</code></td>
-<td>Sonnet 5.5 <sub>12 Oct &ndash; 18 Oct</sub> &middot; Claude Projects <sub>12 Oct &ndash; 18 Oct</sub> &middot; Speech Feedback Loops <sub>12 Oct &ndash; 18 Oct</sub> &middot; Grok Voice Mode <sub>12 Oct &ndash; 18 Oct</sub> &middot; Claude Opus 5.5 <sub>23 Sep &ndash; 12 Oct</sub> &middot; MT5 Unraided Liquidity Indicator <sub>23 Sep &ndash; 12 Oct</sub> &middot; Pen and Paper Journaling <sub>23 Sep &ndash; 12 Oct</sub> &middot; DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub> &middot; OpenRouter <sub>28 Aug &ndash; 23 Sep</sub> &middot; GLM 5.3 Flash <sub>28 Aug &ndash; 23 Sep</sub> &middot; TikTok Studio Live <sub>28 Aug &ndash; 23 Sep</sub> &middot; Scrollytelling <sub>28 Aug &ndash; 23 Sep</sub> &middot; Claude Code Routines <sub>28 Aug &ndash; 23 Sep</sub> &middot; Market Profile MT5 Indicator <sub>28 Aug &ndash; 23 Sep</sub></td>
+<td>DeepSeek V4.1 Flash 1017 <sub>18 Oct &ndash; 10 Nov</sub> &middot; Claude in Google Docs <sub>18 Oct &ndash; 10 Nov</sub> &middot; Opus 5.5 optimizing PC <sub>18 Oct &ndash; 10 Nov</sub> &middot; Qwen uncensored local models: JOSIEFIED-Qwen3-8B, Huihui-Qwen3.5-9B <sub>21 Oct &ndash; 10 Nov</sub> &middot; OpenCode free models: DeepSeek v4.1-Flash-Free and GLM 5.3-Flash-Free <sub>21 Oct &ndash; 10 Nov</sub> &middot; Liquid AI LFM3 <sub>29 Oct &ndash; 10 Nov</sub> &middot; Sonnet 5.5 <sub>12 Oct &ndash; 18 Oct</sub> &middot; Claude Projects <sub>12 Oct &ndash; 18 Oct</sub> &middot; Speech Feedback Loops <sub>12 Oct &ndash; 18 Oct</sub> &middot; Grok Voice Mode <sub>12 Oct &ndash; 18 Oct</sub> &middot; Claude Opus 5.5 <sub>23 Sep &ndash; 12 Oct</sub> &middot; MT5 Unraided Liquidity Indicator <sub>23 Sep &ndash; 12 Oct</sub> &middot; Pen and Paper Journaling <sub>23 Sep &ndash; 12 Oct</sub> &middot; DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub> &middot; OpenRouter <sub>28 Aug &ndash; 23 Sep</sub> &middot; GLM 5.3 Flash <sub>28 Aug &ndash; 23 Sep</sub> &middot; TikTok Studio Live <sub>28 Aug &ndash; 23 Sep</sub> &middot; Scrollytelling <sub>28 Aug &ndash; 23 Sep</sub> &middot; Claude Code Routines <sub>28 Aug &ndash; 23 Sep</sub> &middot; Market Profile MT5 Indicator <sub>28 Aug &ndash; 23 Sep</sub></td>
 </tr>
 <!--row:weather-->
 <tr>
@@ -84,7 +84,7 @@
 </tr>
 </table>
 
-<sub>last sync &middot; 10 Nov 2026 &middot; 19:28 GMT+10</sub>
+<sub>last sync &middot; 10 Nov 2026 &middot; 20:43 GMT+10</sub>
 
 <!-- NOW:END -->
 
