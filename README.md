@@ -75,16 +75,16 @@
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
-<td>29&deg;C &middot; overcast &middot; 78% RH &middot; wind 16 km/h</td>
+<td>27&deg;C &middot; overcast &middot; 82% RH &middot; wind 3 km/h</td>
 </tr>
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $3,957.89 ▼ 0.87%" src="https://img.shields.io/badge/XAUUSD-%243%2C957.89%20%E2%96%BC%200.87%25-FF00CC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $73,463 ▼ 0.49%" src="https://img.shields.io/badge/BTCUSD-%2473%2C463%20%E2%96%BC%200.49%25-FF00CC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $3,867.39 ▼ 3.14%" src="https://img.shields.io/badge/XAUUSD-%243%2C867.39%20%E2%96%BC%203.14%25-FF00CC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $71,649 ▼ 3.51%" src="https://img.shields.io/badge/BTCUSD-%2471%2C649%20%E2%96%BC%203.51%25-FF00CC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 12 Nov 2026 &middot; 17:33 GMT+10</sub>
+<sub>last sync &middot; 13 Nov 2026 &middot; 02:40 GMT+10</sub>
 
 <!-- NOW:END -->
 
