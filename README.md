@@ -65,7 +65,7 @@
 <!--row:exploring-->
 <tr>
 <td width="130"><code>currently exploring</code></td>
-<td>Fable 5.2 <sub>since 10 Nov</sub></td>
+<td>Migrating Gemini Gems to Skills <sub>since 13 Nov</sub> &middot; Fable 5.2 <sub>since 10 Nov</sub></td>
 </tr>
 <!--row:explored-->
 <tr>
@@ -80,11 +80,11 @@
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $3,877.41 ▼ 2.89%" src="https://img.shields.io/badge/XAUUSD-%243%2C877.41%20%E2%96%BC%202.89%25-FF00CC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $71,370 ▼ 3.70%" src="https://img.shields.io/badge/BTCUSD-%2471%2C370%20%E2%96%BC%203.70%25-FF00CC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $3,909.62 ▼ 2.08%" src="https://img.shields.io/badge/XAUUSD-%243%2C909.62%20%E2%96%BC%202.08%25-FF00CC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $71,051 ▼ 3.54%" src="https://img.shields.io/badge/BTCUSD-%2471%2C051%20%E2%96%BC%203.54%25-FF00CC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 13 Nov 2026 &middot; 08:38 GMT+10</sub>
+<sub>last sync &middot; 13 Nov 2026 &middot; 11:33 GMT+10</sub>
 
 <!-- NOW:END -->
 

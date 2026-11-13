@@ -1,5 +1,6 @@
 {
   "exploring": [
+    { "name": "Migrating Gemini Gems to Skills", "since": "2026-11-13" },
     { "name": "Fable 5.2", "since": "2026-11-10" }
   ],
   "explored": [
