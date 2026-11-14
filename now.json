@@ -1,7 +1,8 @@
 {
   "exploring": [
     { "name": "Migrating Gemini Gems to Skills", "since": "2026-11-13" },
-    { "name": "Fable 5.2", "since": "2026-11-10" }
+    { "name": "Fable 5.2", "since": "2026-11-10" },
+    { "name": "Copying Gemini Skills to Grok Skills and Optimizing for Accuracy", "since": "2026-11-14" }
   ],
   "explored": [
     { "name": "DeepSeek V4.1 Flash 1017", "since": "2026-10-18", "until": "2026-11-10" },

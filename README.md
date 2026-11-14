@@ -65,7 +65,7 @@
 <!--row:exploring-->
 <tr>
 <td width="130"><code>currently exploring</code></td>
-<td>Migrating Gemini Gems to Skills <sub>since 13 Nov</sub> &middot; Fable 5.2 <sub>since 10 Nov</sub></td>
+<td>Migrating Gemini Gems to Skills <sub>since 13 Nov</sub> &middot; Fable 5.2 <sub>since 10 Nov</sub> &middot; Copying Gemini Skills to Grok Skills and Optimizing for Accuracy <sub>since 14 Nov</sub></td>
 </tr>
 <!--row:explored-->
 <tr>
