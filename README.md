@@ -65,7 +65,7 @@
 <!--row:exploring-->
 <tr>
 <td width="130"><code>currently exploring</code></td>
-<td>Migrating Gemini Gems to Skills <sub>since 13 Nov</sub> &middot; Fable 5.2 <sub>since 10 Nov</sub> &middot; Copying Gemini Skills to Grok Skills and Optimizing for Accuracy <sub>since 14 Nov</sub></td>
+<td>Canon DSLR raw photo editing with DarkTable MCP and DeepSeek v4.1 Flash Free on OpenCode <sub>since 19 Nov</sub> &middot; Darktable MCP with OpenCode DeepSeek v4.1 Flash Free <sub>since 19 Nov</sub> &middot; Fable 5.2 in Plan Mode <sub>since 19 Nov</sub> &middot; Preparing Fable 5.2 prompts using Grok skills <sub>since 19 Nov</sub> &middot; Multiple Gemini Skills used in chat <sub>since 19 Nov</sub> &middot; Migrating Gemini Gems to Skills <sub>since 13 Nov</sub> &middot; Fable 5.2 <sub>since 10 Nov</sub> &middot; Copying Gemini Skills to Grok Skills and Optimizing for Accuracy <sub>since 14 Nov</sub></td>
 </tr>
 <!--row:explored-->
 <tr>
@@ -75,16 +75,16 @@
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
-<td>30&deg;C &middot; overcast &middot; 73% RH &middot; wind 12 km/h</td>
+<td>29&deg;C &middot; overcast &middot; 78% RH &middot; wind 11 km/h</td>
 </tr>
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $3,748.98 ▼ 2.93%" src="https://img.shields.io/badge/XAUUSD-%243%2C748.98%20%E2%96%BC%202.93%25-FF00CC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $62,753 ▼ 2.45%" src="https://img.shields.io/badge/BTCUSD-%2462%2C753%20%E2%96%BC%202.45%25-FF00CC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $3,724.72 ▼ 3.56%" src="https://img.shields.io/badge/XAUUSD-%243%2C724.72%20%E2%96%BC%203.56%25-FF00CC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $63,430 ▼ 1.45%" src="https://img.shields.io/badge/BTCUSD-%2463%2C430%20%E2%96%BC%201.45%25-FF00CC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 19 Nov 2026 &middot; 12:22 GMT+10</sub>
+<sub>last sync &middot; 19 Nov 2026 &middot; 14:45 GMT+10</sub>
 
 <!-- NOW:END -->
 

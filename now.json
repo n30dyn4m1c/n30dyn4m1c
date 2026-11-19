@@ -1,5 +1,10 @@
 {
   "exploring": [
+    { "name": "Canon DSLR raw photo editing with DarkTable MCP and DeepSeek v4.1 Flash Free on OpenCode", "since": "2026-11-19" },
+    { "name": "Darktable MCP with OpenCode DeepSeek v4.1 Flash Free", "since": "2026-11-19" },
+    { "name": "Fable 5.2 in Plan Mode", "since": "2026-11-19" },
+    { "name": "Preparing Fable 5.2 prompts using Grok skills", "since": "2026-11-19" },
+    { "name": "Multiple Gemini Skills used in chat", "since": "2026-11-19" },
     { "name": "Migrating Gemini Gems to Skills", "since": "2026-11-13" },
     { "name": "Fable 5.2", "since": "2026-11-10" },
     { "name": "Copying Gemini Skills to Grok Skills and Optimizing for Accuracy", "since": "2026-11-14" }
