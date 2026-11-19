@@ -120,7 +120,7 @@
 <!--row:series-->
 <tr>
 <td width="130"><code>netflix series</code></td>
-<td>Mindhunter &middot; Midnight Diner &middot; House of Cards &middot; The Crown &middot; Better Call Saul &middot; Breaking Bad &middot; Ozark &middot; Rick &amp; Morty &middot; Black Mirror &middot; Seinfeld &middot; Lupin &middot; The Diplomat &middot; 3 Body Problem &middot; Bet</td>
+<td>Mindhunter &middot; Midnight Diner &middot; House of Cards &middot; The Crown &middot; Better Call Saul &middot; Breaking Bad &middot; Ozark &middot; Rick &amp; Morty &middot; Black Mirror &middot; Seinfeld &middot; Lupin &middot; The Diplomat &middot; 3 Body Problem &middot; Bet &middot; The Dark Crystal: Age of Resistance</td>
 </tr>
 <!--row:movies-->
 <tr>
