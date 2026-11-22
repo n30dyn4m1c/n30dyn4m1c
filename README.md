@@ -10,6 +10,12 @@
 ```
 
 ```
+$ whoami
+neo malesa · port moresby, png
+trading systems · data stories · AI tooling
+```
+
+```
 ........................................:......................:::::::::::
 ........... .                     ....##..                    .:::::::::::
 ........... .                     .=#####=.                  ..:::::::::::
@@ -48,10 +54,13 @@
 ![AI](https://img.shields.io/badge/AI-00FFCC?style=flat-square)
 ![Port Moresby · PNG](https://img.shields.io/badge/Port%20Moresby%20%C2%B7%20PNG-0D0221?style=flat-square&logo=googlemaps&logoColor=00FFCC)
 
+[![neomalesa.com](https://img.shields.io/badge/neomalesa.com-0D0221?style=for-the-badge&logo=googlechrome&logoColor=00FFCC)](https://neomalesa.com)
 [![X](https://img.shields.io/badge/@n30dyn4m1c-0D0221?style=for-the-badge&logo=x&logoColor=00FFCC)](https://x.com/n30dyn4m1c)
 [![Medium](https://img.shields.io/badge/@neomalesa-0D0221?style=for-the-badge&logo=medium&logoColor=FF00CC)](https://medium.com/@neomalesa)
 [![followers](https://img.shields.io/github/followers/n30dyn4m1c?style=for-the-badge&logo=github&logoColor=00FFCC&label=followers&labelColor=0D0221&color=0D0221)](https://github.com/n30dyn4m1c)
 [![visitors](https://api.visitorbadge.io/api/visitors?path=n30dyn4m1c&label=VISITORS&labelColor=%230D0221&countColor=%2300FFCC&style=for-the-badge)](https://github.com/n30dyn4m1c/n30dyn4m1c)
+
+<sub><a href="#01--live"><code>01 live</code></a> &middot; <a href="#02--projects"><code>02 projects</code></a> &middot; <a href="#03--writing"><code>03 writing</code></a> &middot; <a href="#04--stack"><code>04 stack</code></a> &middot; <a href="#05--stats"><code>05 stats</code></a> &middot; <a href="#06--stuff-i-like"><code>06 likes</code></a> &middot; <a href="#07--status"><code>07 status</code></a></sub>
 
 </div>
 
@@ -65,12 +74,12 @@
 <!--row:exploring-->
 <tr>
 <td width="130"><code>currently exploring</code></td>
-<td>Canon DSLR raw photo editing with DarkTable MCP and DeepSeek v4.1 Flash Free on OpenCode <sub>since 19 Nov</sub> &middot; Darktable MCP with OpenCode DeepSeek v4.1 Flash Free <sub>since 19 Nov</sub> &middot; Fable 5.2 in Plan Mode <sub>since 19 Nov</sub> &middot; Preparing Fable 5.2 prompts using Grok skills <sub>since 19 Nov</sub> &middot; Multiple Gemini Skills used in chat <sub>since 19 Nov</sub> &middot; Migrating Gemini Gems to Skills <sub>since 13 Nov</sub> &middot; Fable 5.2 <sub>since 10 Nov</sub> &middot; Copying Gemini Skills to Grok Skills and Optimizing for Accuracy <sub>since 14 Nov</sub></td>
+<td>Canon DSLR raw photo editing with DarkTable MCP and DeepSeek v4.1 Flash Free on OpenCode <sub>since 19 Nov</sub><br />Darktable MCP with OpenCode DeepSeek v4.1 Flash Free <sub>since 19 Nov</sub><br />Fable 5.2 in Plan Mode <sub>since 19 Nov</sub><br />Preparing Fable 5.2 prompts using Grok skills <sub>since 19 Nov</sub><br />Multiple Gemini Skills used in chat <sub>since 19 Nov</sub><br />Copying Gemini Skills to Grok Skills and Optimizing for Accuracy <sub>since 14 Nov</sub><br />Migrating Gemini Gems to Skills <sub>since 13 Nov</sub><br />Fable 5.2 <sub>since 10 Nov</sub></td>
 </tr>
 <!--row:explored-->
 <tr>
-<td width="130"><code>old exploring</code></td>
-<td>DeepSeek V4.1 Flash 1017 <sub>18 Oct &ndash; 10 Nov</sub> &middot; Claude in Google Docs <sub>18 Oct &ndash; 10 Nov</sub> &middot; Opus 5.5 optimizing PC <sub>18 Oct &ndash; 10 Nov</sub> &middot; Qwen uncensored local models: JOSIEFIED-Qwen3-8B, Huihui-Qwen3.5-9B <sub>21 Oct &ndash; 10 Nov</sub> &middot; OpenCode free models: DeepSeek v4.1-Flash-Free and GLM 5.3-Flash-Free <sub>21 Oct &ndash; 10 Nov</sub> &middot; Liquid AI LFM3 <sub>29 Oct &ndash; 10 Nov</sub> &middot; Sonnet 5.5 <sub>12 Oct &ndash; 18 Oct</sub> &middot; Claude Projects <sub>12 Oct &ndash; 18 Oct</sub> &middot; Speech Feedback Loops <sub>12 Oct &ndash; 18 Oct</sub> &middot; Grok Voice Mode <sub>12 Oct &ndash; 18 Oct</sub> &middot; Claude Opus 5.5 <sub>23 Sep &ndash; 12 Oct</sub> &middot; MT5 Unraided Liquidity Indicator <sub>23 Sep &ndash; 12 Oct</sub> &middot; Pen and Paper Journaling <sub>23 Sep &ndash; 12 Oct</sub> &middot; DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub> &middot; OpenRouter <sub>28 Aug &ndash; 23 Sep</sub> &middot; GLM 5.3 Flash <sub>28 Aug &ndash; 23 Sep</sub> &middot; TikTok Studio Live <sub>28 Aug &ndash; 23 Sep</sub> &middot; Scrollytelling <sub>28 Aug &ndash; 23 Sep</sub> &middot; Claude Code Routines <sub>28 Aug &ndash; 23 Sep</sub> &middot; Market Profile MT5 Indicator <sub>28 Aug &ndash; 23 Sep</sub></td>
+<td width="130"><code>previously explored</code></td>
+<td><details><summary>24 entries &middot; 22 Aug &ndash; 10 Nov</summary>Liquid AI LFM3 <sub>29 Oct &ndash; 10 Nov</sub> &middot; Qwen uncensored local models: JOSIEFIED-Qwen3-8B, Huihui-Qwen3.5-9B <sub>21 Oct &ndash; 10 Nov</sub> &middot; OpenCode free models: DeepSeek v4.1-Flash-Free and GLM 5.3-Flash-Free <sub>21 Oct &ndash; 10 Nov</sub> &middot; DeepSeek V4.1 Flash 1017 <sub>18 Oct &ndash; 10 Nov</sub> &middot; Claude in Google Docs <sub>18 Oct &ndash; 10 Nov</sub> &middot; Opus 5.5 optimizing PC <sub>18 Oct &ndash; 10 Nov</sub> &middot; Sonnet 5.5 <sub>12 Oct &ndash; 18 Oct</sub> &middot; Claude Projects <sub>12 Oct &ndash; 18 Oct</sub> &middot; Speech Feedback Loops <sub>12 Oct &ndash; 18 Oct</sub> &middot; Grok Voice Mode <sub>12 Oct &ndash; 18 Oct</sub> &middot; Claude Opus 5.5 <sub>23 Sep &ndash; 12 Oct</sub> &middot; MT5 Unraided Liquidity Indicator <sub>23 Sep &ndash; 12 Oct</sub> &middot; Pen and Paper Journaling <sub>23 Sep &ndash; 12 Oct</sub> &middot; OpenRouter <sub>28 Aug &ndash; 23 Sep</sub> &middot; GLM 5.3 Flash <sub>28 Aug &ndash; 23 Sep</sub> &middot; TikTok Studio Live <sub>28 Aug &ndash; 23 Sep</sub> &middot; Scrollytelling <sub>28 Aug &ndash; 23 Sep</sub> &middot; Claude Code Routines <sub>28 Aug &ndash; 23 Sep</sub> &middot; Market Profile MT5 Indicator <sub>28 Aug &ndash; 23 Sep</sub> &middot; Kimi K3 <sub>24 Aug &ndash; 28 Aug</sub> &middot; Ox Alpha <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek Harness <sub>24 Aug &ndash; 28 Aug</sub> &middot; DeepSeek V4-Flash <sub>22 Aug &ndash; 28 Aug</sub> &middot; OpenCode <sub>22 Aug &ndash; 28 Aug</sub></details></td>
 </tr>
 <!--row:weather-->
 <tr>
@@ -84,15 +93,123 @@
 </tr>
 </table>
 
-<sub>last sync &middot; 22 Nov 2026 &middot; 18:37 GMT+10</sub>
+<sub>last sync &middot; 23 Nov 2026 &middot; 01:39 GMT+10</sub>
 
 <!-- NOW:END -->
 
-<img alt="market tape" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/main/assets/tape.svg" />
+<img alt="market tape: one-week XAUUSD and BTCUSD price lines" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/main/assets/tape.svg" />
 
 ---
 
-### `02 · stuff i like`
+### `02 · projects`
+
+<!-- curated by hand: a few per theme, newest-relevant first. GitHub's pinned repos render below this README. -->
+
+<table>
+<tr>
+<td width="130"><code>markets</code></td>
+<td><a href="https://github.com/n30dyn4m1c/gold-pro-scalper"><b>gold-pro-scalper</b></a> &mdash; XAUUSD M1 mean-reversion scalpers for MT5: Z-score entries, cost-aware TickRobust variant <img alt="gold-pro-scalper stars" src="https://img.shields.io/github/stars/n30dyn4m1c/gold-pro-scalper?style=flat-square&label=%E2%98%85&labelColor=0D0221&color=00FFCC" /><br /><a href="https://github.com/n30dyn4m1c/crt-turtlesoup-ea"><b>crt-turtlesoup-ea</b></a> &mdash; Candle Range Theory Turtle Soup alerts across M15 &ndash; Monthly <img alt="crt-turtlesoup-ea stars" src="https://img.shields.io/github/stars/n30dyn4m1c/crt-turtlesoup-ea?style=flat-square&label=%E2%98%85&labelColor=0D0221&color=0D0221&logoColor=00FFCC" /><br /><a href="https://github.com/n30dyn4m1c/ichimoku-h4-m1-align"><b>ichimoku-h4-m1-align</b></a> &mdash; multi-timeframe Ichimoku alignment with ATR risk protection and equity-scaled sizing</td>
+</tr>
+<tr>
+<td width="130"><code>systems</code></td>
+<td><a href="https://github.com/n30dyn4m1c/mt5-deploy-agent"><b>mt5-deploy-agent</b></a> &mdash; Go daemon that pulls EA source from GitHub, compiles it in Wine MetaTrader 5 and reports via webhook<br /><a href="https://github.com/n30dyn4m1c/pacific-family-tree"><b>pacific-family-tree</b></a> &mdash; Django registry for PNG customary descent, with disputed claims kept with provenance &middot; <a href="https://pacific-family-tree.onrender.com/"><code>live ↗</code></a></td>
+</tr>
+<tr>
+<td width="130"><code>ai tooling</code></td>
+<td><a href="https://github.com/n30dyn4m1c/opencode-deepseek-effort-escalation"><b>opencode-deepseek-effort-escalation</b></a> &mdash; auto-escalates DeepSeek reasoning effort in opencode when the model is struggling<br /><a href="https://github.com/n30dyn4m1c/dsh-client-ui-deepseek-peak"><b>dsh-client-ui-deepseek-peak</b></a> &mdash; DeepSeek Harness plugin showing live peak / off-peak pricing in your timezone &middot; <a href="https://www.npmjs.com/package/dsh-client-ui-deepseek-peak"><code>npm ↗</code></a></td>
+</tr>
+<tr>
+<td width="130"><code>data stories</code></td>
+<td><a href="https://github.com/n30dyn4m1c/pacificdatavizchallenge26"><b>pacificdatavizchallenge26</b></a> &mdash; scrollytelling PNG's El Niño droughts, from Niño 3.4 to the 2026 event &middot; <a href="https://n30dyn4m1c.github.io/pacificdatavizchallenge26"><code>live ↗</code></a><br /><a href="https://github.com/n30dyn4m1c/png-calls-to-resign"><b>png-calls-to-resign</b></a> &mdash; 27 public calls to resign since 2019, one resignation &middot; <a href="https://n30dyn4m1c.github.io/png-calls-to-resign/"><code>live ↗</code></a></td>
+</tr>
+<tr>
+<td width="130"><code>apps &amp; games</code></td>
+<td><a href="https://github.com/n30dyn4m1c/360-photo-app"><b>360-photo-app</b></a> &mdash; Android capture and stitching of 360° photo spheres with CameraX and OpenCV <img alt="360-photo-app stars" src="https://img.shields.io/github/stars/n30dyn4m1c/360-photo-app?style=flat-square&label=%E2%98%85&labelColor=0D0221&color=00FFCC" /><br /><a href="https://github.com/n30dyn4m1c/rugbygoalkick"><b>rugbygoalkick</b></a> &mdash; 3D rugby league goal-kicking in Three.js, with wind physics and offline PWA play &middot; <a href="https://n30dyn4m1c.github.io/rugbygoalkick"><code>play ↗</code></a></td>
+</tr>
+</table>
+
+<sub>more &middot; <a href="https://github.com/n30dyn4m1c?tab=repositories">all repositories</a></sub>
+
+---
+
+### `03 · writing`
+
+<!-- MEDIUM:START -->
+
+<table>
+<tr>
+<td width="90"><code>13 Oct</code></td>
+<td><a href="https://medium.com/@neomalesa/speaking-and-hearing-mathematics-the-missing-channels-in-advanced-maths-2cab5c777651">Speaking and Hearing Mathematics: The Missing Channels in Advanced Maths</a></td>
+</tr>
+<tr>
+<td width="90"><code>25 Sep</code></td>
+<td><a href="https://medium.com/@neomalesa/voting-technology-is-a-stack-not-a-product-44abc9fa70fd">Voting Technology Is a Stack, Not a Product</a></td>
+</tr>
+<tr>
+<td width="90"><code>22 Sep</code></td>
+<td><a href="https://medium.com/@neomalesa/the-great-southland-of-the-holy-spirit-origin-context-and-historiographical-evolution-6a81cf482765">The Great Southland of the Holy Spirit: Origin, Context, and Historiographical Evolution</a></td>
+</tr>
+<tr>
+<td width="90"><code>22 Sep</code></td>
+<td><a href="https://medium.com/@neomalesa/the-ocean-knows-first-what-i-learned-about-el-ni%C3%B1o-while-building-this-project-d6fde9b6981e">The Ocean Knows First: What I Learned About El Niño While Building This Project</a></td>
+</tr>
+<tr>
+<td width="90"><code>29 Jul</code></td>
+<td><a href="https://medium.com/@neomalesa/a-short-history-of-ict-regulation-in-papua-new-guinea-85e68a25d49d">A Short History of ICT Regulation in Papua New Guinea</a></td>
+</tr>
+</table>
+
+<sub>source &middot; <a href="https://medium.com/@neomalesa">medium.com/@neomalesa</a></sub>
+
+<!-- MEDIUM:END -->
+
+---
+
+### `04 · stack`
+
+<table>
+<tr>
+<td width="130"><code>core</code></td>
+<td><img alt="Python, Go, TypeScript, JavaScript, Kotlin" src="https://skillicons.dev/icons?i=python,go,typescript,javascript,kotlin&theme=dark&perline=5" /></td>
+</tr>
+<tr>
+<td><code>web</code></td>
+<td><img alt="Svelte, Django, PHP, HTML, CSS" src="https://skillicons.dev/icons?i=svelte,django,php,html,css&theme=dark&perline=5" /></td>
+</tr>
+<tr>
+<td><code>ops</code></td>
+<td><img alt="Linux, Git" src="https://skillicons.dev/icons?i=linux,git&theme=dark&perline=5" /></td>
+</tr>
+<tr>
+<td><code>markets</code></td>
+<td>
+<img alt="MQL5" src="https://img.shields.io/badge/MQL5-0D0221?style=for-the-badge&labelColor=FF00CC" />
+<img alt="MetaTrader 5" src="https://img.shields.io/badge/MetaTrader%205-0D0221?style=for-the-badge&labelColor=0D0221" />
+<img alt="Pine Script" src="https://img.shields.io/badge/Pine%20Script-0D0221?style=for-the-badge&labelColor=00FFCC" />
+<img alt="TradingView" src="https://img.shields.io/badge/TradingView-0D0221?style=for-the-badge&logo=tradingview&logoColor=00FFCC" />
+<img alt="Telegram bots" src="https://img.shields.io/badge/Telegram%20bots-0D0221?style=for-the-badge&logo=telegram&logoColor=00FFCC" />
+<img alt="Android" src="https://img.shields.io/badge/Android-0D0221?style=for-the-badge&logo=android&logoColor=FF00CC" />
+</td>
+</tr>
+</table>
+
+---
+
+### `05 · stats`
+
+<div align="center">
+
+<img alt="contribution pulse" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/main/assets/pulse.svg" />
+
+<img alt="languages" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/main/assets/langs.svg" />
+
+<img alt="contribution snake" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/output/github-snake-dark.svg" />
+
+</div>
+
+---
+
+### `06 · stuff i like`
 
 <!-- LIKES:START -->
 
@@ -143,84 +260,7 @@
 
 ---
 
-### `03 · writing`
-
-<!-- MEDIUM:START -->
-
-<table>
-<tr>
-<td width="90"><code>13 Oct</code></td>
-<td><a href="https://medium.com/@neomalesa/speaking-and-hearing-mathematics-the-missing-channels-in-advanced-maths-2cab5c777651">Speaking and Hearing Mathematics: The Missing Channels in Advanced Maths</a></td>
-</tr>
-<tr>
-<td width="90"><code>25 Sep</code></td>
-<td><a href="https://medium.com/@neomalesa/voting-technology-is-a-stack-not-a-product-44abc9fa70fd">Voting Technology Is a Stack, Not a Product</a></td>
-</tr>
-<tr>
-<td width="90"><code>22 Sep</code></td>
-<td><a href="https://medium.com/@neomalesa/the-great-southland-of-the-holy-spirit-origin-context-and-historiographical-evolution-6a81cf482765">The Great Southland of the Holy Spirit: Origin, Context, and Historiographical Evolution</a></td>
-</tr>
-<tr>
-<td width="90"><code>22 Sep</code></td>
-<td><a href="https://medium.com/@neomalesa/the-ocean-knows-first-what-i-learned-about-el-ni%C3%B1o-while-building-this-project-d6fde9b6981e">The Ocean Knows First: What I Learned About El Niño While Building This Project</a></td>
-</tr>
-<tr>
-<td width="90"><code>29 Jul</code></td>
-<td><a href="https://medium.com/@neomalesa/a-short-history-of-ict-regulation-in-papua-new-guinea-85e68a25d49d">A Short History of ICT Regulation in Papua New Guinea</a></td>
-</tr>
-</table>
-
-<sub>source &middot; <a href="https://medium.com/@neomalesa">medium.com/@neomalesa</a></sub>
-
-<!-- MEDIUM:END -->
-
----
-
-### `04 · stack`
-
-<table>
-<tr>
-<td width="120"><code>core</code></td>
-<td><img alt="Python, Go, TypeScript, JavaScript, Kotlin" src="https://skillicons.dev/icons?i=python,go,typescript,javascript,kotlin&theme=dark&perline=5" /></td>
-</tr>
-<tr>
-<td><code>web</code></td>
-<td><img alt="Svelte, Django, PHP, HTML, CSS" src="https://skillicons.dev/icons?i=svelte,django,php,html,css&theme=dark&perline=5" /></td>
-</tr>
-<tr>
-<td><code>ops</code></td>
-<td><img alt="Linux, Git" src="https://skillicons.dev/icons?i=linux,git&theme=dark&perline=5" /></td>
-</tr>
-<tr>
-<td><code>markets</code></td>
-<td>
-<img alt="MQL5" src="https://img.shields.io/badge/MQL5-0D0221?style=for-the-badge&labelColor=FF00CC" />
-<img alt="MetaTrader 5" src="https://img.shields.io/badge/MetaTrader%205-0D0221?style=for-the-badge&labelColor=0D0221" />
-<img alt="Pine Script" src="https://img.shields.io/badge/Pine%20Script-0D0221?style=for-the-badge&labelColor=00FFCC" />
-<img alt="TradingView" src="https://img.shields.io/badge/TradingView-0D0221?style=for-the-badge&logo=tradingview&logoColor=00FFCC" />
-<img alt="Telegram bots" src="https://img.shields.io/badge/Telegram%20bots-0D0221?style=for-the-badge&logo=telegram&logoColor=00FFCC" />
-<img alt="Android" src="https://img.shields.io/badge/Android-0D0221?style=for-the-badge&logo=android&logoColor=FF00CC" />
-</td>
-</tr>
-</table>
-
----
-
-### `05 · stats`
-
-<div align="center">
-
-<img alt="contribution pulse" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/main/assets/pulse.svg" />
-
-<img alt="languages" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/main/assets/langs.svg" />
-
-<img alt="contribution snake" src="https://raw.githubusercontent.com/n30dyn4m1c/n30dyn4m1c/output/github-snake-dark.svg" />
-
-</div>
-
----
-
-### `06 · status`
+### `07 · status`
 
 [![now](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/now.yml?style=for-the-badge&label=now&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/now.yml)
 [![medium](https://img.shields.io/github/actions/workflow/status/n30dyn4m1c/n30dyn4m1c/medium.yml?style=for-the-badge&label=medium&labelColor=0D0221&logo=githubactions&logoColor=00FFCC)](https://github.com/n30dyn4m1c/n30dyn4m1c/actions/workflows/medium.yml)

@@ -145,16 +145,37 @@ def chip(item):
     return name
 
 
+def newest_first(items, *keys):
+    """Sort entries by their ISO dates, newest first; undated entries keep their order at the end."""
+    def key(it):
+        if isinstance(it, str):
+            return ("",) * len(keys)
+        return tuple(it.get(k) or "" for k in keys)
+    return sorted(items, key=key, reverse=True)
+
+
 def exploring_row(items):
     if not items:
         return row("exploring", "currently exploring", "idle")
-    return row("exploring", "currently exploring", " &middot; ".join(chip(it) for it in items))
+    # one entry per line: the live list is the headline, so it should scan like a list
+    return row("exploring", "currently exploring",
+               "<br />".join(chip(it) for it in newest_first(items, "since")))
 
 
 def explored_row(items):
     if not items:
         return None
-    return row("explored", "old exploring", " &middot; ".join(chip(it) for it in items))
+    items = newest_first(items, "until", "since")
+    dated = [it for it in items if isinstance(it, dict) and (it.get("since") or it.get("until"))]
+    span = ""
+    if dated:
+        first = min(it.get("since") or it.get("until") for it in dated)
+        last = max(it.get("until") or it.get("since") for it in dated)
+        span = f" &middot; {stamp(first)} &ndash; {stamp(last)}"
+    # the archive only grows, so it stays folded behind a one-line summary
+    summary = f"<summary>{len(items)} entries{span}</summary>"
+    body = " &middot; ".join(chip(it) for it in items)
+    return row("explored", "previously explored", f"<details>{summary}{body}</details>")
 
 
 def book(item):
