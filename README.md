@@ -84,16 +84,16 @@ trading systems · data stories · AI tooling
 <!--row:weather-->
 <tr>
 <td width="130"><code>port moresby</code></td>
-<td>26&deg;C &middot; clear sky &middot; 80% RH &middot; wind 12 km/h</td>
+<td>30&deg;C &middot; partly cloudy &middot; 63% RH &middot; wind 11 km/h</td>
 </tr>
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $3,573.39 ▲ 1.01%" src="https://img.shields.io/badge/XAUUSD-%243%2C573.39%20%E2%96%B2%201.01%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $60,400 ▲ 3.24%" src="https://img.shields.io/badge/BTCUSD-%2460%2C400%20%E2%96%B2%203.24%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $3,567.69 ▲ 0.85%" src="https://img.shields.io/badge/XAUUSD-%243%2C567.69%20%E2%96%B2%200.85%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $60,586 ▼ 0.51%" src="https://img.shields.io/badge/BTCUSD-%2460%2C586%20%E2%96%BC%200.51%25-FF00CC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 27 Nov 2026 &middot; 01:37 GMT+10</sub>
+<sub>last sync &middot; 27 Nov 2026 &middot; 10:25 GMT+10</sub>
 
 <!-- NOW:END -->
 
