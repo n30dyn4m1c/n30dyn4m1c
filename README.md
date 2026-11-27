@@ -89,11 +89,11 @@ trading systems · data stories · AI tooling
 <!--row:markets-->
 <tr>
 <td width="130"><code>markets</code></td>
-<td><img alt="XAUUSD $3,567.69 ▲ 0.85%" src="https://img.shields.io/badge/XAUUSD-%243%2C567.69%20%E2%96%B2%200.85%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $60,586 ▼ 0.51%" src="https://img.shields.io/badge/BTCUSD-%2460%2C586%20%E2%96%BC%200.51%25-FF00CC?style=flat-square&amp;labelColor=0D0221" /></td>
+<td><img alt="XAUUSD $3,678.13 ▲ 3.07%" src="https://img.shields.io/badge/XAUUSD-%243%2C678.13%20%E2%96%B2%203.07%25-00FFCC?style=flat-square&amp;labelColor=0D0221" />&nbsp;<img alt="BTCUSD $61,676 ▲ 1.34%" src="https://img.shields.io/badge/BTCUSD-%2461%2C676%20%E2%96%B2%201.34%25-00FFCC?style=flat-square&amp;labelColor=0D0221" /></td>
 </tr>
 </table>
 
-<sub>last sync &middot; 27 Nov 2026 &middot; 10:25 GMT+10</sub>
+<sub>last sync &middot; 27 Nov 2026 &middot; 18:57 GMT+10</sub>
 
 <!-- NOW:END -->
 
